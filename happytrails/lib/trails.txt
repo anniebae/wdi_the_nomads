@@ -1,0 +1,587 @@
+<facility>
+<Prop_ID>B057</Prop_ID>
+<Name>Salt Marsh Nature Trail</Name>
+<Location>
+Enter behind the Salt Marsh Nature Center, located near the intersection of East 33rd Street and Avenue U.
+</Location>
+<Park_Name>Marine Park</Park_Name>
+<Length>0.8 miles</Length>
+<Difficulty/>
+<Other_Details>
+The first half of this mile-long trail follows the shore of Gerritsen Beach, which empties into Jamaica Bay. From the trail’s boardwalk and viewing platforms you can observe the birdlife for which the park is famous, including the herons, egrets, ducks, and geese that frequent the marsh throughout the year. The trail’s second leg winds through a prairie of tall grass, where you can sometimes spot cottontail rabbits and ring-necked pheasants. Comfort stations and maps are available inside the Salt Marsh Nature Center.
+</Other_Details>
+<Accessible>Y</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>B073</Prop_ID>
+<Name>Lullwater</Name>
+<Location>
+Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center.
+</Location>
+<Park_Name>Prospect Park</Park_Name>
+<Length>1.0 mile</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+Explore the Lullwater to see how nature thrives in the heart of Brooklyn. The Lullwater is a great place to see birds and other wildlife. Bathrooms, cafÉ and trail guides are available at the Prospect Park Audubon Center.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>B073</Prop_ID>
+<Name>Midwood</Name>
+<Location>
+Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center.
+</Location>
+<Park_Name>Prospect Park</Park_Name>
+<Length>0.75 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+Step back in time with a walk through Brooklyn’s oldest remaining forest. The Midwood, home to some of Prospect Park’s largest trees, is a relic of Brooklyn’s history, and was preserved and incorporated into the park during its original construction. The thirty-minute hike loops from Prospect Park’s Audubon Center through a forest filled with birds and other animals.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>B073</Prop_ID>
+<Name>Peninsula</Name>
+<Location>
+Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center.
+</Location>
+<Park_Name>Prospect Park</Park_Name>
+<Length>0.5 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+Discover how the Peninsula has changed over the last 300 years. The Peninsula's restored landscapes provide scenic views, a home for Park wildlife, and great fishing. Bathrooms, cafÉ and trail guides are available at the Prospect Park Audubon Center.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>B073</Prop_ID>
+<Name>Waterfall</Name>
+<Location>
+Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center.
+</Location>
+<Park_Name>Prospect Park</Park_Name>
+<Length>0.5 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+Trace the source of the Lake on the Waterfall trail. The Fallkill Falls is the first of six waterfalls that you will see along the Park's watercourse. Bathrooms, cafÉ and trail guides are available at the Prospect Park Audubon Center.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q001</Prop_ID>
+<Name>Blue Trail</Name>
+<Location>
+Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
+</Location>
+<Park_Name>Alley Pond Park</Park_Name>
+<Length>0.33 miles</Length>
+<Difficulty/>
+<Other_Details>
+Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q001</Prop_ID>
+<Name>Green Trail</Name>
+<Location>
+Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
+</Location>
+<Park_Name>Alley Pond Park</Park_Name>
+<Length>0.3 miles</Length>
+<Difficulty/>
+<Other_Details>
+Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q001</Prop_ID>
+<Name>Orange Trail</Name>
+<Location>
+Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
+</Location>
+<Park_Name>Alley Pond Park</Park_Name>
+<Length>0.42 miles</Length>
+<Difficulty/>
+<Other_Details>
+Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q001</Prop_ID>
+<Name>Ralph Sloman Trail</Name>
+<Location>
+Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
+</Location>
+<Park_Name>Alley Pond Park</Park_Name>
+<Length>0.2 miles</Length>
+<Difficulty/>
+<Other_Details>
+Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q001</Prop_ID>
+<Name>Tulip Tree Trail</Name>
+<Location>Cloverdale Boulevard east entrance</Location>
+<Park_Name>Alley Pond Park</Park_Name>
+<Length>0.7 miles</Length>
+<Difficulty/>
+<Other_Details>
+Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q001</Prop_ID>
+<Name>White Trail</Name>
+<Location>
+Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
+</Location>
+<Park_Name>Alley Pond Park</Park_Name>
+<Length>0.7 miles</Length>
+<Difficulty/>
+<Other_Details>
+Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q001</Prop_ID>
+<Name>Yellow Trail</Name>
+<Location>
+Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
+</Location>
+<Park_Name>Alley Pond Park</Park_Name>
+<Length>0.45 miles</Length>
+<Difficulty/>
+<Other_Details>
+Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q015</Prop_ID>
+<Name>Blue Trail</Name>
+<Location>Forest Park Drive East, off of Woodhaven Boulevard</Location>
+<Park_Name>Forest Park</Park_Name>
+<Length>1.7 miles</Length>
+<Difficulty/>
+<Other_Details>
+Forest Park's numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q015</Prop_ID>
+<Name>Orange Trail</Name>
+<Location>Memorial Drive and Forest Park Drive East</Location>
+<Park_Name>Forest Park</Park_Name>
+<Length>2.4 miles</Length>
+<Difficulty/>
+<Other_Details>
+This trail will lead you through a 2.4 mile adventurous hike along the perimeter of the forest
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q015</Prop_ID>
+<Name>Yellow Trail</Name>
+<Location>Metropolitan Avenue & Forest Park Drive East</Location>
+<Park_Name>Forest Park</Park_Name>
+<Length>1.0 mile</Length>
+<Difficulty/>
+<Other_Details/>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>Q021</Prop_ID>
+<Name>South Preserve Trail</Name>
+<Location>Francis Lewis Boulevard and Union Turnpike</Location>
+<Park_Name>Cunningham Park</Park_Name>
+<Length>3.0 miles</Length>
+<Difficulty/>
+<Other_Details>
+Numerous unnamed trails wind through native hardwood (oak-hickory) forest, which features a diverse ecosystem to support abundant wildlife. The parks’ Kettle Ponds feature the sounds of Spring Peepers and other species of frogs throughout the spring and summer season.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R013</Prop_ID>
+<Name>Greenbelt Blue Trail (Southern Trailhead)</Name>
+<Location>Brielle Avenue & Roanoake Street</Location>
+<Park_Name>La Tourette Parks & Golf Course</Park_Name>
+<Length>12.3 miles</Length>
+<Difficulty>Easy/Moderate</Difficulty>
+<Other_Details>
+This is the Greenbelt’s longest marked trail. Its northeastern trailhead at the Greenbelt’s Deere Park can be accessed from Staten Island Boulevard. Walk the trail to its end, near the Brielle Avenue-Roanoake Street intersection in Willowbrook, and you will either pass through or have a view of each of the Greenbelt’s five distinct vegetation zones.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R013</Prop_ID>
+<Name>Greenbelt Nature Center Trail</Name>
+<Location>Rockland & Brielle avenues</Location>
+<Park_Name>La Tourette Parks & Golf Course</Park_Name>
+<Length>0.85 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+This gentle walk takes you through a forest of red maple, black birch, cherry, tulip, and sassafras trees. In the understory, there is an abundance of spicebush, which produces bright red berries in the fall. The trail connects to the blue trail and the white trail.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R013</Prop_ID>
+<Name>Greenbelt Red Trail</Name>
+<Location>Richmond Road and St. Patrick's Place</Location>
+<Park_Name>La Tourette Parks & Golf Course</Park_Name>
+<Length>4.0 miles</Length>
+<Difficulty>Easy/Moderate</Difficulty>
+<Other_Details>
+This loop trail is in the heart of the Greenbelt, which is also home to six other picturesque hiking trails on which urban explorers can discover Staten Island’s vast preserves of natural spaces. The red trail crosses over Buck’s Hollow, Heyerdahl Hill, the northern edge of LaTourette golf course and the neighborhood of Lighthouse Hill. Want to make a full day of it? A pathway leads from the trail downhill to Historic Richmond Town, where you can walk through a preserved 18th century village.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R013</Prop_ID>
+<Name>Greenbelt White Trail (Southern)</Name>
+<Location>
+Rockland Avenue near Brielle Avenue (mid-way trailhead) or Richmond Road near Reidel Avenue
+</Location>
+<Park_Name>La Tourette Parks & Golf Course</Park_Name>
+<Length>7.6 miles</Length>
+<Difficulty>Easy/Moderate</Difficulty>
+<Other_Details>
+Connects to Great Kills Park of the Gateway National Park System Service.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R013</Prop_ID>
+<Name>Greenbelt Yellow Trail (Southwest Trailhead)</Name>
+<Location>Richmond Avenue & Forest Hill Road</Location>
+<Park_Name>La Tourette Parks & Golf Course</Park_Name>
+<Length>8.0 miles</Length>
+<Difficulty>Moderate/Difficult</Difficulty>
+<Other_Details>
+Traverses the entire Greenbelt from its Northeast corner in the community of Todt Hill to its Southwest corner in New Springville; access Moses' Mountain at Rockland Avenue and Manor Road behind bus stop.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R017</Prop_ID>
+<Name>William T. Davis Wildlife Refuge Pink Trail</Name>
+<Location>
+Mulberry Avenue off Travis Avenue (limited parking)
+</Location>
+<Park_Name>William T. Davis Wildlife Refuge</Park_Name>
+<Length>0.5 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+Excellent birdwatching location; abounds with water-loving trees such as sweet gum and ash.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R030</Prop_ID>
+<Name>Willowbrook Park White Trail</Name>
+<Location>Willowbrook Park off Victory Boulevard</Location>
+<Park_Name>Willowbrook Park</Park_Name>
+<Length>7.6 miles</Length>
+<Difficulty>Easy/Moderate</Difficulty>
+<Other_Details>
+Connects to Great Kills Park of the Gateway National Park System Service.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R088</Prop_ID>
+<Name>Gretta Moulton Trail/Green Trail</Name>
+<Location>
+200 feet ahead of parking lot at the terminus of Nevada Avenue
+</Location>
+<Park_Name>High Rock Park</Park_Name>
+<Length>0.75 miles</Length>
+<Difficulty>Moderate</Difficulty>
+<Other_Details>
+The trail head of this circular trail is off the High Rock Park access road near the Nevada Avenue entrance. The hike takes you along kettle ponds and knobs, formations characteristic of terminal moraine topography. The upland forest includes a patch of persimmon trees. The trail is also known as the Gretta Moulton Trail in honor of an ardent Greenbelt supporter. Bathrooms nearby.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R088</Prop_ID>
+<Name>High Rock Park Lavender Trail</Name>
+<Location>
+200 feet ahead of parking lot at the terminus of Nevada Avenue
+</Location>
+<Park_Name>High Rock Park</Park_Name>
+<Length>0.25 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+Jewelweed, skunk cabbage, and various grasses and water plants can be seen, along with black water snakes, snapping turtles, and spring peepers. Bathrooms nearby.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R115</Prop_ID>
+<Name>Deere Park Blue Trail</Name>
+<Location>Staten Island Boulevard</Location>
+<Park_Name>Deere Park</Park_Name>
+<Length>12.3 miles</Length>
+<Difficulty>Easy/Moderate</Difficulty>
+<Other_Details>
+This is the Greenbelt’s longest marked trail. Its northeastern trailhead at the Greenbelt’s Deere Park can be accessed from Staten Island Boulevard. Walk the trail to its end, near the Brielle Avenue-Roanoake Street intersection in Willowbrook, and you will either pass through or have a view of each of the Greenbelt’s five distinct vegetation zones.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>X092</Prop_ID>
+<Name>Cass Gallagher Nature Trail</Name>
+<Location>
+A short walk in from the intersection of Broadway and Mosholu Avenue, near the horse stables
+</Location>
+<Park_Name>Van Cortlandt Park</Park_Name>
+<Length>1.4 miles</Length>
+<Difficulty>Moderate/Difficult</Difficulty>
+<Other_Details/>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>X092</Prop_ID>
+<Name>John Kieran Trail</Name>
+<Location>
+Enter at Golf Course via Van Cortlandt Park South and Bailey Avenue.
+</Location>
+<Park_Name>Van Cortlandt Park</Park_Name>
+<Length>1.25 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+Maps are available at the Van Cortlandt Nature Center. Named in 1988 for the famed naturalist and newspaperman, this trail journeys through the park's lake area and freshwater wetlands, passing Tibbet's Brook via a wooden bridge perfect for birding, and forms a loop with the Parade Ground.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>X092</Prop_ID>
+<Name>John Muir Trail</Name>
+<Location>
+Enter either at Broadway & Mosholu Avenue or Van Cortlandt Park East & Oneida Avenue.
+</Location>
+<Park_Name>Van Cortlandt Park</Park_Name>
+<Length>1.5 miles</Length>
+<Difficulty>Moderate</Difficulty>
+<Other_Details>
+Travel through three ecologically distinct forests on this 1.5 mile route, the only trail in Van Cortlandt Park to traverse the park from east to west. The trail will lead you through park's Northeast Forest, home to red oak, sweetgum, and tulip trees, as well as a frog-filled marsh; the Croton Woods and its sugar maple and hickory trees, as well as the Old Croton Aqueduct; and the hilly Northwest Forest, home to stately tulip, oak, and hickory trees.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>Y</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>X092</Prop_ID>
+<Name>Old Croton Aqueduct Trail</Name>
+<Location>
+Enter Trail at either Dickinson Avenue & Van Cortlandt Park South or Mosholu Parkway & West Gun Hill Road.
+</Location>
+<Park_Name>Van Cortlandt Park</Park_Name>
+<Length>1.1 mile</Length>
+<Difficulty>Easy/Moderate</Difficulty>
+<Other_Details>
+[Trail renovations will begin soon. Please bear with us as we correct erosion and rebuild paths.] This segment is part of the 41-mile-long aqueduct that brought water from the Croton Dam to New York City in the 1800s.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>X092</Prop_ID>
+<Name>Putnam Trail</Name>
+<Location>
+Enter the park at Van Cortlandt Park South and Bailey Avenue.
+</Location>
+<Park_Name>Van Cortlandt Park</Park_Name>
+<Length>1.5 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+This section of the 15-mile trail that runs up to Brewster, NY may be accessed by the Van Cortlandt Golf Course parking lot. Native hardwood (oak-hickory) forest, historically significant route (former railroad route that ran through the park into the 1980s!)
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R120</Prop_ID>
+<Name>Arden Woods Trail</Name>
+<Location>Arden & Legate Avenue</Location>
+<Park_Name>Arden Woods</Park_Name>
+<Length>1.2 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details/>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R031</Prop_ID>
+<Name>Wolfe's Pond Trail</Name>
+<Location>Hylan Boulevard & Cornelia Avenue</Location>
+<Park_Name>Wolfes Pond Park</Park_Name>
+<Length>0.75 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+Both hikers and mountain bikers can explore miles of trails in this south shore location. Trails contain easy, moderate, and difficult terrain.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R027</Prop_ID>
+<Name>Long Pond Trail</Name>
+<Location>Page Avenue & Eugene Street</Location>
+<Park_Name>Long Pond Park</Park_Name>
+<Length>1.5 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details/>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>R005</Prop_ID>
+<Name>Clove Lakes Park Trail</Name>
+<Location>Victory Boulevard</Location>
+<Park_Name>Clove Lakes Park</Park_Name>
+<Length>3.0 miles</Length>
+<Difficulty>Easy</Difficulty>
+<Other_Details>
+Visitors can enjoy walks by its valley lakes, ascend pathways through wooded hills, pause along its picturesque bridges, or visit New York City’s largest tulip tree.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>X039</Prop_ID>
+<Name>Kazimiroff Trail</Name>
+<Location>Hunter Island</Location>
+<Park_Name>Pelham Bay Park</Park_Name>
+<Length/>
+<Difficulty/>
+<Other_Details>
+Leave the city far behind on the Kazimiroff Nature Trail, which provides self-guided long and short loop paths around 189-acre Hunter Island, leading visitors along the island’s wetland border, through its interior forest, and onto the shore of beautiful Orchard Beach.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>
+<facility>
+<Prop_ID>M042</Prop_ID>
+<Name>Inwood Hill Park Hiking Trail</Name>
+<Location>Northwest section of Inwood Hill Park</Location>
+<Park_Name>Inwood Hill Park</Park_Name>
+<Length/>
+<Difficulty>Moderate</Difficulty>
+<Other_Details>
+Take a step back in time and imagine Manhattan as a forest grove of tulip trees, oaks, and maples. Inwood Hill Park's marked scenic sites or historic highlights trail will lead you to the top of the hill, where the parkÂ??s oldest trees Â?? two Cottonwoods planted before the park was established Â?? still live.
+</Other_Details>
+<Accessible>N</Accessible>
+<Limited_Access>N</Limited_Access>
+<lat/>
+<lon/>
+</facility>

@@ -11,9 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20141119203817) do
+
+  create_table "trailsolutions", force: true do |t|
+    t.integer  "prop_ID"
+    t.string   "name"
+    t.string   "location"
+    t.string   "park_name"
+    t.string   "length"
+    t.string   "difficulty"
+    t.text     "other_details"
+    t.boolean  "accessible"
+    t.boolean  "limited_access"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
