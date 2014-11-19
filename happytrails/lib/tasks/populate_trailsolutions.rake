@@ -3,6 +3,18 @@ namespace :db do
   task :populate_trailsolutions => :environment do
     file_path = Rails.root + 'lib/trails.txt'
     data = File.read(file_path)
+
+    def split_on_word_if_its_there(arr,word)
+      arr.map! { |datapoint| datapoint.include?(word) ? datapoint.partition(word) : datapoint }
+    end
+
+    data = data.split("\n")
+    data.map! { |datapoint| datapoint.include?("Appalachian National Scenic Trail") ? datapoint.partition("Appalachian National Scenic Trail") : datapoint }
+    data.flatten!
+    data.map { |datapoint| datapoint.include?("Long Distance Trails") ? datapoint.partition("Long Distance Trails") : datapoint }
+    data.flatten!
+
+
     facilities = data.split("\<facility\>")[1..-1]
 
     facilities.each do |facility|
