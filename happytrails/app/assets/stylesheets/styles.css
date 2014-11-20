@@ -1,6 +1,8 @@
 body {
+	height: 100vh;
+	width: 100vw;
 	background: url("./forest_background.jpg");
-	background-repeat: no-repeat;;
+	background-repeat: no-repeat;
 	background-size: cover;
 	-moz-background-size: cover;
   -o-background-size: cover;
@@ -8,6 +10,10 @@ body {
 	color: white;
 	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
 	font-weight: 200px;
+}
+
+.center {
+	text-align: center;
 }
 
 .nav-bar {
@@ -47,6 +53,7 @@ input[type=submit] {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	width: 100px;
+	opacity: 1;
 }
 
 .drop-hike {
@@ -59,6 +66,8 @@ input[type=submit] {
 
 
 .container {
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 15px;
 	width: 45%;
 	opacity: 0.82;
@@ -68,7 +77,7 @@ input[type=submit] {
 }
 
 .container input {
-	width: 400px;
+	width: 80%;
 	height: 30px;
 	font-family: 'Poiret One';
 	font-size: 22px;
