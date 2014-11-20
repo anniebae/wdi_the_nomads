@@ -46,7 +46,7 @@ class Trailsolution < ActiveRecord::Base
 
   	addresspackets < packet
   	
-  	response = HTTParty.get("https://maps.googleapis.com/maps/api/distancematrix/json?#{addresspackets}")  	
+  	response = HTTParty.get("https://maps.googleapis.com/maps/api/distancematrix/json? #{addresspackets}")  	
 
  	response.to_json
   end
