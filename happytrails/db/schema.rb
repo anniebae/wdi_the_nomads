@@ -11,23 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20141119203817) do
+=======
+ActiveRecord::Schema.define(version: 20141120032203) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+>>>>>>> 4a116a4027ef451dff542761c4f129c7c9a3599e
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "trailsolutions", force: true do |t|
-    t.integer  "prop_ID"
-    t.string   "name"
-    t.string   "location"
-    t.string   "park_name"
     t.string   "length"
     t.string   "difficulty"
-    t.text     "other_details"
-    t.boolean  "accessible"
-    t.boolean  "limited_access"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "park"
+    t.string   "title"
+    t.string   "region"
+    t.string   "state"
+    t.string   "dogs"
+    t.string   "lat"
+    t.string   "lon"
+    t.text     "features"
   end
 
 end
