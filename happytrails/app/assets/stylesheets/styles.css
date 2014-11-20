@@ -26,6 +26,7 @@ body {
 }
 
 .nav-bar li {
+	display: inline-block;
   margin: 5px 10px 5px 10px;
 }
 
@@ -68,6 +69,11 @@ input[type=submit] {
 	font-size: 13px;
 	font-style: italic;
 	color: rgb(252,	252,	247);
+}
+
+.drop-hello {
+	background-color: black;
+	width: 150px;
 }
 
 .container {
@@ -121,3 +127,28 @@ a {
 a:hover {
 	color: rgb(94, 101, 0);
 }
+
+
+.trail-info {
+	background-image: url("./dark_fish_skin.png");
+	position: fixed;
+	top: 20%;
+	left: 20%;
+	width: 60em;
+	height: 40em;
+	margin-top: -50px;
+	margin-left: -100px;
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

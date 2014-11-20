@@ -1,8 +1,13 @@
 $(document).ready(function() {
   $(".drop-hike").hide();
+  $(".drop-hello").hide();
 
   $(".about").hover(function() { 
     $(".drop-hike").slideToggle();
+  });
+
+  $(".hello").hover(function(){
+  	$(".drop-hello").slideToggle();
   });
 
   $('.welcome-submit').on('click', function(e){
@@ -16,7 +21,12 @@ $(document).ready(function() {
 
 
     $('.container').animate({
-    	"width": "25%",
+    	"width": "10%",
+    });
+
+    $ ('.container').find($('input')).animate({
+    	"font-size": "12px",
+    	"width": "30%"
     })
 
 
