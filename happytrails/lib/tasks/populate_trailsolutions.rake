@@ -24,6 +24,17 @@ namespace :db do
       end
     end
 
+    url_path = Rails.root + 'lib/urls_arr.txt'
+    urls_from_txt = File.read(url_path)
+    url_arr = urls_from_txt.split(/\d+:\s/)
+    url_arr.shift
+    url_arr.map! {|url| url[1..-2]}
+
+    data.each_with_index do |arr, index|
+      arr.pop
+      arr.push(url_arr[index])
+    end
+
     data.each do |trail|
       park = trail[0]
       title = trail[1]
@@ -35,6 +46,7 @@ namespace :db do
       dogs = trail[7]
       lat = (trail[8] != "") ? (trail[8].split(",")[0].split(" ")[-1]) : ""
       lon = (trail[8] != "") ? (trail[8].split(",")[1].strip.split(" ")[0]) : ""
+      url = trail[9]
       Trailsolution.create!(
         park: park,
         title: title,
@@ -45,7 +57,8 @@ namespace :db do
         features: features,
         dogs: dogs,
         lat: lat,
-        lon: lon
+        lon: lon,
+        url: url
         )
     end
   end
