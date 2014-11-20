@@ -1,587 +1,2068 @@
-<facility>
-<Prop_ID>B057</Prop_ID>
-<Name>Salt Marsh Nature Trail</Name>
-<Location>
-Enter behind the Salt Marsh Nature Center, located near the intersection of East 33rd Street and Avenue U.
-</Location>
-<Park_Name>Marine Park</Park_Name>
-<Length>0.8 miles</Length>
-<Difficulty/>
-<Other_Details>
-The first half of this mile-long trail follows the shore of Gerritsen Beach, which empties into Jamaica Bay. From the trail’s boardwalk and viewing platforms you can observe the birdlife for which the park is famous, including the herons, egrets, ducks, and geese that frequent the marsh throughout the year. The trail’s second leg winds through a prairie of tall grass, where you can sometimes spot cottontail rabbits and ring-necked pheasants. Comfort stations and maps are available inside the Salt Marsh Nature Center.
-</Other_Details>
-<Accessible>Y</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>B073</Prop_ID>
-<Name>Lullwater</Name>
-<Location>
-Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center.
-</Location>
-<Park_Name>Prospect Park</Park_Name>
-<Length>1.0 mile</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-Explore the Lullwater to see how nature thrives in the heart of Brooklyn. The Lullwater is a great place to see birds and other wildlife. Bathrooms, cafÉ and trail guides are available at the Prospect Park Audubon Center.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>B073</Prop_ID>
-<Name>Midwood</Name>
-<Location>
-Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center.
-</Location>
-<Park_Name>Prospect Park</Park_Name>
-<Length>0.75 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-Step back in time with a walk through Brooklyn’s oldest remaining forest. The Midwood, home to some of Prospect Park’s largest trees, is a relic of Brooklyn’s history, and was preserved and incorporated into the park during its original construction. The thirty-minute hike loops from Prospect Park’s Audubon Center through a forest filled with birds and other animals.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>B073</Prop_ID>
-<Name>Peninsula</Name>
-<Location>
-Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center.
-</Location>
-<Park_Name>Prospect Park</Park_Name>
-<Length>0.5 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-Discover how the Peninsula has changed over the last 300 years. The Peninsula's restored landscapes provide scenic views, a home for Park wildlife, and great fishing. Bathrooms, cafÉ and trail guides are available at the Prospect Park Audubon Center.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>B073</Prop_ID>
-<Name>Waterfall</Name>
-<Location>
-Enter Park at Lincoln Road and Ocean Avenue entrance. Trails begin or are near the Prospect Park Audubon Center.
-</Location>
-<Park_Name>Prospect Park</Park_Name>
-<Length>0.5 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-Trace the source of the Lake on the Waterfall trail. The Fallkill Falls is the first of six waterfalls that you will see along the Park's watercourse. Bathrooms, cafÉ and trail guides are available at the Prospect Park Audubon Center.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q001</Prop_ID>
-<Name>Blue Trail</Name>
-<Location>
-Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
-</Location>
-<Park_Name>Alley Pond Park</Park_Name>
-<Length>0.33 miles</Length>
-<Difficulty/>
-<Other_Details>
-Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q001</Prop_ID>
-<Name>Green Trail</Name>
-<Location>
-Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
-</Location>
-<Park_Name>Alley Pond Park</Park_Name>
-<Length>0.3 miles</Length>
-<Difficulty/>
-<Other_Details>
-Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q001</Prop_ID>
-<Name>Orange Trail</Name>
-<Location>
-Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
-</Location>
-<Park_Name>Alley Pond Park</Park_Name>
-<Length>0.42 miles</Length>
-<Difficulty/>
-<Other_Details>
-Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q001</Prop_ID>
-<Name>Ralph Sloman Trail</Name>
-<Location>
-Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
-</Location>
-<Park_Name>Alley Pond Park</Park_Name>
-<Length>0.2 miles</Length>
-<Difficulty/>
-<Other_Details>
-Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q001</Prop_ID>
-<Name>Tulip Tree Trail</Name>
-<Location>Cloverdale Boulevard east entrance</Location>
-<Park_Name>Alley Pond Park</Park_Name>
-<Length>0.7 miles</Length>
-<Difficulty/>
-<Other_Details>
-Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q001</Prop_ID>
-<Name>White Trail</Name>
-<Location>
-Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
-</Location>
-<Park_Name>Alley Pond Park</Park_Name>
-<Length>0.7 miles</Length>
-<Difficulty/>
-<Other_Details>
-Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q001</Prop_ID>
-<Name>Yellow Trail</Name>
-<Location>
-Behind ballfield 6 by Winchester Boulevard, north of Union Turnpike
-</Location>
-<Park_Name>Alley Pond Park</Park_Name>
-<Length>0.45 miles</Length>
-<Difficulty/>
-<Other_Details>
-Numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds. The north end of the park boasts splendid salt marsh views.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q015</Prop_ID>
-<Name>Blue Trail</Name>
-<Location>Forest Park Drive East, off of Woodhaven Boulevard</Location>
-<Park_Name>Forest Park</Park_Name>
-<Length>1.7 miles</Length>
-<Difficulty/>
-<Other_Details>
-Forest Park's numerous trails wind through native hardwood (oak-hickory) forest and kettle ponds.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q015</Prop_ID>
-<Name>Orange Trail</Name>
-<Location>Memorial Drive and Forest Park Drive East</Location>
-<Park_Name>Forest Park</Park_Name>
-<Length>2.4 miles</Length>
-<Difficulty/>
-<Other_Details>
-This trail will lead you through a 2.4 mile adventurous hike along the perimeter of the forest
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q015</Prop_ID>
-<Name>Yellow Trail</Name>
-<Location>Metropolitan Avenue & Forest Park Drive East</Location>
-<Park_Name>Forest Park</Park_Name>
-<Length>1.0 mile</Length>
-<Difficulty/>
-<Other_Details/>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>Q021</Prop_ID>
-<Name>South Preserve Trail</Name>
-<Location>Francis Lewis Boulevard and Union Turnpike</Location>
-<Park_Name>Cunningham Park</Park_Name>
-<Length>3.0 miles</Length>
-<Difficulty/>
-<Other_Details>
-Numerous unnamed trails wind through native hardwood (oak-hickory) forest, which features a diverse ecosystem to support abundant wildlife. The parks’ Kettle Ponds feature the sounds of Spring Peepers and other species of frogs throughout the spring and summer season.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R013</Prop_ID>
-<Name>Greenbelt Blue Trail (Southern Trailhead)</Name>
-<Location>Brielle Avenue & Roanoake Street</Location>
-<Park_Name>La Tourette Parks & Golf Course</Park_Name>
-<Length>12.3 miles</Length>
-<Difficulty>Easy/Moderate</Difficulty>
-<Other_Details>
-This is the Greenbelt’s longest marked trail. Its northeastern trailhead at the Greenbelt’s Deere Park can be accessed from Staten Island Boulevard. Walk the trail to its end, near the Brielle Avenue-Roanoake Street intersection in Willowbrook, and you will either pass through or have a view of each of the Greenbelt’s five distinct vegetation zones.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R013</Prop_ID>
-<Name>Greenbelt Nature Center Trail</Name>
-<Location>Rockland & Brielle avenues</Location>
-<Park_Name>La Tourette Parks & Golf Course</Park_Name>
-<Length>0.85 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-This gentle walk takes you through a forest of red maple, black birch, cherry, tulip, and sassafras trees. In the understory, there is an abundance of spicebush, which produces bright red berries in the fall. The trail connects to the blue trail and the white trail.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R013</Prop_ID>
-<Name>Greenbelt Red Trail</Name>
-<Location>Richmond Road and St. Patrick's Place</Location>
-<Park_Name>La Tourette Parks & Golf Course</Park_Name>
-<Length>4.0 miles</Length>
-<Difficulty>Easy/Moderate</Difficulty>
-<Other_Details>
-This loop trail is in the heart of the Greenbelt, which is also home to six other picturesque hiking trails on which urban explorers can discover Staten Island’s vast preserves of natural spaces. The red trail crosses over Buck’s Hollow, Heyerdahl Hill, the northern edge of LaTourette golf course and the neighborhood of Lighthouse Hill. Want to make a full day of it? A pathway leads from the trail downhill to Historic Richmond Town, where you can walk through a preserved 18th century village.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R013</Prop_ID>
-<Name>Greenbelt White Trail (Southern)</Name>
-<Location>
-Rockland Avenue near Brielle Avenue (mid-way trailhead) or Richmond Road near Reidel Avenue
-</Location>
-<Park_Name>La Tourette Parks & Golf Course</Park_Name>
-<Length>7.6 miles</Length>
-<Difficulty>Easy/Moderate</Difficulty>
-<Other_Details>
-Connects to Great Kills Park of the Gateway National Park System Service.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R013</Prop_ID>
-<Name>Greenbelt Yellow Trail (Southwest Trailhead)</Name>
-<Location>Richmond Avenue & Forest Hill Road</Location>
-<Park_Name>La Tourette Parks & Golf Course</Park_Name>
-<Length>8.0 miles</Length>
-<Difficulty>Moderate/Difficult</Difficulty>
-<Other_Details>
-Traverses the entire Greenbelt from its Northeast corner in the community of Todt Hill to its Southwest corner in New Springville; access Moses' Mountain at Rockland Avenue and Manor Road behind bus stop.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R017</Prop_ID>
-<Name>William T. Davis Wildlife Refuge Pink Trail</Name>
-<Location>
-Mulberry Avenue off Travis Avenue (limited parking)
-</Location>
-<Park_Name>William T. Davis Wildlife Refuge</Park_Name>
-<Length>0.5 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-Excellent birdwatching location; abounds with water-loving trees such as sweet gum and ash.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R030</Prop_ID>
-<Name>Willowbrook Park White Trail</Name>
-<Location>Willowbrook Park off Victory Boulevard</Location>
-<Park_Name>Willowbrook Park</Park_Name>
-<Length>7.6 miles</Length>
-<Difficulty>Easy/Moderate</Difficulty>
-<Other_Details>
-Connects to Great Kills Park of the Gateway National Park System Service.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R088</Prop_ID>
-<Name>Gretta Moulton Trail/Green Trail</Name>
-<Location>
-200 feet ahead of parking lot at the terminus of Nevada Avenue
-</Location>
-<Park_Name>High Rock Park</Park_Name>
-<Length>0.75 miles</Length>
-<Difficulty>Moderate</Difficulty>
-<Other_Details>
-The trail head of this circular trail is off the High Rock Park access road near the Nevada Avenue entrance. The hike takes you along kettle ponds and knobs, formations characteristic of terminal moraine topography. The upland forest includes a patch of persimmon trees. The trail is also known as the Gretta Moulton Trail in honor of an ardent Greenbelt supporter. Bathrooms nearby.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R088</Prop_ID>
-<Name>High Rock Park Lavender Trail</Name>
-<Location>
-200 feet ahead of parking lot at the terminus of Nevada Avenue
-</Location>
-<Park_Name>High Rock Park</Park_Name>
-<Length>0.25 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-Jewelweed, skunk cabbage, and various grasses and water plants can be seen, along with black water snakes, snapping turtles, and spring peepers. Bathrooms nearby.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R115</Prop_ID>
-<Name>Deere Park Blue Trail</Name>
-<Location>Staten Island Boulevard</Location>
-<Park_Name>Deere Park</Park_Name>
-<Length>12.3 miles</Length>
-<Difficulty>Easy/Moderate</Difficulty>
-<Other_Details>
-This is the Greenbelt’s longest marked trail. Its northeastern trailhead at the Greenbelt’s Deere Park can be accessed from Staten Island Boulevard. Walk the trail to its end, near the Brielle Avenue-Roanoake Street intersection in Willowbrook, and you will either pass through or have a view of each of the Greenbelt’s five distinct vegetation zones.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>X092</Prop_ID>
-<Name>Cass Gallagher Nature Trail</Name>
-<Location>
-A short walk in from the intersection of Broadway and Mosholu Avenue, near the horse stables
-</Location>
-<Park_Name>Van Cortlandt Park</Park_Name>
-<Length>1.4 miles</Length>
-<Difficulty>Moderate/Difficult</Difficulty>
-<Other_Details/>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>X092</Prop_ID>
-<Name>John Kieran Trail</Name>
-<Location>
-Enter at Golf Course via Van Cortlandt Park South and Bailey Avenue.
-</Location>
-<Park_Name>Van Cortlandt Park</Park_Name>
-<Length>1.25 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-Maps are available at the Van Cortlandt Nature Center. Named in 1988 for the famed naturalist and newspaperman, this trail journeys through the park's lake area and freshwater wetlands, passing Tibbet's Brook via a wooden bridge perfect for birding, and forms a loop with the Parade Ground.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>X092</Prop_ID>
-<Name>John Muir Trail</Name>
-<Location>
-Enter either at Broadway & Mosholu Avenue or Van Cortlandt Park East & Oneida Avenue.
-</Location>
-<Park_Name>Van Cortlandt Park</Park_Name>
-<Length>1.5 miles</Length>
-<Difficulty>Moderate</Difficulty>
-<Other_Details>
-Travel through three ecologically distinct forests on this 1.5 mile route, the only trail in Van Cortlandt Park to traverse the park from east to west. The trail will lead you through park's Northeast Forest, home to red oak, sweetgum, and tulip trees, as well as a frog-filled marsh; the Croton Woods and its sugar maple and hickory trees, as well as the Old Croton Aqueduct; and the hilly Northwest Forest, home to stately tulip, oak, and hickory trees.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>Y</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>X092</Prop_ID>
-<Name>Old Croton Aqueduct Trail</Name>
-<Location>
-Enter Trail at either Dickinson Avenue & Van Cortlandt Park South or Mosholu Parkway & West Gun Hill Road.
-</Location>
-<Park_Name>Van Cortlandt Park</Park_Name>
-<Length>1.1 mile</Length>
-<Difficulty>Easy/Moderate</Difficulty>
-<Other_Details>
-[Trail renovations will begin soon. Please bear with us as we correct erosion and rebuild paths.] This segment is part of the 41-mile-long aqueduct that brought water from the Croton Dam to New York City in the 1800s.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>X092</Prop_ID>
-<Name>Putnam Trail</Name>
-<Location>
-Enter the park at Van Cortlandt Park South and Bailey Avenue.
-</Location>
-<Park_Name>Van Cortlandt Park</Park_Name>
-<Length>1.5 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-This section of the 15-mile trail that runs up to Brewster, NY may be accessed by the Van Cortlandt Golf Course parking lot. Native hardwood (oak-hickory) forest, historically significant route (former railroad route that ran through the park into the 1980s!)
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R120</Prop_ID>
-<Name>Arden Woods Trail</Name>
-<Location>Arden & Legate Avenue</Location>
-<Park_Name>Arden Woods</Park_Name>
-<Length>1.2 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details/>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R031</Prop_ID>
-<Name>Wolfe's Pond Trail</Name>
-<Location>Hylan Boulevard & Cornelia Avenue</Location>
-<Park_Name>Wolfes Pond Park</Park_Name>
-<Length>0.75 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-Both hikers and mountain bikers can explore miles of trails in this south shore location. Trails contain easy, moderate, and difficult terrain.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R027</Prop_ID>
-<Name>Long Pond Trail</Name>
-<Location>Page Avenue & Eugene Street</Location>
-<Park_Name>Long Pond Park</Park_Name>
-<Length>1.5 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details/>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>R005</Prop_ID>
-<Name>Clove Lakes Park Trail</Name>
-<Location>Victory Boulevard</Location>
-<Park_Name>Clove Lakes Park</Park_Name>
-<Length>3.0 miles</Length>
-<Difficulty>Easy</Difficulty>
-<Other_Details>
-Visitors can enjoy walks by its valley lakes, ascend pathways through wooded hills, pause along its picturesque bridges, or visit New York City’s largest tulip tree.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>X039</Prop_ID>
-<Name>Kazimiroff Trail</Name>
-<Location>Hunter Island</Location>
-<Park_Name>Pelham Bay Park</Park_Name>
-<Length/>
-<Difficulty/>
-<Other_Details>
-Leave the city far behind on the Kazimiroff Nature Trail, which provides self-guided long and short loop paths around 189-acre Hunter Island, leading visitors along the island’s wetland border, through its interior forest, and onto the shore of beautiful Orchard Beach.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
-<facility>
-<Prop_ID>M042</Prop_ID>
-<Name>Inwood Hill Park Hiking Trail</Name>
-<Location>Northwest section of Inwood Hill Park</Location>
-<Park_Name>Inwood Hill Park</Park_Name>
-<Length/>
-<Difficulty>Moderate</Difficulty>
-<Other_Details>
-Take a step back in time and imagine Manhattan as a forest grove of tulip trees, oaks, and maples. Inwood Hill Park's marked scenic sites or historic highlights trail will lead you to the top of the hill, where the parkÂ??s oldest trees Â?? two Cottonwoods planted before the park was established Â?? still live.
-</Other_Details>
-<Accessible>N</Accessible>
-<Limited_Access>N</Limited_Access>
-<lat/>
-<lon/>
-</facility>
+"
+            Appalachian National Scenic Trail          ","
+            Appalachian Trail on Bellvale Mountain          ","
+            Long Distance Trails          ","
+            NY          ","
+            7.1 miles          ","
+            Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.244159,-74.286675          ","
+            49,213          "
+"
+            Appalachian National Scenic Trail          ","
+            Appalachian Trail - Hoyt Road, NY to Conn. 341, Kent, CT          ","
+            Southern Taconics          ","
+            NY/CT          ","
+            11.5 miles          ","
+            Strenuous          ","
+            ViewsWaterfallWoods          ","
+            Allowed on leash          ","
+            41.731029, -73.490691 (CT) to spot car, 41.640959, -73.520118 (Hoyt Rd) to start hike          ","
+            17,377          "
+"
+            Appalachian National Scenic Trail          ","
+            Cat Rocks and Nuclear Lake on Appalachian Trail in Dutchess County, NY          ","
+            Long Distance Trails          ","
+            NY          ","
+            12.7 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.593878,-73.586989          ","
+            14,720          "
+"
+            Appalachian National Scenic Trail          ","
+            Appalachian Trail North of Route 17A in Warwick, NY          ","
+            Long Distance Trails          ","
+            NY          ","
+            4.8 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.244159,-74.286675          ","
+            11,226          "
+"
+            Black Creek Preserve          ","
+            Black Creek Preserve          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            2.5 miles          ","
+            Easy to Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.819688,-73.963695          ","
+            8,355          "
+"
+            Black Rock Forest          ","
+            Sutherland Pond/Scenic Trail/Eagle Cliff Loop from Mine Hill Road          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            6.5 miles          ","
+            Moderate          ","
+            ViewsSwimmingHistoric feature          ","
+            Allowed on leash          ","
+            41.402043,-74.047106          ","
+            38,874          "
+"
+            Black Rock Forest          ","
+            Mt. Misery/Hill of Pines/Rattlesnake Hill/Black Rock Mountain Loop          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            7.5 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.41857, -74.01014          ","
+            31,501          "
+"
+            Black Rock Forest          ","
+            Black Rock Mountain and Sphagnum Pond Loop from Mine Hill Road          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            5 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.398896,-74.04974          ","
+            17,478          "
+"
+            Black Rock Forest          ","
+            Black Rock Mountain Circuit Via Footpaths and Woods Roads          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            4.5 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.41857, -74.01014          ","
+            22,292          "
+"
+            Blue Mountain Reservation          ","
+            Blue Mountain Reservation Loop          ","
+            Westchester County          ","
+            NY          ","
+            5 miles          ","
+            Easy to Moderate          ","
+            ViewsBikes allowed          ","
+            Allowed on leash          ","
+            41.271372,-73.928418          ","
+            25,669          "
+"
+            Bronx River Parkway Reservation          ","
+            Bronx River Pathway          ","
+            Westchester County          ","
+            NY          ","
+            9.8 miles          ","
+            Easy          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.072014,-73.768624          ","
+            13,243          "
+"
+            Butler Memorial Sanctuary          ","
+            Butler Memorial Sanctuary (Mt. Kisco, NY)          ","
+            Westchester County          ","
+            NY          ","
+            3.5 miles          ","
+            Easy to Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.18253,-73.686934          ","
+            19,083          "
+"
+            Buttermilk Falls County Park          ","
+            Buttermilk Falls  in Rockland County          ","
+            Rockland County          ","
+            NY          ","
+            1.2 miles          ","
+            Easy to Moderate          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.087131,-73.94744          ","
+            51,222          "
+"
+            Buttermilk Falls County Park          ","
+            Buttermilk Falls and Long Path in Rockland County          ","
+            Rockland County          ","
+            NY          ","
+            4 miles          ","
+            Moderate          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.087131,-73.94744          ","
+            32,002          "
+"
+            Catskill Park          ","
+            Mud Pond/Trout Pond Loop          ","
+            Catskills          ","
+            NY          ","
+            4.8 miles          ","
+            Moderate          ","
+            Swimming          ","
+            Allowed off leash          ","
+            41.994457,-74.940834          ","
+            30,643          "
+"
+            Catskill Park          ","
+            Hunter Mountain Fire Tower          ","
+            Catskills          ","
+            NY          ","
+            8 miles          ","
+            Strenuous          ","
+            ViewsHistoric feature          ","
+            Allowed off leash          ","
+            42.18478, -74.27178          ","
+            22,319          "
+"
+            Catskill Park          ","
+            Slide Mountain (Highest Peak in Catskills)  Loop          ","
+            Catskills          ","
+            NY          ","
+            6.8 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed off leash          ","
+            42.010928,-74.422371 (Estimated)          ","
+            69,764          "
+"
+            Catskill Park          ","
+            Plateau Mountain Via Warner Creek Trail          ","
+            Catskills          ","
+            NY          ","
+            8 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed off leash          ","
+            42.140337,-74.212239          ","
+            13,260          "
+"
+            Catskill Park          ","
+            Catskill Escarpment Loop (South) from Scutt Road (North/South Lake)          ","
+            Catskills          ","
+            NY          ","
+            4.7 miles          ","
+            Moderate          ","
+            ViewsSwimmingHistoric feature          ","
+            Allowed on leash          ","
+            42.200662,-74.058473          ","
+            38,465          "
+"
+            Catskill Park          ","
+            North-South Lake/Escarpment Trail Loop Hike          ","
+            Catskills          ","
+            NY          ","
+            10.3 miles          ","
+            Moderate to Strenuous          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            42.200662,-74.058473          ","
+            32,312          "
+"
+            Catskill Park          ","
+            Balsam Mountain Catskill High Peak          ","
+            Catskills          ","
+            NY          ","
+            5.2 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed off leash          ","
+            42.097044,-74.51005          ","
+            15,068          "
+"
+            Catskill Park          ","
+            Windham High Peak          ","
+            Catskills          ","
+            NY          ","
+            6.4 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed off leash          ","
+            42.296441,-74.169152          ","
+            12,985          "
+"
+            Catskill Park          ","
+            Peekamoose and Table Mountains          ","
+            Catskills          ","
+            NY          ","
+            9.2 miles          ","
+            Strenuous          ","
+            ViewsWaterfallWoods          ","
+            Allowed off leash          ","
+            41.915164, -74.429080          ","
+            19,872          "
+"
+            Catskill Park          ","
+            Indian Head Mountain Loop          ","
+            Catskills          ","
+            NY          ","
+            7.8 miles          ","
+            Strenuous          ","
+            ViewsWoods          ","
+            Allowed off leash          ","
+            42.133827, -74.081967          ","
+            16,503          "
+"
+            Catskill Park          ","
+            Windham High Peak via Burnt Knob          ","
+            Catskills          ","
+            NY          ","
+            7.3 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed off leash          ","
+            42.288765, -74.114545          ","
+            6,380          "
+"
+            Catskill Park          ","
+            Acra Point and Batavia Kill Loop          ","
+            Catskills          ","
+            NY          ","
+            5.2 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed off leash          ","
+            42.288765, -74.114545          ","
+            8,870          "
+"
+            Catskill Park          ","
+            Touchmenot Mountain (Catskills)          ","
+            Catskills          ","
+            NY          ","
+            5 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWoods          ","
+            Allowed off leash          ","
+            42.06520054523206,-74.75181341171265          ","
+            8,455          "
+"
+            Catskill Park          ","
+            Kanape Brook and Ashokan High Point          ","
+            Catskills          ","
+            NY          ","
+            9.2 miles          ","
+            Strenuous          ","
+            ViewsHistoric feature          ","
+            Allowed off leash          ","
+            41.935710, -74.328383           ","
+            7,536          "
+"
+            Catskill Park          ","
+            Platte Clove to Overlook Mountain via Codfish Point and Echo Lake          ","
+            Catskills          ","
+            NY          ","
+            13 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfallHistoric feature          ","
+            Allowed off leash          ","
+            42.133827, -74.081967          ","
+            10,587          "
+"
+            Catskill Park          ","
+            Shavertown Trail on Perch Lake Mountain in Catskills          ","
+            Catskills          ","
+            NY          ","
+            5.3 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed off leash          ","
+            42.089945, -74.818863          ","
+            2,651          "
+"
+            Catskill Park          ","
+            Devils Path East Section            ","
+            Catskills          ","
+            NY          ","
+            13.1 miles          ","
+            Very Strenuous          ","
+            Views          ","
+            Allowed off leash          ","
+            Notch Lake 42.159555,-74.203185 Prediger Rd. 42.134256,-74.104093          ","
+            4,410          "
+"
+            Catskill Park          ","
+            Catskills Frick Pond Loop Via Quick Lake, Big Rock and Loggers Loop Trails          ","
+            Catskills          ","
+            NY          ","
+            2.2 miles          ","
+            Easy          ","
+            Views          ","
+            Allowed off leash          ","
+            41.951020, -74.707197          ","
+            1,899          "
+"
+            Catskill Park          ","
+            Balsam Lake Mountain from Beaver Kill Road          ","
+            Catskills          ","
+            NY          ","
+            4.4 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed off leash          ","
+            42.023892, -74.599734          ","
+            781          "
+"
+            Catskill Park          ","
+            Catskill Escarpment Loop (North) from Scutt Road (North/South Lake)          ","
+            Catskills          ","
+            NY          ","
+            7.2 miles          ","
+            Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            42.200662,-74.058473          ","
+            831          "
+"
+            Cranberry Lake Preserve          ","
+            Cranberry Lake Preserve Loop          ","
+            Westchester County          ","
+            NY          ","
+            3 miles          ","
+            Easy          ","
+            WaterfallHistoric feature          ","
+            No Dogs          ","
+            41.081923,-73.755898          ","
+            41,865          "
+"
+            Dater Mountain Nature Park          ","
+            Dater Mountain Nature Park          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            2.5 miles          ","
+            Easy to Moderate          ","
+            ViewsWoods          ","
+            Allowed on leash          ","
+            41.175553,-74.170697          ","
+            11,126          "
+"
+            Fahnestock State Park          ","
+            Catfish Loop Trail          ","
+            Fahnestock State Park          ","
+            NY          ","
+            4.9 miles          ","
+            Easy to Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.420722,-73.868799          ","
+            16,752          "
+"
+            Fahnestock State Park          ","
+            Charcoal Burners/Cabot/Perkins/Fahnestock Trail Loop          ","
+            Fahnestock State Park          ","
+            NY          ","
+            7.2 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.444779,-73.858345 (Estimated)          ","
+            12,758          "
+"
+            Fahnestock State Park          ","
+            Round Hill/East Mountain Loop          ","
+            Fahnestock State Park          ","
+            NY          ","
+            7.5 miles          ","
+            Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.442839,-73.915168          ","
+            12,325          "
+"
+            Fahnestock State Park          ","
+            Three Lakes Trail/Appalachian Trail Loop from Dennytown Road          ","
+            Fahnestock State Park          ","
+            NY          ","
+            5 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfallHistoric feature          ","
+            Allowed on leash          ","
+            41.420722,-73.868799          ","
+            21,969          "
+"
+            Fahnestock State Park          ","
+            Appalachian Trail/Blue Trail (Clear Lake) Loop from Route 301          ","
+            Fahnestock State Park          ","
+            NY          ","
+            6.3 miles          ","
+            Moderate          ","
+            Views          ","
+            No Dogs          ","
+            41.454882,-73.833827          ","
+            17,366          "
+"
+            Fishkill Ridge Conservation Area          ","
+            Fishkill Ridge Conservation Area from Pocket Road          ","
+            East Hudson Highlands          ","
+            NY          ","
+            6.8 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.496862,-73.949237          ","
+            16,712          "
+"
+            Granite Knolls Park          ","
+            Granite Knolls Easy Loop          ","
+            Westchester County          ","
+            NY          ","
+            3.5 miles          ","
+            Easy          ","
+            Woods          ","
+            Allowed on leash          ","
+            41.32459, -73.82486           ","
+            17,491          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            West Mountain Loop from Anthony Wayne Recreation Area          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            6.8 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.297598,-74.027274          ","
+            35,650          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Ramapo Torne/Raccoon Brook Hills Trail Loop from Reeves Meadow          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            6.5 miles          ","
+            Moderate          ","
+            ViewsWaterfallPublic Transportation          ","
+            Allowed on leash          ","
+            41.173916,-74.168658          ","
+            67,777          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Suffern-Bear Mountain Trail/Pyngyp          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            7.5 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.297598,-74.027274          ","
+            26,361          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Circular Hike Around Bear Mountain          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            10 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.297598,-74.027274          ","
+            24,514          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Appalachian Trail/Long Path Loop from Silvermine Picnic Area          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            7.6 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.295607,-74.05961          ","
+            24,687          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Iron Mines Loop #3 (Northwest/Lemon Squeezer)          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            7 miles          ","
+            Moderate to Strenuous          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.275723,-74.0887          ","
+            21,225          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Dater Mountain Nature Park and Harriman State Park          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            6 miles          ","
+            Easy to Moderate          ","
+            ViewsWaterfallPublic Transportation          ","
+            Allowed on leash          ","
+            41.171523,-74.176737          ","
+            47,880          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Raccoon Brook Hills Trail/Pine Meadow Lake/Diamond Mountain Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            7.2 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.173916,-74.168658          ","
+            30,484          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Bald Mountain/Doodletown Loop from Route 9W          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.300185,-73.984509          ","
+            48,495          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Green Pond/Boston Mine Longer Loop from Elk Pen          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            4.3 miles          ","
+            Moderate to Strenuous          ","
+            ViewsPublic TransportationHistoric feature          ","
+            Allowed on leash          ","
+            41.264792, -74.15426          ","
+            25,449          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Claudius Smith Den/Parker Cabin Mountain Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            8.5 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.194208, -74.184460          ","
+            19,255          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Popolopen Gorge/Popolopen Torne Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5 miles          ","
+            Strenuous          ","
+            ViewsWaterfallHistoric feature          ","
+            Allowed on leash          ","
+            41.324539,-73.988736          ","
+            34,651          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Raccoon Brook Hills Trail/Cascade of Slid Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5.4 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.173916,-74.168658          ","
+            19,130          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Diamond Mountain/Stony Brook Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            6.3 miles          ","
+            Moderate          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.173916,-74.168658          ","
+            26,006          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Bear Mountain Loop via Major Welch Trail and Appalachian Trail          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            4 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.312661,-73.988972          ","
+            61,258          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Iron Mines Loop #2 (Southwest) in Harriman-Bear Mountain State Parks          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            8.5 miles          ","
+            Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.234516,-74.148972          ","
+            16,906          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Almost Perpendicular/Claudius Smith Den Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            4.7 miles          ","
+            Moderate to Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.179887,-74.163916          ","
+            31,005          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Dunderberg Spiral Railway/Bald Mountain Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            7 miles          ","
+            Strenuous          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.281193,-73.962922          ","
+            27,151          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Parker Cabin/Black Rock Mountain Loop from Route 106          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            4.7 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.234516,-74.148972          ","
+            16,255          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Island Pond/Lemon Squeezer Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            7.5 miles          ","
+            Moderate to Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.264792,-74.15426          ","
+            37,433          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Seven Hills/HTS/Reeves Brook Trail Loop to Ramapo Torne and Torne View          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5.2 miles          ","
+            Moderate          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.173916,-74.168658          ","
+            29,104          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Iron Mines Loop #1 (East) in Harriman-Bear Mountain State Parks          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5.5 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.241997, -74.102354          ","
+            18,999          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            West Mountain Loop from Seven Lakes Drive          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5.4 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.30453,-74.019442          ","
+            32,247          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Claudius Smith's Rock Loop from Tuxedo          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            6.2 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.194208,-74.184460          ","
+            18,820          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Stockbridge Mountain/Nawahunta Fire Road Loop from Silvermine Picnic Area          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            4.7 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.295607,-74.05961          ","
+            19,060          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Iron Mines Short Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            3.8 miles          ","
+            Easy to Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.241997, -74.102354          ","
+            33,656          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            West Mountain (Timp-Torne/A.T. and Beechy Bottom Road) Loop from Anthony Wayne Recreation Area          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.297598, -74.027274          ","
+            17,593          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Timp-Torne/Dunderberg Spiral Railway/R-D Trail Short Loop from Route 9W          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            3.9 miles          ","
+            Moderate to Strenuous          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.281193,-73.962922          ","
+            20,896          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Black Mountain Loop from Anthony Wayne Recreation Area          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            7.5 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.297598,-74.027274          ","
+            33,106          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Red Cross, Beech Trail and Long Path Loop from Lake Skannatati           ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            8.4 miles          ","
+            Moderate          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.241997,-74.102354          ","
+            19,696          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Seven Hills/HTS/Raccoon Brook Hills Loop from Reeves Meadow          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            8 miles          ","
+            Strenuous          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.173916,-74.168658          ","
+            22,432          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Reeves Brook/Raccoon Brook Hills/Pine Meadow Trails Loop from Reeves Meadow          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.173916,-74.168658          ","
+            21,527          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            1777E/Doodletown Bridle Path Loop from Route 9W          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5 miles          ","
+            Easy to Moderate          ","
+            Historic feature          ","
+            Allowed on leash          ","
+                      ","
+            32,448          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Long Path to Long Mountain Summit in Harriman State Park          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            2 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.315548,-74.05004          ","
+            23,967          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Bear Mountain Loop via Appalachian Trail and Major Welch Trail          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            4 miles          ","
+            Strenuous          ","
+            ViewsFees          ","
+            Allowed on leash          ","
+            41.312661, -73.988972          ","
+            21,655          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Queensboro and Turkey Hill Lakes Loop from Anthony Wayne Recreation Area          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            4.6 miles          ","
+            Moderate          ","
+            ViewsHistoric featureWoods          ","
+            Allowed on leash          ","
+            41.297598, -74.027274          ","
+            14,254          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Lake Sebago and Stony Brook in Harriman State Park          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            5.1 miles          ","
+            Easy to Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.179887,-74.163916          ","
+            20,153          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            ORAK Ruins, Jackie Jones Fire Tower and Big Hill Shelter          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            4.5 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.229741,-74.060438          ","
+            17,039          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Green Pond/Boston Mine Shorter Loop from Route 106          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            2.8 miles          ","
+            Easy          ","
+            ViewsHistoric featureWoods          ","
+            Allowed on leash          ","
+            41.234516, -74.148972          ","
+            16,181          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Bear Mountain Summit Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            1.3 miles          ","
+            Easy to Moderate          ","
+            ViewsHandicap AccessibleHistoric featureWoods          ","
+            Allowed on leash          ","
+            41.311612,-74.007235          ","
+            27,625          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Ramapo Escarpment and Pine Meadow Lake from Town of Ramapo Equestrian Center          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            6.2 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.174788,-74.08526          ","
+            10,478          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Silvermine Lake Loop          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            3.8 miles          ","
+            Moderate          ","
+            ViewsHistoric featureWoods          ","
+            Allowed on leash          ","
+            41.295607,-74.05961          ","
+            17,976          "
+"
+            Harriman-Bear Mountain State Parks           ","
+            Goshen and Stevens Mountains          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            7 miles          ","
+            Moderate          ","
+            ViewsWoods          ","
+            Allowed on leash          ","
+            41.275723,-74.0887          ","
+            6,835          "
+"
+            Harriman-Bear Mountain State Parks          ","
+            Breakneck Mountain Loop from Diltz Road (Diltzes Lane)          ","
+            Harriman-Bear Mountain State Parks          ","
+            NY          ","
+            6.9 miles          ","
+            Moderate          ","
+            ViewsPublic TransportationWoods          ","
+            Allowed on leash          ","
+            41.185126,-74.073896          ","
+            7,764          "
+"
+            High Line, The Esplanade, Hudson River Park          ","
+            High Line from the WTC Site via The Esplanade & Hudson River Park          ","
+            New York City          ","
+            NY          ","
+            4.75 miles          ","
+            Easy to Moderate          ","
+            ViewsHandicap AccessiblePublic TransportationHistoric feature          ","
+            No Dogs          ","
+            40.73947,-74.008327          ","
+            16,525          "
+"
+            Hither Hills State Park and Hither Woods Preserve          ","
+            Hither Hills and Hither Woods Loop          ","
+            Long Island          ","
+            NY          ","
+            11.3 miles          ","
+            Moderate          ","
+            ViewsHistoric featureWoods          ","
+            Allowed on leash          ","
+            41.013940, -72.006879          ","
+            9,266          "
+"
+            Hook Mountain State Park          ","
+            Long Path/Bike Path Loop from Landing Road          ","
+            Rockland County          ","
+            NY          ","
+            6 miles          ","
+            Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.144342,-73.909621          ","
+            16,951          "
+"
+            Huckleberry Ridge State Forest          ","
+            Lenape Ridge/Minisink Trail Loop          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            5 miles          ","
+            Moderate          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.357919,-74.668965          ","
+            19,618          "
+"
+            Hudson Highlands Gateway Park (Cortlandt, New York)          ","
+            Hudson Highlands Gateway Park Loop          ","
+            Westchester County          ","
+            NY          ","
+            4.3 miles          ","
+            Moderate          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.326037,-73.948631          ","
+            24,315          "
+"
+            Hudson Highlands Nature Museum Outdoor Discovery Center          ","
+            Family Friendly Pond Quest Trail at Hudson Highlands Nature Museum          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            0.5 miles          ","
+            Easy          ","
+            ViewsHandicap Accessible          ","
+            No Dogs          ","
+            41.42207,-74.03458          ","
+            6,119          "
+"
+            Hudson Highlands Nature Museum Outdoor Discovery Center          ","
+            Family Friendly Field Quest Trail at Hudson Highlands Nature Museum          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            0.5 miles          ","
+            Easy          ","
+            ViewsHandicap AccessibleHistoric feature          ","
+            No Dogs          ","
+            41.42207,-74.03458          ","
+            5,595          "
+"
+            Hudson Highlands Nature Museum Outdoor Discovery Center          ","
+            Family Friendly Woodland Quest Trail at Hudson Highlands Nature Center          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            1 miles          ","
+            Moderate          ","
+            Views          ","
+            No Dogs          ","
+            41.42207,-74.03458          ","
+            5,392          "
+"
+            Hudson Highlands Nature Museum Outdoor Discovery Center          ","
+            Family Friendly Highlands Quest Trail at Hudson Highlands Nature Museum          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            1.8 miles          ","
+            Easy to Moderate          ","
+            ViewsHistoric feature          ","
+            No Dogs          ","
+            41.42207,-74.03458          ","
+            6,910          "
+"
+            Hudson Highlands State Park          ","
+            South Beacon Mountain Firetower and Scofield Ridge          ","
+            East Hudson Highlands          ","
+            NY          ","
+            8 miles          ","
+            Strenuous          ","
+            ViewsPublic TransportationHistoric feature          ","
+            Allowed on leash          ","
+            41.493547,-73.959854 (or N41°29.61282, W073°57.59124)          ","
+            29,987          "
+"
+            Hudson Highlands State Park          ","
+            Arden Point and Glenclyffe (Garrison, N.Y.)          ","
+            East Hudson Highlands          ","
+            NY          ","
+            3.7 miles          ","
+            Easy          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.380049,-73.94699          ","
+            29,280          "
+"
+            Hudson Highlands State Park          ","
+            Bull Hill (Mt. Taurus) via Washburn/Notch/Brook/Cornish Trail Loop          ","
+            East Hudson Highlands          ","
+            NY          ","
+            4.8 miles          ","
+            Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.426591,-73.96539          ","
+            52,020          "
+"
+            Hudson Highlands State Park          ","
+            Appalachian Trail /Osborn Loop Trail from Route 9          ","
+            East Hudson Highlands          ","
+            NY          ","
+            6 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.353039,-73.924491          ","
+            13,293          "
+"
+            Hudson Highlands State Park          ","
+            Breakneck Ridge Loop          ","
+            East Hudson Highlands          ","
+            NY          ","
+            2.8 miles          ","
+            Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.447809,-73.980861          ","
+            269,851          "
+"
+            Hudson Highlands State Park          ","
+            Bull Hill (Mt. Taurus) via Lone Star/Nelsonville/Washburn/Undercliff Trails Loop          ","
+            East Hudson Highlands          ","
+            NY          ","
+            5.8 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.434633,-73.93654          ","
+            17,331          "
+"
+            Hudson Highlands State Park          ","
+            Undercliff/Brook/Cornish Trail Loop from Cold Spring station          ","
+            East Hudson Highlands          ","
+            NY          ","
+            6 miles          ","
+            Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.414781,-73.957944          ","
+            25,858          "
+"
+            Hudson Highlands State Park          ","
+            Nelsonville/Notch/Breakneck Ridge Trail Loop          ","
+            East Hudson Highlands          ","
+            NY          ","
+            7 miles          ","
+            Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.424397, -73.949215          ","
+            14,441          "
+"
+            Hudson Highlands State Park          ","
+            Sugarloaf Hill and Osborn Loop Trail          ","
+            East Hudson Highlands          ","
+            NY          ","
+            7 miles          ","
+            Moderate          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+                      ","
+            28,951          "
+"
+            Hudson Highlands State Park          ","
+            Sugarloaf Mountain and Breakneck Ridge Trail          ","
+            East Hudson Highlands          ","
+            NY          ","
+            6 miles          ","
+            Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+                      ","
+            27,233          "
+"
+            Hudson Highlands State Park          ","
+            Camp Smith Trail          ","
+            East Hudson Highlands          ","
+            NY          ","
+            4.3 miles          ","
+            Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+             41.301419, -73.951288          ","
+            33,145          "
+"
+            Hunt-Parker Memorial Sanctuary and Mount Holly Sanctuary          ","
+            Westchester County Sanctuary Ramble          ","
+            Westchester County          ","
+            NY          ","
+            7.6 miles          ","
+            Moderate          ","
+            Woods          ","
+            No Dogs          ","
+            41.283644,-73.67216          ","
+            12,788          "
+"
+            Hunter Brook Linear Park          ","
+            Hunter Brook Linear Park          ","
+            Westchester County          ","
+            NY          ","
+            2.9 miles          ","
+            Easy          ","
+            ViewsWoods          ","
+            No Dogs          ","
+            41.276968,-73.845592          ","
+            6,762          "
+"
+            John Boyd Thacher State Park          ","
+            Cliff Edge Overlook and Indian Ladder via the Long Path and Escarpment Trails          ","
+            Other NY          ","
+            NY          ","
+            5.7 miles          ","
+            Easy          ","
+            ViewsWaterfallHistoric featureWoods          ","
+            Allowed on leash          ","
+            42.638692, -74.015090          ","
+            7,128          "
+"
+            John Boyd Thacher State Park          ","
+            Hang Glider Overlook and High Point Overlook via the Long Path          ","
+            Other NY          ","
+            NY          ","
+            4.45 miles          ","
+            Easy          ","
+            ViewsWoods          ","
+            Allowed on leash          ","
+            42.666399, -74.030366          ","
+            4,755          "
+"
+            Kennedy Dells County Park          ","
+            Kennedy Dells County Park Loop Hike          ","
+            Rockland County          ","
+            NY          ","
+            2.4 miles          ","
+            Easy          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+                      ","
+            22,483          "
+"
+            Koegel Park          ","
+            Koegel Park via the North County Trailway           ","
+            Westchester County          ","
+            NY          ","
+            2.9 miles          ","
+            Easy          ","
+            Public Transportation          ","
+            No Dogs          ","
+            41.348851,-73.760233          ","
+            7,462          "
+"
+            Long Path/Old Erie Railroad Bed (Rockland County, N.Y.)          ","
+            Long Path/Old Erie Railroad Bed Loop (Piermont to Nyack)          ","
+            Rockland County          ","
+            NY          ","
+            10 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+                      ","
+            15,444          "
+"
+            Manitoga          ","
+            Manitoga to Appalachian Trail Circuit          ","
+            East Hudson Highlands          ","
+            NY          ","
+            4.6 miles          ","
+            Moderate          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.339894,-73.959103          ","
+            1,359          "
+"
+            Manitou Point Preserve          ","
+            Hudson River Views at Manitou Point Preserve          ","
+            East Hudson Highlands          ","
+            NY          ","
+            3.5 miles          ","
+            Easy to Moderate          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+                      ","
+            23,259          "
+"
+            Marshlands Conservancy          ","
+            Along Long Island Sound in Marshlands Conservancy          ","
+            Westchester County          ","
+            NY          ","
+            1 miles          ","
+            Easy          ","
+            ViewsPublic Transportation          ","
+            No Dogs          ","
+            40.955971,-73.703262          ","
+            10,956          "
+"
+            Minnewaska State Park Preserve          ","
+            Mossy Glen/Blueberry Run/Castle Point Carriage Road Loop          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            8.7 miles          ","
+            Moderate          ","
+            ViewsWaterfallSwimmingFees          ","
+            Allowed on leash          ","
+            41.742371,-74.199944          ","
+            19,191          "
+"
+            Minnewaska State Park Preserve          ","
+            Mossy Glen/Rainbow Falls/Castle Point/Hamilton Point Loop          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            10 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfallFees          ","
+            Allowed on leash          ","
+            41.742371,-74.199944          ","
+            19,445          "
+"
+            Minnewaska State Park Preserve          ","
+            Castle Point Carriage Road/Lake Awosting Carriage Road/Upper Awosting Carriage Road Loop          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            8.5 miles          ","
+            Moderate          ","
+            ViewsSwimmingFees          ","
+            Allowed on leash          ","
+            41.73507,-74.239082          ","
+            23,484          "
+"
+            Minnewaska State Park Preserve          ","
+            Gertrude's Nose Loop/Millbrook Mountain          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            8 miles          ","
+            Moderate to Strenuous          ","
+            ViewsSwimmingFees          ","
+            Allowed on leash          ","
+            41.73507,-74.239082          ","
+            45,937          "
+"
+            Minnewaska State Park Preserve          ","
+            Mossy Glen/Blueberry Run/Rainbow Falls/Hamilton Point Loop          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            9.1 miles          ","
+            Moderate          ","
+            ViewsSwimmingFees          ","
+            Allowed on leash          ","
+            41.742371,-74.199944          ","
+            11,389          "
+"
+            Minnewaska State Park Preserve          ","
+            Beacon Hill and Lake Minnewaska Easy Loop          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            3 miles          ","
+            Easy to Moderate          ","
+            ViewsSwimmingFees          ","
+            Allowed on leash          ","
+                      ","
+            23,155          "
+"
+            Minnewaska State Park Preserve          ","
+            Short and Scenic Loop Hike on Bullwheel, High Peters Kill and Red Trails          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            2 miles          ","
+            Moderate          ","
+            WaterfallFeesHistoric feature          ","
+            Allowed on leash          ","
+                      ","
+            14,652          "
+"
+            Mohonk Preserve          ","
+            Old Minnewaska Trail and Undivided Lot Trail          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            7.5 miles          ","
+            Moderate to Strenuous          ","
+            ViewsSwimmingFees          ","
+            Allowed on leash          ","
+            41.742371,-74.199944          ","
+            14,470          "
+"
+            Mohonk Preserve          ","
+            Dickie Barre, Peters Kill and Awosting Falls Loop          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            7.5 miles          ","
+            Strenuous          ","
+            ViewsWaterfallFees          ","
+            Allowed on leash          ","
+            41.736039,-74.200394          ","
+            27,711          "
+"
+            Mohonk Preserve          ","
+            Millbrook Mountain via Millbrook Ridge Trail          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            6.5 miles          ","
+            Moderate          ","
+            ViewsFees          ","
+            Allowed on leash          ","
+            41.742371,-74.199944          ","
+            16,360          "
+"
+            Mohonk Preserve          ","
+            Bonticou Crag          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            3 miles          ","
+            Strenuous          ","
+            ViewsFees          ","
+            Allowed on leash          ","
+            41.795208,-74.128532          ","
+            30,528          "
+"
+            Mohonk Preserve          ","
+            Undercliff/Overcliff Carriage Roads Loop          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            5 miles          ","
+            Easy          ","
+            ViewsFeesBikes allowed          ","
+            Allowed on leash          ","
+            41.742371,-74.199944          ","
+            14,751          "
+"
+            Mohonk Preserve          ","
+            North Lookout at Mohonk Preserve          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            6.5 miles          ","
+            Moderate          ","
+            ViewsFees          ","
+            No Dogs          ","
+                      ","
+            8,731          "
+"
+            Mohonk Preserve          ","
+            Northeast Crags/Bonticou Crag Loop from Spring Farm          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            7 miles          ","
+            Moderate          ","
+            ViewsFees          ","
+            No Dogs          ","
+            41.795208,-74.128532          ","
+            9,889          "
+"
+            Mohonk Preserve and Mohonk Mountain House          ","
+            Spring Farm to North Lookout at Mohonk Preserve          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            8 miles          ","
+            Easy to Moderate          ","
+            ViewsFeesHistoric feature          ","
+            No Dogs          ","
+            41.795208,-74.128532          ","
+            10,189          "
+"
+            Mohonk Preserve and Mohonk Mountain House          ","
+            Spring Farm to Mohonk Mountain House          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            9 miles          ","
+            Moderate          ","
+            ViewsFees          ","
+            No Dogs          ","
+            41.795208,-74.128532          ","
+            9,505          "
+"
+            Mount Washington State Forest          ","
+            Tri-state Hike in the South Taconic Mountains          ","
+            Southern Taconics          ","
+            MA/CT/NY          ","
+            12 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+                      ","
+            9,476          "
+"
+            Mountain Lakes County Park (North Salem, N.Y.)          ","
+            Mountain Lakes Park (North Salem, N.Y.)          ","
+            Westchester County          ","
+            NY          ","
+            5.5 miles          ","
+            Moderate          ","
+            ViewsWoods          ","
+            Allowed on leash          ","
+            41.311023,-73.562357          ","
+            2,881          "
+"
+            Mountainview County Nature Park          ","
+            Mountainview Nature Park in West Nyack          ","
+            Rockland County          ","
+            NY          ","
+            2.5 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+                      ","
+            11,972          "
+"
+            Nyack Beach State Park          ","
+            Long Path/Hook Mountain Bike Path Loop to Summit of Hook Mountain          ","
+            Rockland County          ","
+            NY          ","
+            6 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.120746,-73.911552          ","
+            23,656          "
+"
+            Old Croton Aqueduct State Historic Park          ","
+            Old Croton Aqueduct from Ossining to Quaker Bridge - Walk and Bike          ","
+            Westchester County          ","
+            NY          ","
+            5.5 miles          ","
+            Easy to Moderate          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.163867,-73.863903          ","
+            18,784          "
+"
+            Old Croton Aqueduct State Historic Park          ","
+            Old Croton Aqueduct from Tarrytown to Yonkers          ","
+            Westchester County          ","
+            NY          ","
+            9 miles          ","
+            Easy          ","
+            ViewsPublic TransportationHistoric feature          ","
+            Allowed on leash          ","
+            41.066798,-73.860312          ","
+            30,948          "
+"
+            Old Croton Aqueduct State Historic Park          ","
+            Old Croton Aqueduct from Tarrytown to Ossining          ","
+            Westchester County          ","
+            NY          ","
+            9 miles          ","
+            Easy to Moderate          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.066798,-73.860312          ","
+            16,502          "
+"
+            Rockefeller State Park Preserve          ","
+            Pocantico Hills Loop Walk          ","
+            Westchester County          ","
+            NY          ","
+            5.7 miles          ","
+            Easy          ","
+            Views          ","
+            Allowed on leash          ","
+            41.092548,-73.856664          ","
+            18,743          "
+"
+            Rockefeller State Park Preserve          ","
+            Rockwood Hall at Sleepy Hollow          ","
+            Westchester County          ","
+            NY          ","
+            2.1 miles          ","
+            Easy          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.126694,-73.87207          ","
+            27,842          "
+"
+            Sam's Point Preserve          ","
+            Ice Caves and Verkeerderkill Falls          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            7.4 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfallFees          ","
+            Allowed on leash          ","
+            41.669963,-74.361649          ","
+            108,180          "
+"
+            Sam's Point Preserve          ","
+            Sam's Point, Indian Rock, High Point and Verkeerder Kill Falls Loop          ","
+            Shawangunk Mountains          ","
+            NY          ","
+            10 miles          ","
+            Moderate to Strenuous          ","
+            ViewsFees          ","
+            Allowed on leash          ","
+            41.669963,-74.361649          ","
+            3,951          "
+"
+            Saxon Woods Park          ","
+            Saxon Woods Park Southern Loop          ","
+            Westchester County          ","
+            NY          ","
+            2.7 miles          ","
+            Easy          ","
+            Public Transportation          ","
+            Allowed on leash          ","
+            40.977954,-73.745298          ","
+            10,335          "
+"
+            Schunemunk Mountain State Park          ","
+            Schunemunk Mountain Loop from Taylor Road via Jessup, Western Ridge and Dark Hollow Trails          ","
+            Schunemunk Mountain          ","
+            NY          ","
+            8.2 miles          ","
+            Strenuous          ","
+            ViewsPublic Transportation          ","
+            Allowed on leash          ","
+            41.407553,-74.081725          ","
+            10,930          "
+"
+            Schunemunk Mountain State Park          ","
+            Schunemunk Mountain Loop from Otterkill Road           ","
+            Schunemunk Mountain          ","
+            NY          ","
+            8.5 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.425755,-74.101685          ","
+            12,864          "
+"
+            Schunemunk Mountain State Park          ","
+            Schunemunk Mountain Loop from Taylor Road via Dark Hollow, Jessup and Western Ridge Trails          ","
+            Schunemunk Mountain          ","
+            NY          ","
+            9 miles          ","
+            Strenuous          ","
+            ViewsWaterfallPublic Transportation          ","
+            Allowed on leash          ","
+            41.407553,-74.081725          ","
+            16,623          "
+"
+            Schunemunk Mountain State Park          ","
+            Schunemunk Mountain Loop from Taylor Road via Sweet Clover, Jessup and Dark Hollow Trails          ","
+            Schunemunk Mountain          ","
+            NY          ","
+            6.5 miles          ","
+            Strenuous          ","
+            ViewsWaterfallPublic Transportation          ","
+            Allowed on leash          ","
+            41.407553,-74.081725          ","
+            14,259          "
+"
+            Schunemunk Mountain State Park          ","
+            Schunemunk Mountain Loop from Taylor Road via Jessup, Western Ridge and Sweet Clover Trails          ","
+            Schunemunk Mountain          ","
+            NY          ","
+            7.5 miles          ","
+            Strenuous          ","
+            ViewsWaterfallPublic Transportation          ","
+            Allowed on leash          ","
+            41.407553,-74.081725          ","
+            4,321          "
+"
+            Schunemunk Mountain State Park          ","
+            Long Path on Schunemunk Mountain          ","
+            Schunemunk Mountain          ","
+            NY          ","
+            7 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            Evans Drive 41.360641,-74.108126; Gonzaga Park 41.356727,-74.175761          ","
+            953          "
+"
+            Shaupeneak Ridge Cooperative Recreation Area          ","
+            Shaupeneak Ridge Cooperative Recreation Area          ","
+            Other NY          ","
+            NY          ","
+            5.6 miles          ","
+            Strenuous          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            41.840856,-73.991375          ","
+            3,803          "
+"
+            Shawangunk Ridge Trail          ","
+            Long Path and Shawangunk Ridge Trail (Wurtsboro, N.Y.)          ","
+            Long Distance Trails          ","
+            NY          ","
+            10 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.576966,-74.465316 VFW Post; 41.671794,-74.405061 Second car          ","
+            12,818          "
+"
+            Sterling Forest State Park          ","
+            Sterling Forest Fire Tower and Iron Mines          ","
+            Sterling Forest          ","
+            NY          ","
+            4.3 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.19890,-74.25684          ","
+            17,105          "
+"
+            Sterling Forest State Park          ","
+            Sterling Ridge Trail/Fire Tower/Sterling Lake Trail Loop from Route 17A          ","
+            Sterling Forest          ","
+            NY          ","
+            7 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.230616,-74.260762          ","
+            15,221          "
+"
+            Sterling Forest State Park          ","
+            Sterling Lake Loop          ","
+            Sterling Forest          ","
+            NY          ","
+            4.2 miles          ","
+            Easy to Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.19890,-74.25684          ","
+            19,021          "
+"
+            Sterling Forest State Park          ","
+            Indian Hill Loop Trail          ","
+            Sterling Forest          ","
+            NY          ","
+            3.6 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+                      ","
+            14,408          "
+"
+            Sterling Forest State Park          ","
+            Townsend Trail/Long Meadow Extension Loop          ","
+            Sterling Forest          ","
+            NY          ","
+            3.8 miles          ","
+            Easy to Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+                      ","
+            8,732          "
+"
+            Sterling Forest State Park          ","
+            Bare Rock Trail to Greenwood Lake Overlook          ","
+            Sterling Forest          ","
+            NY          ","
+            7.5 miles          ","
+            Strenuous          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.19890,-74.25684          ","
+            15,302          "
+"
+            Sterling Forest State Park          ","
+            Furnace Loop/Indian Hill Loop Trails from Hall Road          ","
+            Sterling Forest          ","
+            NY          ","
+            4.3 miles          ","
+            Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.25291145066675,-74.18313950300217          ","
+            3,504          "
+"
+            Sterling Forest State Park          ","
+            Sterling Forest Doris Duke Wildlife Sanctuary          ","
+            Sterling Forest          ","
+            NY          ","
+            3.5 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.254037,-74.227963          ","
+            723          "
+"
+            Stissing Mountain          ","
+            Stissing Mountain Loop to Fire Tower          ","
+            Dutchess County          ","
+            NY          ","
+            1.5 miles          ","
+            Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.967532,-73.681698          ","
+            3,563          "
+"
+            Storm King State Park          ","
+            Butter Hill/Stillman/By-Pass Trail Loop from Route 9W          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            2.5 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.423196,-74.000773          ","
+            18,262          "
+"
+            Storm King State Park          ","
+            Crows Nest Mountain/Howell Trail from Route 9W          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            4 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.414925,-73.993714          ","
+            16,793          "
+"
+            Storm King State Park          ","
+            Butter Hill/Stillman/Bluebird Trail Loop from Route 9W          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            3.5 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+            41.423196,-74.000773          ","
+            31,223          "
+"
+            Storm King State Park          ","
+            Stillman/Highlands/Bluebird Trails Loop from Mountain Road          ","
+            Storm King and Black Rock Forest          ","
+            NY          ","
+            4.1 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+                      ","
+            13,540          "
+"
+            Sylvan Glen Park Preserve          ","
+            Sylvan Glen Park Preserve Short Loop          ","
+            Westchester County          ","
+            NY          ","
+            3 miles          ","
+            Easy          ","
+            ViewsHistoric feature          ","
+            No Dogs          ","
+            41.29975, -73.85246          ","
+            7,584          "
+"
+            Sylvan Glen Park Preserve          ","
+            Mohegan Quarry Ramble at Sylvan Glen Park Preserve          ","
+            Westchester County          ","
+            NY          ","
+            4.9 miles          ","
+            Easy to Moderate          ","
+            Historic feature          ","
+            No Dogs          ","
+            41.29975, -73.85246          ","
+            6,028          "
+"
+            Taconic State Park          ","
+            Brace Mountain on the Taconic Ridge          ","
+            Southern Taconics          ","
+            NY          ","
+            7 miles          ","
+            Moderate to Strenuous          ","
+            Views          ","
+            Allowed on leash          ","
+                      ","
+            19,475          "
+"
+            Taconic State Park          ","
+            South Taconic Tri-State Hike          ","
+            Southern Taconics          ","
+            MA/CT/NY          ","
+            11 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+            42.05022, -73.46699          ","
+            11,697          "
+"
+            Taconic State Park and Bash Bish Falls State Park           ","
+            Bash Bish Falls – Sunset Rock – Prospect Hill via the northern section of the South Taconic Trail          ","
+            Southern Taconics          ","
+            MA/CT/NY          ","
+            8.1 miles          ","
+            Moderate to Strenuous          ","
+            ViewsWaterfall          ","
+            Allowed on leash          ","
+                      ","
+            10,940          "
+"
+            Tallman Mountain State Park          ","
+            Long Path/Bike Path Loop in Tallman Mountain State Park          ","
+            Rockland County          ","
+            NY          ","
+            4.3 miles          ","
+            Easy          ","
+            Views          ","
+            Allowed on leash          ","
+            41.029138,-73.916493          ","
+            18,834          "
+"
+            Teatown Lake Reservation          ","
+            Teatown Lake/Northwest Trail/Hidden Valley Loop          ","
+            Westchester County          ","
+            NY          ","
+            4.5 miles          ","
+            Easy to Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.211169,-73.827353          ","
+            11,211          "
+"
+            Teatown Lake Reservation          ","
+            Vernay Lake/Hidden Valley Loop          ","
+            Westchester County          ","
+            NY          ","
+            2.2 miles          ","
+            Easy to Moderate          ","
+            ViewsWoods          ","
+            Allowed on leash          ","
+            41.211169,-73.827353          ","
+            6,768          "
+"
+            Van Cortlandt Park          ","
+            Van Cortlandt Park          ","
+            New York City          ","
+            NY          ","
+            3 miles          ","
+            Easy          ","
+            ViewsPublic TransportationHistoric feature          ","
+            Allowed on leash          ","
+            40.889574,-73.898324          ","
+            14,747          "
+"
+            Walkway Over the Hudson and Franny Reese State Park          ","
+            Walkway Over the Hudson and Franny Reese State Park from City of Poughkeepsie (East Shore)          ","
+            Dutchess County          ","
+            NY          ","
+            6 miles          ","
+            Moderate          ","
+            ViewsHandicap AccessiblePublic TransportationHistoric feature          ","
+            Allowed on leash          ","
+                      ","
+            10,061          "
+"
+            Walkway Over the Hudson and Franny Reese State Park          ","
+            Walkway Over the Hudson and Franny Reese State Park from Highland (West Shore)          ","
+            Dutchess County          ","
+            NY          ","
+            7 miles          ","
+            Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+                      ","
+            7,863          "
+"
+            Wappinger Greenway Trail           ","
+            Wappinger Greenway Trail           ","
+            Dutchess County          ","
+            NY          ","
+            5 miles          ","
+            Moderate          ","
+            Public TransportationHistoric feature          ","
+            Allowed on leash          ","
+            41.587491,-73.947215          ","
+            4,027          "
+"
+            Ward Pound Ridge Reservation          ","
+            Ward Pound Ridge Southwest Loop to Leatherman's Cave          ","
+            Westchester County          ","
+            NY          ","
+            6.5 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.248483,-73.595781          ","
+            15,329          "
+"
+            Ward Pound Ridge Reservation          ","
+            Northern Loop along Cross River in Ward Pound Ridge Reservation          ","
+            Westchester County          ","
+            NY          ","
+            4.6 miles          ","
+            Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.268259,-73.609085          ","
+            7,823          "
+"
+            Ward Pound Ridge Reservation          ","
+            Southeast Loop at Ward Pound Ridge to Highest Point in the Park          ","
+            Westchester County          ","
+            NY          ","
+            3.8 miles          ","
+            Moderate          ","
+            Fees          ","
+            Allowed on leash          ","
+            41.299476,-73.643417          ","
+            6,496          "
+"
+            Ward Pound Ridge Reservation          ","
+            Loop Hike to Fire Tower Site and Indian Rock Shelter from Michigan Road Parking Area          ","
+            Westchester County          ","
+            NY          ","
+            4 miles          ","
+            Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.264905,-73.616295          ","
+            7,658          "
+"
+            Ward Pound Ridge Reservation          ","
+            Rocks Trail at Ward Pound Ridge Reservation          ","
+            Westchester County          ","
+            NY          ","
+            7.5 miles          ","
+            Moderate to Strenuous          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.248483,-73.595781          ","
+            12,462          "
+"
+            Ward Pound Ridge Reservation          ","
+            Loop hike to CCC Camp Ruins, Indian Rock Shelter, Raven Rocks, Dancing Rock and Bear Rock at Ward Pound Ridge          ","
+            Westchester County          ","
+            NY          ","
+            5 miles          ","
+            Easy to Moderate          ","
+            ViewsHistoric feature          ","
+            Allowed on leash          ","
+            41.297413,-73.613892          ","
+            1,996          "
+"
+            Westchester Wilderness Walk          ","
+            Westchester Wilderness Walk (Pound Ridge, New York)          ","
+            Westchester County          ","
+            NY          ","
+            6 miles          ","
+            Easy to Moderate          ","
+            ViewsWoods          ","
+            Allowed on leash          ","
+            41.17607,-73.599472          ","
+            13,561          "
+"
+            Westmoreland Sanctuary (Mt. Kisco, N.Y.)          ","
+            Westmoreland Sanctuary Loop Hike          ","
+            Westchester County          ","
+            NY          ","
+            6 miles          ","
+            Moderate          ","
+            Views          ","
+            No Dogs          ","
+            41.180915,-73.684788          ","
+            10,840          "
+"
+            Wonder Lake State Park          ","
+            Wonder Lake Figure-Eight Loop          ","
+            Fahnestock State Park          ","
+            NY          ","
+            4 miles          ","
+            Easy to Moderate          ","
+            Views          ","
+            Allowed on leash          ","
+            41.49487,-73.66284          ","
+            7,648          "
+"
+            Wonder Lake State Park          ","
+            Wonder Lake/Laurel Pond Loop Hike          ","
+            Fahnestock State Park          ","
+            NY          ","
+            5.1 miles          ","
+            Easy to Moderate          ","
+            ViewsWoods          ","
+            Allowed on leash          ","
+            41.49487,-73.66284          ","
+            7,169          "

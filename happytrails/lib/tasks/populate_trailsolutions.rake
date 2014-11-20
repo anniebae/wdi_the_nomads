@@ -1,36 +1,51 @@
+require 'csv'
+
 namespace :db do
   desc "populate trailsolutions"
   task :populate_trailsolutions => :environment do
     file_path = Rails.root + 'lib/trails.txt'
-    data = File.read(file_path)
-    facilities = data.split("\<facility\>")[1..-1]
+    data_from_txt = File.read(file_path)
+    data_from_txt = data_from_txt.split("\n")
+    data_from_txt.reject!{|line| line=="\""}
+    data_from_txt.map! do |line|
+      line = line[1..-7]
+      line.strip!
+    end
 
-    facilities.each do |facility|
-      if facility.include?("\</Prop_ID\>") && ("\<Prop_ID\>")
-        prop_ID = facility.split("\<Prop_ID\>")[1].split("\<")[0]
+    data = []
+    arr = []
+    data_from_txt.each_with_index do |line,i|
+      if (i+1) % 10 == 0
+        arr.push(line)
+        data.push(arr)
+        arr = []
+      else
+        arr.push(line)
       end
-      name = facility.include?(("\</Name\>") && ("\<Name\>")) ? facility.split("\<Name\>")[1].split("\<")[0] : ""
-      location = facility.include?(("\</Location\>\n") && ("\<Location\n\>")) ? facility.split("\<Location\>\n")[1].split("\n\<")[0] : ""
-      park_name = facility.include?(("\</Park_Name\>") && ("\<Park_Name\>")) ? facility.split("\<Park_Name\>")[1].split("\<")[0] : ""
-      length = facility.include?(("\</Length\>") && ("\<Length\>")) ? facility.split("\<Length\>")[1].split("\<")[0] : ""
-      difficulty = facility.include?(("\</Difficulty\>") && ("\<Difficulty\>")) ? facility.split("\<Difficulty\>")[1].split("\<")[0] : ""
-      other_details = facility.include?(("\</Other_Details\>\n") && ("\<Other_Details\n\>")) ? facility.split("\<Other_Details\>\n")[1].split("\n\<")[0] : ""
-      if facility.include?("\</Accessible\>") && ("\<Accessible\>")
-        accessible = ((facility.split("\<Accessible\>")[1].split("\<")[0])=="Y")
-      end
-      if facility.include?("\</Limited_Access\>") && ("\<Limited_Access\>")
-        limited_access = ((facility.split("\<Limited_Access\>")[1].split("\<")[0])=="Y")
-      end
+    end
+
+    data.each do |trail|
+      park = trail[0]
+      title = trail[1]
+      region = trail[2]
+      state = trail[3]
+      length = trail[4]
+      difficulty = trail[5]
+      features = trail[6]
+      dogs = trail[7]
+      lat = (trail[8] != "") ? (trail[8].split(",")[0]) : ""
+      lon = (trail[8] != "") ? (trail[8].split(",")[1].strip.split(" ")[0]) : ""
       Trailsolution.create!(
-        prop_ID: prop_ID,
-        name: name,
-        location: location,
-        park_name: park_name,
+        park: park,
+        title: title,
+        region: region,
+        state: state,
         length: length,
         difficulty: difficulty,
-        other_details: other_details,
-        accessible: accessible,
-        limited_access: limited_access
+        features: features,
+        dogs: dogs,
+        lat: lat,
+        lon: lon
         )
     end
   end
