@@ -64,6 +64,11 @@ input[type=submit] {
 	border-radius: 5px;
 }
 
+.drop-hike p {
+	font-size: 13px;
+	font-style: italic;
+	color: rgb(252,	252,	247);
+}
 
 .container {
 	margin-left: auto;
@@ -84,7 +89,7 @@ input[type=submit] {
 }
 
 .hike-sign {
-	margin-top: 150px;
+	margin-top: 100px;
 }
 
 h1 {
