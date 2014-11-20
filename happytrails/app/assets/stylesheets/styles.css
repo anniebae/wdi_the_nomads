@@ -47,15 +47,6 @@ body {
   color: #F5F5F5; 
 }
 
-input[type=submit] {
-	border: 0 none;
-	cursor: pointer;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	width: 100px;
-	opacity: 1;
-}
-
 .drop-hike {
 	width: 190px;
 	background-color: black;
@@ -69,11 +60,13 @@ input[type=submit] {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
+	margin-top: -20px;
 	width: 45%;
 	opacity: 0.82;
 	border: 1px solid black;
 	background: rgb(233,	224,	214);
 	text-align: center;
+	height: 21em;
 }
 
 .container input {
@@ -81,6 +74,47 @@ input[type=submit] {
 	height: 30px;
 	font-family: 'Poiret One';
 	font-size: 22px;
+}
+
+.container input.welcome-submit {
+	border: 0 none;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	opacity: 1;
+	position: absolute;
+	left: 10%;
+	top: 65%;
+	width: 80%;
+}
+
+.location-form {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.form-p {
+	width: 100%;
+	position: absolute;
+	display: inline-block;
+	left: 0%;
+}
+
+.form-p#address {
+	top: -5%;
+}
+
+.form-p#city {
+	top: 11%;
+}
+
+.form-p#state {
+	top: 27%;
+}
+
+.form-p#zip {
+	top: 43%;
 }
 
 .hike-sign {
