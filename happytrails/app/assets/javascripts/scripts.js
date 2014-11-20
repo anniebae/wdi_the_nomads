@@ -12,7 +12,14 @@ $(document).ready(function() {
     }, 600);
     $('.hike-sign').find($('h1')).animate({
       "font-size": "35px"
-    }, 600);    
+    }, 600);
+
+
+    $('.container').animate({
+    	"width": "25%",
+    })
+
+
   });
 
 });
