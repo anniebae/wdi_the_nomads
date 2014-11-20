@@ -1,5 +1,5 @@
 body {
-	background: url("http://images.fineartamerica.com/images-medium-large/appalachian-hiking-trail--blue-ridge-mountains-forest-fog-nature-landscape-dave-allen.jpg");
+	background: url("./forest_background.jpg");
 	background-repeat: no-repeat;;
 	background-size: cover;
 	-moz-background-size: cover;
@@ -65,7 +65,7 @@ input[type=submit] {
 	margin-bottom: 15px;
 	width: 45%;
 	opacity: 0.82;
-	border: 3px solid black;
+	border: 1px solid black;
 	background: rgb(233,	224,	214);
 	text-align: center;
 }
@@ -73,19 +73,20 @@ input[type=submit] {
 .container input {
 	width: 400px;
 	height: 30px;
-	font-family: calibri;
+	font-family: 'Poiret One';
 	font-size: 22px;
 }
 
 h1 {
-	font-family: 'Amatic SC';
-	font-size: 150px;
+	font-family: 'Cinzel', serif;
+	font-size: 120px;
 	font-weight: 100px;
-	color: white;
+	color: rgb(252, 252, 247);
+	text-shadow: -1px 0 rgb(50, 54, 14), 0 1px rgb(50, 54, 14), 1px 0 rgb(50, 54, 14), 0 -1px rgb(50, 54, 14);
 }
 
 h2 {
-	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	font-family: 'Poiret One';
 	font-weight: 100px;
 	text-align: center;
 	color: black;
