@@ -1,8 +1,13 @@
 $(document).ready(function() {
   $(".drop-hike").hide();
+  $(".drop-hello").hide();
 
   $(".about").hover(function() { 
     $(".drop-hike").slideToggle();
+  });
+
+  $(".hello").hover(function(){
+  	$(".drop-hello").slideToggle();
   });
 
   $('.welcome-submit').on('click', function(e){
@@ -15,6 +20,7 @@ $(document).ready(function() {
       "font-size": "35px"
     }, 600);
     $('.container').animate({
+
       "width": "80%", "height": "7em", "margin-bottom": "20px"
     }, 600);
     $('.hike-sign').find($('h1')).animate({
@@ -36,6 +42,10 @@ $(document).ready(function() {
       "left": "77%"
     });
     $(this).animate({"top":"45%"});
+
+    	"width": "10%",
+    });
+
 
   });
 
