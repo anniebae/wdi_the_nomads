@@ -22,20 +22,21 @@ $(document).ready(function() {
     }, 600);
     $('.form-p').animate({
       "width": "20%", "top": "-16%"
-    })
+    });
     $('#address').animate({
       "left": "2%"
-    })
+    });
     $('#city').animate({
       "left": "27%"
-    })
+    });
     $('#state').animate({
       "left": "52%"
-    })
+    });
     $('#zip').animate({
       "left": "77%"
-    })
+    });
     $(this).animate({"top":"45%"});
+
   });
 
 

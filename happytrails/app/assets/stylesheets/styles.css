@@ -48,13 +48,18 @@ body {
 }
 
 .drop-hike {
-	width: 190px;
+	width: 220px;
 	background-color: black;
 	color: white;
 	border: 2px solid black;
 	border-radius: 5px;
 }
 
+.drop-hike p {
+	font-size: 13px;
+	font-style: italic;
+	color: rgb(252,	252,	247);
+}
 
 .container {
 	margin-left: auto;
