@@ -33,7 +33,7 @@ function animateLocationForm(form, speed){
 
 function altRows(id){
   if(document.getElementsByTagName){
-    var table = document.getElementsById(id);
+    var table = document.getElementById(id);
     var rows = table.getElementsByTagName("tr");
 
     for (i = 0; i < rows.length; i++){
@@ -45,15 +45,15 @@ function altRows(id){
     }
   }
 }
-window.onload = function(){
-  altRows('alternatecolor');
-}
 
 
 
 $(document).ready(function() {
+
   $(".drop-hike").hide();
   $(".drop-hello").hide();
+  
+  altRows('alternatecolor');
 
   $(".about").hover(function() { 
     $(".drop-hike").slideToggle();

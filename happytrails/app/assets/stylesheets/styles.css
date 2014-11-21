@@ -216,10 +216,10 @@ table.altrowstable td {
 	border-color: #a9c6c9;
 }
 .oddrowcolor {
-	background-color: #d4e3e5;
+	background-color: lightgrey;
 }
 .evenrowcolor {
-	background-color: #c3dde0;
+	background-color: lightblue;
 }
 
 /*TRAIL INFORMATION DIV BOX*/
