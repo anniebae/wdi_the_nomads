@@ -1,3 +1,5 @@
+$trails = $(".trails")
+
 function animateTitle(title, speed){
   $(title).animate({
     "margin-top": "50px"
@@ -32,6 +34,7 @@ function animateLocationForm(form, speed){
 }
 
 
+
 function altRows(id){
   if(document.getElementsByTagName){
     var table = document.getElementById(id);
@@ -45,7 +48,42 @@ function altRows(id){
       }
     }
   }
+
+function secondsToHours(seconds){
+  var hours = Math.floor(seconds/3600);
+  var minutes = Math.floor((seconds%3600)/60);
+  return hours + " hrs " + minutes + " minutes away"
 }
+
+function displayTrails(trails){
+  $trails.empty();
+  $(trails).each(function(index, trail){
+    var trailHTML = trailToHTML(trail);
+    $trails.append(trailHTML);
+  });
+}
+
+function trailToHTML(trail){
+  $li = $("<li>");
+  $li.addClass("trail");
+
+  $spanTravelDist = $("<span>");
+  $spanTravelDist.addClass("travel_distance");
+  $spanTravelDist.text(secondsToHours(trail.drivingfromgrandcentralseconds));
+  $spanTitle = $("<span>");
+  $spanTitle.addClass("title");
+  $spanTitle.text(trail.title);
+  $spanTrailLength = $("<span>");
+  $spanTrailLength.addClass("trail_length");
+  $spanTrailLength.text(trail.length);
+
+  $li.append($spanTravelDist);
+  $li.append($spanTitle);
+  $li.append($spanTrailLength);
+
+  return $li;
+}
+
 
 
 $(document).ready(function() {
@@ -88,13 +126,10 @@ $(document).ready(function() {
       },
       success: function(data){
         var trails = data.trails;
-        debugger;
-        $.each(trails, function(index, value){
-          value.drivingfromgrandcentralseconds
-        })
-        console.log(startPointAddress)
+        displayTrails(trails);
       }
     });
   });
 
 });
+
