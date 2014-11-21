@@ -1,6 +1,8 @@
+require 'rubygems'
 require 'httparty'
 require 'pry'
 require 'pg'
+require "active_record"
 
 location_string = ""
 location_set = []
@@ -18,16 +20,18 @@ grandcentral="40.752726,-73.977229"
 
 origin_set=grandcentral+"|"+pennstation+"|"+barclayscenter+"|"+stanfordCT+"|"+albanyNY
 
-conn = PGconn.open('dbname=happytrails_development')
-query_results = conn.exec("SELECT * FROM trailsolutions;")
+ActiveRecord::Base.establish_connection(
+	adapter: 'postgresql',
+	database: 'happytrails_development'
+	)
 
+class Trail <ActiveRecord::Base
 
-query_results.each do |trail|
-	if trail["lat"].length>4
-		trails_with_data<<trail
-	else
-	end
+def self.cleanThisShit
+Trail.where(:lat<4).destroy_all
 end
+
+trails_with_data = Trail.all
 
 trails_with_data.each do |trail| 
 	location_string<<trail["lat"].to_s+","+trail["lon"].to_s 
@@ -109,3 +113,18 @@ walking_response_two_grandcentral["rows"][0]["elements"].each do |track|
 	trails_with_data[i][:walkingfromgrandcentralmiles] = track["distance"]["value"]
 	i=i+1
 end
+
+
+# now we feed the data in
+
+i=0
+conn = PGconn.open("dbname=happytrails_development")
+
+trails_with_data.each do |trail|
+
+
+	i=i+1
+	
+end
+
+conn = conn.close
