@@ -1,12 +1,12 @@
 # =========================================================================================================
-# 
-#   ~~~888~~~ 888~-_        e      888 888                e    e        ,88~-_   888~-_   888~~  888     
-#      888    888   \      d8b     888 888               d8b  d8b      d888   \  888   \  888___ 888     
-#      888    888    |    /Y88b    888 888              d888bdY88b    88888    | 888    | 888    888     
-#      888    888   /    /  Y88b   888 888             / Y88Y Y888b   88888    | 888    | 888    888     
-#      888    888_-~    /____Y88b  888 888            /   YY   Y888b   Y888   /  888   /  888    888     
-#      888    888 ~-_  /      Y88b 888 888____       /          Y888b   `88_-~   888_-~   888___ 888____ 
-# 
+#
+#   ~~~888~~~ 888~-_        e      888 888                e    e        ,88~-_   888~-_   888~~  888
+#      888    888   \      d8b     888 888               d8b  d8b      d888   \  888   \  888___ 888
+#      888    888    |    /Y88b    888 888              d888bdY88b    88888    | 888    | 888    888
+#      888    888   /    /  Y88b   888 888             / Y88Y Y888b   88888    | 888    | 888    888
+#      888    888_-~    /____Y88b  888 888            /   YY   Y888b   Y888   /  888   /  888    888
+#      888    888 ~-_  /      Y88b 888 888____       /          Y888b   `88_-~   888_-~   888___ 888____
+#
 # =========================================================================================================
 
 
@@ -25,8 +25,8 @@ end
 # =========================================================================================================
 
 def self.setgeocoordinates
-  Trail.all.each do |trail| 
-    location_string<<trail["lat"].to_s+","+trail["lon"].to_s 
+  Trail.all.each do |trail|
+    location_string<<trail["lat"].to_s+","+trail["lon"].to_s
     trail[:geocoordinates] = location_string
     location_string=""
     trail.save
@@ -43,13 +43,13 @@ end
 #                                                $  $  _  $   $
 #                                               $$   $  $ $   $$
 #                                              $$$$ $$  $  $$$$$$
-# 
+#
 #                   :::====  :::==== :::==== :::===== :::= === :::==== ::: :::====  :::= ===
 #                   :::  === :::==== :::==== :::      :::===== :::==== ::: :::  === :::=====
 #                   ========   ===     ===   ======   ========   ===   === ===  === ========
 #                   ===  ===   ===     ===   ===      === ====   ===   === ===  === === ====
 #                   ===  ===   ===     ===   ======== ===  ===   ===   ===  ======  ===  ===
-# 
+#
 #                           THIS WILL RING GOOGLE AND LOAD DISTANCE DATA TO GC NYC
 #                            DO NOT DO THIS MORE THAN ONCE PER IP ADDRESS PER DAY
 #                             OR DON'T BE A PLEB, AND PAY GOOGLE FOR THEIR WORK
@@ -109,45 +109,45 @@ def self.stagenewyork
   walking_response_two_grandcentral = HTTParty.get(walking_request_two_grandcentral)
 
   i=0
-  driving_response_one_grandcentral["rows"][0]["elements"].each do |track| 
+  driving_response_one_grandcentral["rows"][0]["elements"].each do |track|
     trails_with_data[i][:drivingfromgrandcentralseconds] = track["duration"]["value"]
     trails_with_data[i][:drivingfromgrandcentralmiles] = track["distance"]["value"]
     i=i+1
   end
 
-  driving_response_two_grandcentral["rows"][0]["elements"].each do |track| 
+  driving_response_two_grandcentral["rows"][0]["elements"].each do |track|
     trails_with_data[i][:drivingfromgrandcentralseconds] = track["duration"]["value"]
     trails_with_data[i][:drivingfromgrandcentralmiles] = track["distance"]["value"]
     i=i+1
   end
 
   i=0
-  cycling_response_one_grandcentral["rows"][0]["elements"].each do |track| 
+  cycling_response_one_grandcentral["rows"][0]["elements"].each do |track|
     trails_with_data[i][:cyclingfromgrandcentralseconds] = track["duration"]["value"]
     trails_with_data[i][:cyclingfromgrandcentralmiles] = track["distance"]["value"]
     i=i+1
   end
 
-  cycling_response_two_grandcentral["rows"][0]["elements"].each do |track| 
+  cycling_response_two_grandcentral["rows"][0]["elements"].each do |track|
     trails_with_data[i][:cyclingfromgrandcentralseconds] = track["duration"]["value"]
     trails_with_data[i][:cyclingfromgrandcentralmiles] = track["distance"]["value"]
     i=i+1
   end
 
   i=0
-  walking_response_one_grandcentral["rows"][0]["elements"].each do |track| 
+  walking_response_one_grandcentral["rows"][0]["elements"].each do |track|
     trails_with_data[i][:walkingfromgrandcentralseconds] = track["duration"]["value"]
     trails_with_data[i][:walkingfromgrandcentralmiles] = track["distance"]["value"]
     i=i+1
   end
 
-  walking_response_two_grandcentral["rows"][0]["elements"].each do |track| 
+  walking_response_two_grandcentral["rows"][0]["elements"].each do |track|
     trails_with_data[i][:walkingfromgrandcentralseconds] = track["duration"]["value"]
     trails_with_data[i][:walkingfromgrandcentralmiles] = track["distance"]["value"]
     i=i+1
   end
 
-  trails_with_data.each do {|trail| trail.save}
+  trails_with_data.each {|trail| trail.save}
 
 end
 
@@ -155,9 +155,9 @@ end
 #                       THIS WILL CONTACT GOOGLE FOR DIRECTION TO A TRAIL
 # =========================================================================================================
 
-	 
+
   def self.getdistances(startpoint_address, transit_type, set_of_trail_head_addresses, launch_time, time_type)
-  	
+
   	# First, I am going to make a string for the API request. It needs to be under 2000 characters long.
 
   	if transit_type == "mass transit"
@@ -201,8 +201,8 @@ end
   		packet = "origin=#{origin}&#{time_packet}&mode=#{mode}&destination=#{destinationset}"
 
   	addresspackets < packet
-  	
-  	response = HTTParty.get("https://maps.googleapis.com/maps/api/distancematrix/json? #{addresspackets}")  	
+
+  	response = HTTParty.get("https://maps.googleapis.com/maps/api/distancematrix/json? #{addresspackets}")
 
  	response.to_json
   end
