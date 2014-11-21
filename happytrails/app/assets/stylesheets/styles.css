@@ -196,36 +196,38 @@ a:hover {
 }
 
 table.altrowstable {
-	font-family: verdana,arial,sans-serif;
-	font-size: 11px;
+	font-family: 'Poiret One';
+	font-size: 14px;
 	color: #333333;
 	border-width: 1px;
-	border-color: #a9c6c9;
+	border-color: #FFFFFF;
 	border-collapse: collapse;
+	width: 70%;
 }
 table.altrowstable th {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #a9c6c9;
+	border-color: #FFFFFF;
+	height: 50px;
 }
 table.altrowstable td {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #a9c6c9;
+	border-color: #FFFFFF;
+	height: 30px;
 }
 .oddrowcolor {
 	background-color: lightgrey;
 }
 .evenrowcolor {
-	background-color: lightblue;
+	background-color: #F2F2EB;
 }
 
 .trails-table {
 	text-align: center;
-	margin: 0 auto;
-	width: 50%;
+	width: 1200px;
 
 }
 
