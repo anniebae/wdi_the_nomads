@@ -71,19 +71,35 @@ function trailToHTML(trail){
   $tdTravelDist = $("<td>");
   $tdTravelDist.addClass("travel_distance");
   $tdTravelDist.text(secondsToHours(trail.drivingfromgrandcentralseconds));
+
   $tdTitle = $("<td>");
   $tdTitle.addClass("title");
-  $tdTitle.text(trail.title);
+  $a = $("<a>");
+  $a.addClass("title-link");
+  $a.text(trail.title);
+  $a.attr("href", trail.url);
+
+  $a.on('click', function(e){
+    e.preventDefault();
+    alert('yay');
+  })
+
+  $tdTitle.append($a);
   $tdTrailLength = $("<td>");
   $tdTrailLength.addClass("trail_length");
   $tdTrailLength.text(trail.length);
+  $tdTrailDifficulty = $("<td>");
+  $tdTrailDifficulty.addClass("trail_difficulty");
+  $tdTrailDifficulty.text(trail.difficulty);
 
   $tr.append($tdTravelDist);
   $tr.append($tdTitle);
   $tr.append($tdTrailLength);
+  $tr.append($tdTrailDifficulty);
 
   return $tr;
 }
+
 
 $(document).ready(function() {
 
@@ -129,5 +145,7 @@ $(document).ready(function() {
       }
     });
   });
+
 });
+
 
