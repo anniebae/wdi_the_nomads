@@ -11,10 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121004336) do
+ActiveRecord::Schema.define(version: 20141121015204) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "trails", force: true do |t|
+    t.string   "geocoordinates"
+    t.string   "url"
+    t.string   "park"
+    t.string   "title"
+    t.string   "region"
+    t.string   "state"
+    t.string   "length"
+    t.string   "difficulty"
+    t.string   "dogs"
+    t.string   "lat"
+    t.string   "lon"
+    t.text     "features"
+    t.integer  "drivingfromgrandcentralmiles"
+    t.integer  "drivingfromgrandcentralseconds"
+    t.integer  "cyclingfromgrandcentralmiles"
+    t.integer  "cyclingfromgrandcentralseconds"
+    t.integer  "walkingfromgrandcentralmiles"
+    t.integer  "walkingfromgrandcentralseconds"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "trailsolutions", force: true do |t|
     t.string   "length"
@@ -30,13 +53,6 @@ ActiveRecord::Schema.define(version: 20141121004336) do
     t.string   "lon"
     t.text     "features"
     t.string   "url"
-    t.integer  "drivingfromgrandcentralseconds"
-    t.integer  "drivingfromgrandcentralmiles"
-    t.integer  "cyclingfromgrandcentralseconds"
-    t.integer  "cyclingfromgrandcentralmiles"
-    t.integer  "walkingfromgrandcentralseconds"
-    t.integer  "walkingfromgrandcentralmiles"
-    t.string   "geocoordinates"
   end
 
 end
