@@ -11,14 +11,15 @@ class TrailsController < ApplicationController
     10.times do |i|
       @trails.push(Trail.all.sample)
     end
+    trails = @trails
     respond_to do |format|
       format.html
-      format.json { render :json => {startpoint_address: startpoint_address}}
+      format.json { render :json => {trails: trails}}
     end
   end
 
   def show
-    @trailsolution = Trailsolution.all.sample
+    @trails = Trail.all.sample
   end
 
 end

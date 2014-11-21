@@ -58,7 +58,7 @@ $(document).ready(function() {
     var zip = $(e.target).find('#zip-submit').val();
 
     $.ajax({
-      url: '/trailsolutions',
+      url: '/trails',
       method: 'GET',
       dataType: 'JSON',
       data: {
