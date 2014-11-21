@@ -31,6 +31,10 @@ function animateLocationForm(form, speed){
   }, speed);  
 }
 
+function secondsToHours(seconds){
+  
+}
+
 
 $(document).ready(function() {
   $(".drop-hike").hide();
@@ -70,6 +74,9 @@ $(document).ready(function() {
       success: function(data){
         var trails = data.trails;
         debugger;
+        $.each(trails, function(index, value){
+          value.drivingfromgrandcentralseconds
+        })
         console.log(startPointAddress)
       }
     });
