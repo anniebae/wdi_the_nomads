@@ -61,5 +61,10 @@ namespace :db do
         url: url
         )
     end
+
+    Trail.sweeptrails
+
+    Trail.setgeocoordinates
+
   end
 end
