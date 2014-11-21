@@ -1,8 +1,8 @@
 require 'csv'
 
 namespace :db do
-  desc "populate trailsolutions"
-  task :populate_trailsolutions => :environment do
+  desc "populate trails"
+  task :populate_trails => :environment do
     file_path = Rails.root + 'lib/trails.txt'
     data_from_txt = File.read(file_path)
     data_from_txt = data_from_txt.split("\n")
@@ -47,7 +47,7 @@ namespace :db do
       lat = (trail[8] != "") ? (trail[8].split(",")[0].split(" ")[-1]) : ""
       lon = (trail[8] != "") ? (trail[8].split(",")[1].strip.split(" ")[0]) : ""
       url = trail[9]
-      Trailsolution.create!(
+      Trail.create!(
         park: park,
         title: title,
         region: region,
