@@ -75,8 +75,15 @@ function trailToHTML(trail){
   $tdTitle = $("<td>");
   $tdTitle.addClass("title");
   $a = $("<a>");
+  $a.addClass("title-link");
   $a.text(trail.title);
   $a.attr("href", trail.url);
+
+  $a.on('click', function(e){
+    e.preventDefault();
+    alert('yay');
+  })
+
   $tdTitle.append($a);
   $tdTrailLength = $("<td>");
   $tdTrailLength.addClass("trail_length");
@@ -92,7 +99,6 @@ function trailToHTML(trail){
 
   return $tr;
 }
-
 
 
 $(document).ready(function() {
@@ -139,5 +145,7 @@ $(document).ready(function() {
       }
     });
   });
+
 });
+
 
