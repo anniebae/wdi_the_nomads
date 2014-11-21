@@ -20,7 +20,6 @@ $(document).ready(function() {
       "font-size": "35px"
     }, 600);
     $('.container').animate({
-
       "width": "80%", "height": "7em", "margin-bottom": "20px"
     }, 600);
     $('.hike-sign').find($('h1')).animate({
@@ -41,13 +40,10 @@ $(document).ready(function() {
     $('#zip').animate({
       "left": "77%"
     });
-    $(this).animate({"top":"45%"});
-
-    	"width": "10%",
+    $(this).animate({
+      "top":"45%","width":"10%","left":"45%"
     });
 
-
   });
-
 
 });
