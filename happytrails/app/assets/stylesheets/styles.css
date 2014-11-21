@@ -183,6 +183,7 @@ a:hover {
 	background-color: white;
 	color: black;
 	border: 2px solid #5C8A00;
+	display: none;
 }
 
 .trail-details {
