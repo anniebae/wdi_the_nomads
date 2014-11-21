@@ -52,7 +52,6 @@ ActiveRecord::Schema.define(version: 20141121101553) do
     t.string   "lat"
     t.string   "lon"
     t.text     "features"
-    t.string   "url"
   end
 
 end
