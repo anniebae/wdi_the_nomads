@@ -204,13 +204,7 @@ table.altrowstable {
 	border-collapse: collapse;
 	display: none;
 }
-table.altrowstable th {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #FFFFFF;
-	height: 50px;
-}
+
 table.altrowstable td {
 	border-width: 1px;
 	padding: 8px;
@@ -218,11 +212,13 @@ table.altrowstable td {
 	border-color: #FFFFFF;
 	height: 30px;
 }
-.oddrowcolor {
-	background-color: lightgrey;
-}
-.evenrowcolor {
+
+
+table tr:nth-child(EVEN){
 	background-color: #F2F2EB;
+}
+table tr:nth-child(ODD){
+	background-color: #EAEAEA;
 }
 
 .trails-table {

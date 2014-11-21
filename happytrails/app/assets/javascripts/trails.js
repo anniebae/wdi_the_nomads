@@ -33,20 +33,6 @@ function animateLocationForm(form, speed){
   }, speed);  
 }
 
-function altRows(id){
-  if(document.getElementsByTagName){
-    var table = document.getElementById(id);
-    var rows = table.getElementsByTagName("tr");
-
-    for (i = 0; i < rows.length; i++){
-      if(i % 2 == 0){
-        rows[i].className = "evenrowcolor";
-      } else {
-        rows[i].className = "oddrowcolor";
-      }
-    }
-  }
-}
 
 function secondsToHours(seconds){
   var hours = Math.floor(seconds/3600);
@@ -77,10 +63,14 @@ function trailToHTML(trail){
   $tdTrailLength = $("<td>");
   $tdTrailLength.addClass("trail_length");
   $tdTrailLength.text(trail.length);
+  $tdTrailDifficulty = $("<td>");
+  $tdTrailDifficulty.addClass("trail_difficulty");
+  $tdTrailDifficulty.text(trail.difficulty);
 
   $tr.append($tdTravelDist);
   $tr.append($tdTitle);
   $tr.append($tdTrailLength);
+  $tr.append($tdTrailDifficulty);
 
   return $tr;
 }
@@ -90,8 +80,6 @@ $(document).ready(function() {
   $(".drop-hike").hide();
   $(".drop-hello").hide();
   
-  altRows('alternatecolor');
-
   $(".about").hover(function() { 
     $(".drop-hike").slideToggle();
   });
@@ -100,6 +88,7 @@ $(document).ready(function() {
     $(".drop-hello").slideToggle();
   });
 
+
   $('.location-form').on('submit', function(e){
     e.preventDefault();
     var speed = 400;
@@ -107,6 +96,8 @@ $(document).ready(function() {
     var title = $(this).parents('.center').find('.hike-sign');
     animateTitle(title, speed);
     animateLocationForm(this, speed);
+
+
     var $form = $(this);
     var address = $(e.target).find('#address-submit').val();
     var city = $(e.target).find('#city-submit').val();
