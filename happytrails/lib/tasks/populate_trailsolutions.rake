@@ -44,8 +44,8 @@ namespace :db do
       difficulty = trail[5]
       features = trail[6]
       dogs = trail[7]
-      lat = (trail[8] != "") ? (trail[8].split(",")[0].split(" ")[-1]) : ""
-      lon = (trail[8] != "") ? (trail[8].split(",")[1].strip.split(" ")[0]) : ""
+      lat = (trail[8] != "") ? (trail[8].split(",")[0].split(" ")[-1]).to_f : 0.0
+      lon = (trail[8] != "") ? (trail[8].split(",")[1].strip.split(" ")[0]).to_f : 0.0
       url = trail[9]
       Trail.create!(
         park: park,
@@ -61,5 +61,10 @@ namespace :db do
         url: url
         )
     end
+
+    Trail.sweeptrails
+
+    Trail.setgeocoordinates
+
   end
 end

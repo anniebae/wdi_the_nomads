@@ -17,7 +17,7 @@ class Trail <ActiveRecord::Base
 # =========================================================================================================
 
 def self.sweeptrails
-Trail.where(:lat<4).destroy_all
+Trail.where("lat<4.0").destroy_all
 end
 
 # =========================================================================================================
@@ -26,6 +26,7 @@ end
 
 def self.setgeocoordinates
   Trail.all.each do |trail|
+    location_string = ""
     location_string<<trail["lat"].to_s+","+trail["lon"].to_s
     trail[:geocoordinates] = location_string
     location_string=""
