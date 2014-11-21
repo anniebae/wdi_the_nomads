@@ -81,7 +81,7 @@ function trailToHTML(trail){
 
   $a.on('click', function(e){
     e.preventDefault();
-    alert('yay');
+    displayTrailInfoBox();
   })
 
   $tdTitle.append($a);
@@ -98,6 +98,10 @@ function trailToHTML(trail){
   $tr.append($tdTrailDifficulty);
 
   return $tr;
+}
+
+function displayTrailInfoBox(){
+  $('.trail-info-box').slideDown(1000);
 }
 
 
