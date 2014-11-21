@@ -68,7 +68,8 @@ $(document).ready(function() {
         zip: zip,
       },
       success: function(data){
-        console.log('yay');
+        var startPointAddress = data.startpoint_address;
+        console.log(startPointAddress)
       }
     });
   });

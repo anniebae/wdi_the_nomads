@@ -1,5 +1,3 @@
-require 'csv'
-
 namespace :db do
   desc "populate trails"
   task :populate_trails => :environment do
