@@ -26,6 +26,7 @@ end
 
 def self.setgeocoordinates
   Trail.all.each do |trail|
+    location_string = ""
     location_string<<trail["lat"].to_s+","+trail["lon"].to_s
     trail[:geocoordinates] = location_string
     location_string=""
