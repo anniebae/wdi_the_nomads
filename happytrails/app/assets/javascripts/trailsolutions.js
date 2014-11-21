@@ -1,4 +1,4 @@
-$('enter-starting-point').on('submit', function(e){
+$('.location-form').on('submit', function(e){
 	var $form = $(this);
 
 	$.ajax({
