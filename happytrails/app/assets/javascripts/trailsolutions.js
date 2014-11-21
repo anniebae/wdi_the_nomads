@@ -51,21 +51,16 @@ $(document).ready(function() {
     var title = $(this).parents('.center').find('.hike-sign');
     animateTitle(title, speed);
     animateLocationForm(this, speed);
+    var $form = $(this);
+
+    $.ajax({
+      url: '/trailsolutions',
+      method: 'GET',
+      dataType: 'JSON',
+      success: function(data){
+        console.log('yay');
+      }
+    });
   });
-
-});
-
-$('.location-form').on('submit', function(e){
-  console.log('yay?');
-	var $form = $(this);
-
-	$.ajax({
-		url: '/trailsolutions',
-		method: 'GET',
-		dataType: 'JSON',
-		success: function(data){
-			console.log('yay');
-		}
-	});
 
 });
