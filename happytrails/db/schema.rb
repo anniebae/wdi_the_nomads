@@ -39,19 +39,4 @@ ActiveRecord::Schema.define(version: 20141121101553) do
     t.float    "lon"
   end
 
-  create_table "trailsolutions", force: true do |t|
-    t.string   "length"
-    t.string   "difficulty"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "park"
-    t.string   "title"
-    t.string   "region"
-    t.string   "state"
-    t.string   "dogs"
-    t.string   "lat"
-    t.string   "lon"
-    t.text     "features"
-  end
-
 end
