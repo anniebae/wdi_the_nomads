@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'trailsolutions/index'
+  get 'trails/index'
 
-  resources :trailsolutions
+  resources :trails
   root "welcome#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

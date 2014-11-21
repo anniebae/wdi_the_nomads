@@ -1,4 +1,4 @@
-class TrailsolutionsController < ApplicationController
+class TrailsController < ApplicationController
 
   def index
     address = params[:address] || ""
