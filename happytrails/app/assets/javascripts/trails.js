@@ -1,9 +1,9 @@
-$trails = $(".trails")
-
 function animateTitle(title, speed){
+  
   $(title).animate({
     "margin-top": "50px"
   }, speed);
+
   $(title).find($('h1')).animate({
     "font-size": "35px"
   }, speed);
@@ -33,8 +33,6 @@ function animateLocationForm(form, speed){
   }, speed);  
 }
 
-
-
 function altRows(id){
   if(document.getElementsByTagName){
     var table = document.getElementById(id);
@@ -48,6 +46,7 @@ function altRows(id){
       }
     }
   }
+}
 
 function secondsToHours(seconds){
   var hours = Math.floor(seconds/3600);
@@ -56,35 +55,35 @@ function secondsToHours(seconds){
 }
 
 function displayTrails(trails){
+  var $trails = $(".altrowstable");
   $trails.empty();
   $(trails).each(function(index, trail){
     var trailHTML = trailToHTML(trail);
     $trails.append(trailHTML);
   });
+  $trails.show();
 }
 
 function trailToHTML(trail){
-  $li = $("<li>");
-  $li.addClass("trail");
+  $tr = $("<tr>");
+  $tr.addClass("trail");
 
-  $spanTravelDist = $("<span>");
-  $spanTravelDist.addClass("travel_distance");
-  $spanTravelDist.text(secondsToHours(trail.drivingfromgrandcentralseconds));
-  $spanTitle = $("<span>");
-  $spanTitle.addClass("title");
-  $spanTitle.text(trail.title);
-  $spanTrailLength = $("<span>");
-  $spanTrailLength.addClass("trail_length");
-  $spanTrailLength.text(trail.length);
+  $tdTravelDist = $("<td>");
+  $tdTravelDist.addClass("travel_distance");
+  $tdTravelDist.text(secondsToHours(trail.drivingfromgrandcentralseconds));
+  $tdTitle = $("<td>");
+  $tdTitle.addClass("title");
+  $tdTitle.text(trail.title);
+  $tdTrailLength = $("<td>");
+  $tdTrailLength.addClass("trail_length");
+  $tdTrailLength.text(trail.length);
 
-  $li.append($spanTravelDist);
-  $li.append($spanTitle);
-  $li.append($spanTrailLength);
+  $tr.append($tdTravelDist);
+  $tr.append($tdTitle);
+  $tr.append($tdTrailLength);
 
-  return $li;
+  return $tr;
 }
-
-
 
 $(document).ready(function() {
 
@@ -130,6 +129,5 @@ $(document).ready(function() {
       }
     });
   });
-
 });
 

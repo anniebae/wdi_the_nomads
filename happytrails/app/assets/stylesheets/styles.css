@@ -202,6 +202,7 @@ table.altrowstable {
 	border-width: 1px;
 	border-color: #a9c6c9;
 	border-collapse: collapse;
+	display: none;
 }
 table.altrowstable th {
 	border-width: 1px;
