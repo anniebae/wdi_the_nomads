@@ -5,4 +5,5 @@ class TrailsolutionsController < ApplicationController
   def show
     @trailsolution = Trailsolution.all.sample
   end
+
 end

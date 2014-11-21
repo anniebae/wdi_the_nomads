@@ -52,11 +52,21 @@ $(document).ready(function() {
     animateTitle(title, speed);
     animateLocationForm(this, speed);
     var $form = $(this);
+    var address = $(e.target).find('#address-submit').val();
+    var city = $(e.target).find('#city-submit').val();
+    var state = $(e.target).find('#state-submit').val();
+    var zip = $(e.target).find('#zip-submit').val();
 
     $.ajax({
       url: '/trailsolutions',
       method: 'GET',
       dataType: 'JSON',
+      data: {
+        address: address,
+        city: city,
+        state: state,
+        zip: zip,
+      },
       success: function(data){
         console.log('yay');
       }
