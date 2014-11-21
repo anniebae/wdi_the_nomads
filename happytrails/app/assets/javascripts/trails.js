@@ -68,7 +68,8 @@ $(document).ready(function() {
         zip: zip,
       },
       success: function(data){
-        var startPointAddress = data.startpoint_address;
+        var trails = data.trails;
+        debugger;
         console.log(startPointAddress)
       }
     });
