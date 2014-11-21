@@ -170,7 +170,7 @@ a:hover {
 }
 
 
-/*TRAIL LIST DIV BOX*/
+/*TRAILS LIST DIV BOX*/
 .trail-list-box {
 	position: fixed;
 	top: 20%;
@@ -222,7 +222,14 @@ table.altrowstable td {
 	background-color: lightblue;
 }
 
-/*TRAIL INFORMATION DIV BOX*/
+.trails-table {
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+
+}
+
+/*TRAIL DETAILED INFORMATION DIV BOX*/
 .trail-info-box {
 	position: fixed;
 	top: 20%;
