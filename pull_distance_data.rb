@@ -1,7 +1,3 @@
-require 'rubygems'
-require 'httparty'
-require 'pry'
-require 'pg'
 require "active_record"
 
 location_string = ""
@@ -27,10 +23,11 @@ ActiveRecord::Base.establish_connection(
 
 class Trail <ActiveRecord::Base
 
-def self.cleanThisShit
+def self.cleanthisshit
 Trail.where(:lat<4).destroy_all
 end
 
+def self.callgoogleandsellyourhouse
 trails_with_data = Trail.all
 
 trails_with_data.each do |trail| 
@@ -114,17 +111,3 @@ walking_response_two_grandcentral["rows"][0]["elements"].each do |track|
 	i=i+1
 end
 
-
-# now we feed the data in
-
-i=0
-conn = PGconn.open("dbname=happytrails_development")
-
-trails_with_data.each do |trail|
-
-
-	i=i+1
-	
-end
-
-conn = conn.close
