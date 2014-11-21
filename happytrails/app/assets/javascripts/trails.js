@@ -81,6 +81,7 @@ function trailToHTML(trail){
 
   $a.on('click', function(e){
     e.preventDefault();
+    $('.trail-info-box').show();
     alert('yay');
   })
 
