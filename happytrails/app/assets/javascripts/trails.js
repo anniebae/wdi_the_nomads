@@ -65,6 +65,7 @@ function displayTrails(trails){
 }
 
 function trailToHTML(trail){
+  var trail = trail;
   $tr = $("<tr>");
   $tr.addClass("trail");
 
@@ -81,7 +82,7 @@ function trailToHTML(trail){
 
   $a.on('click', function(e){
     e.preventDefault();
-    displayTrailInfoBox();
+    displayTrailInfoBox(trail);
   })
 
   $tdTitle.append($a);
@@ -100,8 +101,16 @@ function trailToHTML(trail){
   return $tr;
 }
 
-function displayTrailInfoBox(){
+function displayTrailInfoBox(trail){
+  var $infoBox = $('.trail-info-box');
+  $infoBox.empty();
+  var trailHTMLInfoBox = trailToInfoBox(trail);
+  $infoBox.append(trailHTMLInfoBox);
   $('.trail-info-box').slideDown(1000);
+}
+
+function trailToInfoBox(trail){
+  alert('yaaay');
 }
 
 
