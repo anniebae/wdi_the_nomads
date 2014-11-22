@@ -148,7 +148,7 @@ h2 {
 
 h3 {
 	font-family: 'Cinzel', serif;
-	font-size: 5em;
+	font-size: 3em;
 	font-weight: 200;
 	text-align: center;
 	color: #2E4500;
@@ -262,7 +262,7 @@ table.altrowstable td {
 }
 
 
-.trail-details-title {
+.infobox-header {
 	font-weight: bold;
 	color: #5C8A00;
 }

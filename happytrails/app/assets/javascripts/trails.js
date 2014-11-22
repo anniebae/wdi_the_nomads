@@ -65,30 +65,31 @@ function displayTrails(trails){
 }
 
 function trailToHTML(trail){
-  $tr = $("<tr>");
+  var trail = trail;
+  var $tr = $("<tr>");
   $tr.addClass("trail");
 
-  $tdTravelDist = $("<td>");
+  var $tdTravelDist = $("<td>");
   $tdTravelDist.addClass("travel_distance");
   $tdTravelDist.text(secondsToHours(trail.drivingfromgrandcentralseconds));
 
-  $tdTitle = $("<td>");
+  var $tdTitle = $("<td>");
   $tdTitle.addClass("title");
-  $a = $("<a>");
+  var $a = $("<a>");
   $a.addClass("title-link");
   $a.text(trail.title);
   $a.attr("href", trail.url);
 
   $a.on('click', function(e){
     e.preventDefault();
-    displayTrailInfoBox();
+    displayTrailInfoBox(trail);
   })
 
   $tdTitle.append($a);
-  $tdTrailLength = $("<td>");
+  var $tdTrailLength = $("<td>");
   $tdTrailLength.addClass("trail_length");
   $tdTrailLength.text(trail.length);
-  $tdTrailDifficulty = $("<td>");
+  var $tdTrailDifficulty = $("<td>");
   $tdTrailDifficulty.addClass("trail_difficulty");
   $tdTrailDifficulty.text(trail.difficulty);
 
@@ -100,8 +101,56 @@ function trailToHTML(trail){
   return $tr;
 }
 
-function displayTrailInfoBox(){
-  $('.trail-info-box').slideDown(1000);
+function displayTrailInfoBox(trail){
+  var $trailDetails = $('.trail-details');
+  $trailDetails.empty();
+  var trailHTMLDetails = trailToDetails(trail);
+  $trailDetails.append(trailHTMLDetails);
+  $trailDetails.parent().slideDown(1000);
+}
+
+function trailToDetails(trail){
+  var $div = $('<div>');
+
+  var $h3Title = $('<h3>');
+  $h3Title.addClass('infobox-title');
+  $h3Title.text(trail.title);
+
+  var $pAddress = $('<p>');
+  $pAddress.addClass('infobox-address');
+  $pAddress.text(trail.region + ', ' + trail.state);
+
+  var $pDuration = $('<p>');
+  var $spanDuration = $('<span>');
+  $pDuration.addClass('infobox-duration');
+  $spanDuration.addClass('infobox-header');
+  $pDuration.text(trail.length);
+  $spanDuration.text('DURTAION: ')
+  $pDuration.prepend($spanDuration);
+
+  var $pDifficulty = $('<p>');
+  var $spanDifficulty = $('<span>');
+  $pDifficulty.addClass('infobox-difficulty');
+  $spanDifficulty.addClass('infobox-header');
+  $pDifficulty.text(trail.difficulty);
+  $spanDifficulty.text('DIFFICULTY: ')
+  $pDifficulty.prepend($spanDifficulty);
+
+  var $pDescription = $('<p>');
+  var $spanDescriptions = $('<span>');
+  $pDescription.addClass('infobox-description');
+  $spanDescriptions.addClass('infobox-header');
+  $pDescription.text(trail.features);
+  $spanDescriptions.text('FEATURES: ')
+  $pDescription.prepend($spanDescriptions);
+                 
+  $div.append($h3Title);
+  $div.append($pAddress);
+  $div.append($pDuration);
+  $div.append($pDifficulty);
+  $div.append($pDescription);
+
+  return $div;
 }
 
 
