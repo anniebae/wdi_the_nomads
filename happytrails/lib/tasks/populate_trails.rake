@@ -37,8 +37,12 @@ namespace :db do
     url_arr.each do |url|
       response = HTTParty.get(url)
       img_string = response.slice(/<img.+class="imagecache/)
-      img = img_string.slice(/http.+JPG/i)
-      img_arr.push(img)
+      if img_string != nil
+        img = img_string.slice(/http.+JPG/i)
+        img_arr.push(img)
+      else
+        img_arr.push("")
+      end
       sleep 1
     end
 
