@@ -33,6 +33,19 @@ namespace :db do
       arr.push(url_arr[index])
     end
 
+    img_arr = []
+    url_arr.each do |url|
+      response = HTTParty.get(url)
+      img_string = response.slice(/<img.+class="imagecache/)
+      img = img_string.slice(/http.+JPG/i)
+      img_arr.push(img)
+      sleep 1
+    end
+
+    data.each_with_index do |arr, index|
+      arr.push(img_arr[index])
+    end
+
     data.each do |trail|
       park = trail[0]
       title = trail[1]
@@ -45,6 +58,7 @@ namespace :db do
       lat = (trail[8] != "") ? (trail[8].split(",")[0].split(" ")[-1]).to_f : 0.0
       lon = (trail[8] != "") ? (trail[8].split(",")[1].strip.split(" ")[0]).to_f : 0.0
       url = trail[9]
+      img = trail[10]
       Trail.create!(
         park: park,
         title: title,
@@ -56,7 +70,8 @@ namespace :db do
         dogs: dogs,
         lat: lat,
         lon: lon,
-        url: url
+        url: url,
+        img: img
         )
     end
 
@@ -66,3 +81,4 @@ namespace :db do
 
   end
 end
+
