@@ -102,15 +102,15 @@ function trailToHTML(trail){
 }
 
 function displayTrailInfoBox(trail){
-  var $infoBox = $('.trail-info-box');
-  $infoBox.empty();
-  var trailHTMLInfoBox = trailToInfoBox(trail);
-  $infoBox.append(trailHTMLInfoBox);
-  $('.trail-info-box').slideDown(1000);
+  var $trailDetails = $('.trail-details');
+  $trailDetails.empty();
+  var trailHTMLDetails = trailToDetails(trail);
+  $trailDetails.append(trailHTMLDetails);
+  $trailDetails.parent().slideDown(1000);
 }
 
-function trailToInfoBox(trail){
-  alert('yaaay');
+function trailToDetails(trail){
+  alert(trail.title);
 }
 
 
