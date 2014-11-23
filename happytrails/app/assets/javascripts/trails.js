@@ -115,7 +115,7 @@ function trailToDetails(trail){
   $pDuration.addClass('infobox-duration');
   $spanDuration.addClass('infobox-header');
   $pDuration.text(trail.length);
-  $spanDuration.text('DURTAION: ')
+  $spanDuration.text('DURATION: ')
   $pDuration.prepend($spanDuration);
 
   var $pDifficulty = $('<p>');
