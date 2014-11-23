@@ -59,7 +59,7 @@ namespace :db do
         end
         if index_array != []
           p_arr = p_arr[0..index_array[0]-1]
-          p_arr.map { |x| x[3..-1] }
+          p_arr.map! { |x| x[3..-1] }
           p_arr_arr.push(p_arr)
         else
           p_arr_arr.push([""])
