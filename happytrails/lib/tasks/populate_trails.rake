@@ -46,19 +46,27 @@ namespace :db do
       end
 
       description_string = response.slice(/<div class=\"hike-heading\">Description<\/div>.+<div class=\"stop\">/m)
-      p_arr = description_string.split("</p>")
-      idx0 = p_arr.shift
-      p_arr.unshift("<p>" + idx0.split("<p>")[1])
-      p_arr.map! { |x| x.lstrip }
-      index_array = []
-      p_arr.each_with_index do |x,i|
-        if x[0..4] == "</div"
-          index_array.push(i)
+      if description_string != nil
+        p_arr = description_string.split("</p>")
+        idx0 = p_arr.shift
+        p_arr.unshift("<p>" + idx0.split("<p>")[-1])
+        p_arr.map! { |x| x.lstrip }
+        index_array = []
+        p_arr.each_with_index do |x,i|
+          if x[0..4] == "</div"
+            index_array.push(i)
+          end
         end
+        if index_array != []
+          p_arr = p_arr[0..index_array[0]-1]
+          p_arr.map { |x| x[3..-1] }
+          p_arr_arr.push(p_arr)
+        else
+          p_arr_arr.push([""])
+        end
+      else
+        p_arr_arr.push([""])
       end
-      p_arr = p_arr[0..index_array[0]-1]
-      p_arr.map { |x| x[3..-1] }
-      p_arr_arr.push(p_arr)
 
       sleep 1
     end
