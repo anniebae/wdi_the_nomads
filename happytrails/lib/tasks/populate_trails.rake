@@ -52,6 +52,27 @@ namespace :db do
         p_arr.unshift("<p>" + idx0.split("<p>")[-1])
         p_arr.map! { |p| p.lstrip.split("<br /> <br /> ") }
         p_arr.map! { |p| p.include?("<img") ? p.gsub!(/<img.+>/,"") : p}
+        p_arr.map! { |p| p.include?("<a href") ? p.gsub!(/<a\shref.+>/,"") : p}
+        p_arr.map! do |p|
+          if p.include?("<em>")
+            split1 = p.split("<em>")
+            split2 = split1.map!{|text|text.split("</em>")}
+            split2.flatten!
+            emphasized = []
+            split2.each_with_index do |text, i|
+              if i%2 == 1
+                emphasized.push(text.upcase)
+              else
+                emphasized.push(text)
+              end
+            end
+            return emphasized
+          else
+            return p
+          end
+        end
+
+        end
         p_arr.flatten!
         index_array = []
         p_arr.each_with_index do |p,i|
