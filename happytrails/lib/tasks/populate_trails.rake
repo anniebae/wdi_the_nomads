@@ -34,6 +34,7 @@ namespace :db do
     end
 
     img_arr = []
+    p_arr_arr = []
     url_arr.each do |url|
       response = HTTParty.get(url)
       img_string = response.slice(/<img.+class="imagecache/)
@@ -43,12 +44,31 @@ namespace :db do
       else
         img_arr.push("")
       end
+
+      description_string = response.slice(/<div class=\"hike-heading\">Description<\/div>.+<div class=\"stop\">/m)
+      p_arr = description_string.split("</p>")
+      idx0 = p_arr.shift
+      p_arr.unshift("<p>" + idx0.split("<p>")[1])
+      p_arr.map! { |x| x.lstrip }
+      index_array = []
+      p_arr.each_with_index do |x,i|
+        if x[0..4] == "</div"
+          index_array.push(i)
+        end
+      end
+      p_arr = p_arr[0..index_array[0]-1]
+      p_arr.map { |x| x[3..-1] }
+      p_arr_arr.push(p_arr)
+
       sleep 1
     end
 
     data.each_with_index do |arr, index|
       arr.push(img_arr[index])
+      arr.push(p_arr_arr[index])
     end
+
+
 
     data.each do |trail|
       park = trail[0]
@@ -63,7 +83,8 @@ namespace :db do
       lon = (trail[8] != "") ? (trail[8].split(",")[1].strip.split(" ")[0]).to_f : 0.0
       url = trail[9]
       img = trail[10]
-      Trail.create!(
+      p_arr = trail[11]
+      t = Trail.create!(
         park: park,
         title: title,
         region: region,
@@ -77,6 +98,13 @@ namespace :db do
         url: url,
         img: img
         )
+      p_arr.each_with_index do |p,i|
+        Paragraph.create!(
+          body: p,
+          index: i,
+          trail_id: t.id
+          )
+      end
     end
 
     Trail.sweeptrails
