@@ -52,6 +52,7 @@ namespace :db do
         p_arr.unshift("<p>" + idx0.split("<p>")[-1])
         p_arr.map! { |p| p.lstrip.split("<br /> <br /> ") }
         p_arr.flatten!
+        p_arr.gsub!(/<img.+>/,"")
         index_array = []
         p_arr.each_with_index do |p,i|
           if p[0..4] == "</div"
@@ -68,7 +69,6 @@ namespace :db do
       else
         p_arr_arr.push([""])
       end
-        binding.pry
 
       sleep 1
     end

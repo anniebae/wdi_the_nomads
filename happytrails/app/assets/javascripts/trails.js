@@ -127,25 +127,22 @@ function trailToDetails(trail){
   $pDifficulty.prepend($spanDifficulty);
 
   var id = trail.id;
+  var $description = $('<div>');
   $.ajax({
     url: '/trails/' + id,
     method: 'GET',
     dataType: 'json',
     data: {trail_id: id},
     success: function(data){
-      alert("yay");
-      debugger;
+      var paragraphs = data.paragraphs;
+      $description.addClass('infobox-description');
+      $.each(paragraphs, function(idx, pgraph){
+        var $p = $('<p>');
+        $p.text(pgraph.body);
+        $description.append($p);
+      });
     }
-  })
-
-  var $description = $('<div>');
-  $description.addClass('infobox-description');
-  var paragraphs = trail.paragraphs
-  // $.each(paragraphs, function(idx, pgraph){
-  //   var $p = $('<p>');
-  //   $p.text(pgraph.body);
-  //   $description.append($p);
-  // });
+  });
                  
   $div.append($h3Title);
   $div.append($img);
