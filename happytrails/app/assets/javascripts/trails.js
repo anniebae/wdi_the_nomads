@@ -116,6 +116,10 @@ function trailToDetails(trail){
   $h3Title.addClass('infobox-title');
   $h3Title.text(trail.title);
 
+  var $img = $('<img>');
+  $img.addClass('infobox-img');
+  $img.attr({src: trail.img});
+
   var $pAddress = $('<p>');
   $pAddress.addClass('infobox-address');
   $pAddress.text(trail.region + ', ' + trail.state);
@@ -145,6 +149,7 @@ function trailToDetails(trail){
   $pDescription.prepend($spanDescriptions);
                  
   $div.append($h3Title);
+  $div.append($img);
   $div.append($pAddress);
   $div.append($pDuration);
   $div.append($pDifficulty);
