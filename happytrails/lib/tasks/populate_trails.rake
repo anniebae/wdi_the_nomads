@@ -33,6 +33,51 @@ namespace :db do
       arr.push(url_arr[index])
     end
 
+    img_arr = []
+    p_arr_arr = []
+    url_arr.each do |url|
+      response = HTTParty.get(url)
+      img_string = response.slice(/<img.+class="imagecache/)
+      if img_string != nil
+        img = img_string.slice(/http.+JPG/i)
+        img_arr.push(img)
+      else
+        img_arr.push("")
+      end
+
+      description_string = response.slice(/<div class=\"hike-heading\">Description<\/div>.+<div class=\"stop\">/m)
+      if description_string != nil
+        p_arr = description_string.split("</p>")
+        idx0 = p_arr.shift
+        p_arr.unshift("<p>" + idx0.split("<p>")[-1])
+        p_arr.map! { |x| x.lstrip }
+        index_array = []
+        p_arr.each_with_index do |x,i|
+          if x[0..4] == "</div"
+            index_array.push(i)
+          end
+        end
+        if index_array != []
+          p_arr = p_arr[0..index_array[0]-1]
+          p_arr.map! { |x| x[3..-1] }
+          p_arr_arr.push(p_arr)
+        else
+          p_arr_arr.push([""])
+        end
+      else
+        p_arr_arr.push([""])
+      end
+
+      sleep 1
+    end
+
+    data.each_with_index do |arr, index|
+      arr.push(img_arr[index])
+      arr.push(p_arr_arr[index])
+    end
+
+
+
     data.each do |trail|
       park = trail[0]
       title = trail[1]
@@ -45,7 +90,9 @@ namespace :db do
       lat = (trail[8] != "") ? (trail[8].split(",")[0].split(" ")[-1]).to_f : 0.0
       lon = (trail[8] != "") ? (trail[8].split(",")[1].strip.split(" ")[0]).to_f : 0.0
       url = trail[9]
-      Trail.create!(
+      img = trail[10]
+      p_arr = trail[11]
+      t = Trail.create!(
         park: park,
         title: title,
         region: region,
@@ -56,8 +103,16 @@ namespace :db do
         dogs: dogs,
         lat: lat,
         lon: lon,
-        url: url
+        url: url,
+        img: img
         )
+      p_arr.each_with_index do |p,i|
+        Paragraph.create!(
+          body: p,
+          index: i,
+          trail_id: t.id
+          )
+      end
     end
 
     Trail.sweeptrails
@@ -66,3 +121,4 @@ namespace :db do
 
   end
 end
+

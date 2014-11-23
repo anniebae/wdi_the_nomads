@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121101553) do
+ActiveRecord::Schema.define(version: 20141123124824) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "paragraphs", force: true do |t|
+    t.text     "body"
+    t.integer  "index"
+    t.integer  "trail_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "trails", force: true do |t|
     t.string   "geocoordinates"
@@ -37,6 +45,7 @@ ActiveRecord::Schema.define(version: 20141121101553) do
     t.datetime "updated_at"
     t.float    "lat"
     t.float    "lon"
+    t.string   "img"
   end
 
 end
