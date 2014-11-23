@@ -245,6 +245,31 @@ table tr:nth-child(ODD){
 	overflow: scroll;
 }
 
+.infobox-img {
+	position: absolute;
+	margin-left: 30%;
+	margin-top: -4%;
+}
+
+.infobox-address {
+	position: absolute;
+	margin-top: 33%;
+	margin-left: 33%;
+}
+
+.infobox-duration {
+	margin-top: 43%;
+	margin-left: 33%;
+}
+
+.infobox-difficulty {
+	margin-left: 33%;
+}
+
+.infobox-description {
+	margin-left: 33%;
+}
+
 .trail-details {
 	font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
 	font-weight: lighter;
@@ -258,6 +283,7 @@ table tr:nth-child(ODD){
   width: 80px;
   height: 35px;
   border: none;
+  margin-left: 43%;
 }
 
 
