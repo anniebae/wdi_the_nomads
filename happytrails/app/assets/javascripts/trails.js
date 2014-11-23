@@ -126,20 +126,33 @@ function trailToDetails(trail){
   $spanDifficulty.text('DIFFICULTY: ')
   $pDifficulty.prepend($spanDifficulty);
 
-  var $pDescription = $('<p>');
-  var $spanDescriptions = $('<span>');
-  $pDescription.addClass('infobox-description');
-  $spanDescriptions.addClass('infobox-header');
-  $pDescription.text(trail.features);
-  $spanDescriptions.text('FEATURES: ')
-  $pDescription.prepend($spanDescriptions);
+  var id = trail.id;
+  $.ajax({
+    url: '/trails/' + id,
+    method: 'GET',
+    dataType: 'json',
+    data: {trail_id: id},
+    success: function(data){
+      alert("yay");
+      debugger;
+    }
+  })
+
+  var $description = $('<div>');
+  $description.addClass('infobox-description');
+  var paragraphs = trail.paragraphs
+  // $.each(paragraphs, function(idx, pgraph){
+  //   var $p = $('<p>');
+  //   $p.text(pgraph.body);
+  //   $description.append($p);
+  // });
                  
   $div.append($h3Title);
   $div.append($img);
   $div.append($pAddress);
   $div.append($pDuration);
   $div.append($pDifficulty);
-  $div.append($pDescription);
+  $div.append($description);
 
   return $div;
 }

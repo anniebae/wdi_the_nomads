@@ -19,7 +19,12 @@ class TrailsController < ApplicationController
   end
 
   def show
-    @trails = Trail.all.sample
+    trail = Trail.find(params[:id])
+    paragraphs = trail.paragraphs
+    respond_to do |format|
+      format.html
+      format.json {render :json => {paragraphs: paragraphs}}
+    end
   end
 
 end
