@@ -169,6 +169,15 @@ $(document).ready(function() {
   });
 
 
+
+  $('.close_box').on('click', function(){
+    $(this).parent().fadeTo(300,0,function(){
+      $(this).remove();
+    });
+  });
+
+
+
   $('.location-form').on('submit', function(e){
     e.preventDefault();
     var speed = 400;
