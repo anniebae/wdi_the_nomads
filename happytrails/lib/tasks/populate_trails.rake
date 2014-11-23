@@ -50,16 +50,16 @@ namespace :db do
         p_arr = description_string.split("</p>")
         idx0 = p_arr.shift
         p_arr.unshift("<p>" + idx0.split("<p>")[-1])
-        p_arr.map! { |x| x.lstrip }
+        p_arr.map! { |p| p.lstrip.split("<br /> <br /> ").flatten }
         index_array = []
-        p_arr.each_with_index do |x,i|
-          if x[0..4] == "</div"
+        p_arr.each_with_index do |p,i|
+          if p[0..4] == "</div"
             index_array.push(i)
           end
         end
         if index_array != []
           p_arr = p_arr[0..index_array[0]-1]
-          p_arr.map! { |x| x[3..-1] }
+          p_arr.map! { |p| p[3..-1] }
           p_arr_arr.push(p_arr)
         else
           p_arr_arr.push([""])
