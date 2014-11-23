@@ -51,8 +51,8 @@ namespace :db do
         idx0 = p_arr.shift
         p_arr.unshift("<p>" + idx0.split("<p>")[-1])
         p_arr.map! { |p| p.lstrip.split("<br /> <br /> ") }
+        p_arr.map! { |p| p.include?("<img") ? p.gsub!(/<img.+>/,"") : p}
         p_arr.flatten!
-        p_arr.gsub!(/<img.+>/,"")
         index_array = []
         p_arr.each_with_index do |p,i|
           if p[0..4] == "</div"
