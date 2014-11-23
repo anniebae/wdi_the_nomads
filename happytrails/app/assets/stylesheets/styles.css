@@ -131,6 +131,10 @@ body {
 	margin-top: 100px;
 }
 
+p {
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+}
+
 h1 {
 	font-family: 'Cinzel', serif;
 	font-size: 120px;
@@ -147,7 +151,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Cinzel', serif;
+	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
 	font-size: 3em;
 	font-weight: 200;
 	text-align: center;
@@ -160,15 +164,34 @@ ul {
 
 a {
 	text-decoration: none;
-	color: white;
-  transition: 0.3s;
+	color: black;
+  transition: 0.7s;
 }
 
 
 a:hover {
+	color: rgb(200, 191, 179);
+}
+
+a.hello {
+	text-decoration: none;
+	color: white;
+  transition: 0.3s;
+}
+
+a.hello:hover {
 	color: rgb(94, 101, 0);
 }
 
+a.about {
+	text-decoration: none;
+	color: white;
+  transition: 0.3s;
+}
+
+a.about:hover {
+	color: rgb(94, 101, 0);
+}
 
 /*TRAILS LIST DIV BOX*/
 .trail-list-box {
@@ -225,6 +248,7 @@ table tr:nth-child(ODD){
 	margin: 0 auto;
 	text-align: center;
 	width: 1200px;
+	margin-left: 210px;
 
 }
 
@@ -268,7 +292,6 @@ table tr:nth-child(ODD){
 }
 
 
-
 .directions-submit {
 	cursor: pointer;
   width: 80px;
@@ -278,6 +301,7 @@ table tr:nth-child(ODD){
 }
 
 .close_box {
+	position: fixed;
 	cursor: pointer;
 	margin-left: 10px;
 	margin-top: 10px;
