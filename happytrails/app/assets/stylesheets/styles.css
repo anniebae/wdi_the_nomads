@@ -50,6 +50,10 @@ body {
   color: #F5F5F5; 
 }
 
+.stage-ny {
+	position: absolute;
+}
+
 .drop-hike {
 	margin-top: -60px;
 	margin-right: 120px;
@@ -59,6 +63,8 @@ body {
 	color: white;
 	border: 2px solid black;
 	border-radius: 5px;
+	position: fixed;
+	right: 0;
 }
 
 .drop-hike p {
@@ -69,10 +75,12 @@ body {
 
 .drop-hello {
 	margin-top: -58px;
-	margin-right: 10px;
+	margin-right: 30px;
 	float: right;
 	background-color: black;
 	width: 150px;
+	position: fixed;
+	right: 0;
 }
 
 
@@ -284,6 +292,7 @@ table tr:nth-child(ODD){
 	margin-left: 30%;
 	margin-top: -4%;
 	width: 35%;
+	text-align: center;
 }
 
 .infobox-address {
@@ -291,6 +300,7 @@ table tr:nth-child(ODD){
 	margin-top: 32%;
 	margin-left: 32%;
 	width: 35%;
+	text-align: center;
 }
 
 .infobox-duration {
