@@ -47,6 +47,10 @@ body {
   color: #F5F5F5; 
 }
 
+.stage-ny {
+	position: absolute;
+}
+
 .drop-hike {
 	width: 220px;
 	background-color: black;
