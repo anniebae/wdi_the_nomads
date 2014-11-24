@@ -25,7 +25,6 @@ body {
 	background: black;
 }
 
-
 .nav-bar li {
 	padding-right: 25px;
 	float: right;
@@ -83,7 +82,6 @@ body {
 	right: 0;
 }
 
-
 .container {
 	margin-left: auto;
 	margin-right: auto;
@@ -94,14 +92,14 @@ body {
 	border: 1px solid black;
 	background: rgb(233,	224,	214);
 	text-align: center;
-	height: 21em;
 }
 
 .container input {
 	width: 80%;
-	height: 30px;
+	/*height: 30px;*/
 	font-family: 'Poiret One';
 	font-size: 22px;
+	border-radius: 3px;
 }
 
 .container input.welcome-submit {
@@ -110,10 +108,6 @@ body {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	opacity: 1;
-	position: absolute;
-	left: 10%;
-	top: 65%;
-	width: 80%;
 }
 
 .location-form {
@@ -124,7 +118,6 @@ body {
 
 .form-p {
 	width: 100%;
-	position: absolute;
 	display: inline-block;
 	left: 0%;
 }
