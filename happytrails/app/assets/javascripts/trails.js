@@ -149,6 +149,11 @@ function trailToDetails(trail){
   getDirections.type = 'submit';
   $(getDirections).val('Get Directions');
   $(getDirections).addClass('directions-submit');
+  $(getDirections).css({"position": "absolute", "top": "50%"});
+  $(getDirections).on('click', function(e){
+    e.preventDefault;
+    alert('yay');
+  });
 
                  
   $div.append($h3Title);
