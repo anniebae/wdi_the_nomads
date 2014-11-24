@@ -69,6 +69,7 @@ function trailToHTML(trail){
   $a.on('click', function(e){
     e.preventDefault();
     displayTrailInfoBox(trail);
+
   })
 
   $tdTitle.append($a);
@@ -92,7 +93,7 @@ function displayTrailInfoBox(trail){
   $trailDetails.empty();
   var trailHTMLDetails = trailToDetails(trail);
   $trailDetails.append(trailHTMLDetails);
-  $trailDetails.parent().slideDown(1000);
+  $trailDetails.parent().show().css("opacity", 1).slideDown(1000);
 }
 
 function trailToDetails(trail){
@@ -169,13 +170,15 @@ $(document).ready(function() {
   });
 
 
-
+// ************************* TROUBLE ************************
+ 
   $('.close_box').on('click', function(){
     $(this).parent().fadeTo(300,0,function(){
-      $(this).remove();
+      $(this).hide();
     });
   });
 
+// ************************* TROUBLE ************************
 
 
   $('.location-form').on('submit', function(e){
