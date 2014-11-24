@@ -154,59 +154,72 @@ def self.stagenewyork
 end
 
 # =========================================================================================================
-#                       THIS WILL CONTACT GOOGLE FOR DIRECTION TO A TRAIL
+#                  __________________   ____  ________  __________________________  _   _______
+#                 / ____/ ____/_  __/  / __ \/  _/ __ \/ ____/ ____/_  __/  _/ __ \/ | / / ___/
+#                / / __/ __/   / /    / / / // // /_/ / __/ / /     / /  / // / / /  |/ /\__ \ 
+#               / /_/ / /___  / /    / /_/ // // _, _/ /___/ /___  / / _/ // /_/ / /|  /___/ / 
+#               \____/_____/ /_/    /_____/___/_/ |_/_____/\____/ /_/ /___/\____/_/ |_//____/
+# 
+#                                         !WWWWWeeu..   ..ueeWWWWW!
+#                                          "$$(    R$$e$$R    )$$"
+#                                           "$8oeeo. "*" .oeeo8$"
+#                                           .$$#"""*$i i$*"""#$$.
+#                                           9$" @*c $$ $$F @*c $N
+#                                           9$  NeP $$ $$L NeP $$
+#                                           `$$uuuuo$$ $$uuuuu$$"
+#                                           x$P**$$P*$"$P#$$$*R$L
+#                                          x$$   #$k #$F :$P` '#$i
+#                                          $$     #$  #  $$     #$k
+#                                         d$"     '$L   x$F     '$$
+#                                         $$      '$E   9$>      9$>
+#                                         $6       $F   ?$>      9$>
+#                                         $$      d$    '$&      8$
+#                                         "$k    x$$     !$k    :$$
+#                                          #$b  u$$L      9$b.  $$"
+#                                          '#$od$#$$u....u$P$Nu@$"
+#                                          ..?$R)..?R$$$$*"  #$P
+#                                          $$$$$$$$$$$$$$@WWWW$NWWW
+#                                          `````""3$F""""#$F"""""""
+#                                                 @$.... '$B
+#                                                d$$$$$$$$$$:
+#                                                ````````````
 # =========================================================================================================
 
 
-  def self.getdistances(startpoint_address, transit_type, set_of_trail_head_addresses, launch_time, time_type)
-
-  	# First, I am going to make a string for the API request. It needs to be under 2000 characters long.
-
-  	if transit_type == "mass transit"
-	  		mode = "transit"
-	  	elsif transit_type == "bicycling"
-	  		mode = "bicycling"
-	  	elsif transit_type == "walking"
-	  		mode = "walking"
-	  	else
-	  		mode = "driving"
-  	end
-
-    #Replace spaces with + signs
+  def self.getdirections(startpoint_address, target_coordinates)
+    
   	origin = startpoint_address.gsub(/\s/,"+")
 
-    #Convert times to epoch
-    time = DateTime.parse(launch_time).to_time.to_i
+  	packet = "origin=#{origin}&destination=#{target_coordinates}"
 
-    # figure out whether you are dealing with a start time or an end time
-    if time_type == "departs at"
-      time_target = "departure_time="
-    else
-      time_target = "arrival_time="
-    end
+  	response = HTTParty.get("https://maps.googleapis.com/maps/api/directions/json?#{packet}")
 
-    time_packet = time_target.to_s+time.to_s
+ 	  response.to_json
 
-    # The addresses then need to be strung together as follows: latitude,longitude|latitude,longitude
-    destination_string = ""
-  	destination_list = []
-
-    set_of_trail_head_addresses.each do |trail|
-  		latitude = trail[:latitude]
-  		longitude = trail[:longitude]
-  		destination = latitude.to_s+","+longitude.to_s
-      destination_list<<destination
-    end
-
-    destination_list.each{|destination| destination_string<<destination.to_s+"|"}
-
-  		packet = "origin=#{origin}&#{time_packet}&mode=#{mode}&destination=#{destinationset}"
-
-  	addresspackets < packet
-
-  	response = HTTParty.get("https://maps.googleapis.com/maps/api/distancematrix/json? #{addresspackets}")
-
- 	response.to_json
   end
+
+    # if transit_type == "mass transit"
+    #     mode = "transit"
+    #   elsif transit_type == "bicycling"
+    #     mode = "bicycling"
+    #   elsif transit_type == "walking"
+    #     mode = "walking"
+    #   else
+    #     mode = "driving"
+    # end
+
+    # #Convert times to epoch
+    # time = DateTime.parse(launch_time).to_time.to_i
+
+    # # figure out whether you are dealing with a start time or an end time
+    # if time_type == "departs at"
+    #   time_target = "departure_time="
+    # else
+    #   time_target = "arrival_time="
+    # end
+
+    # time_packet = time_target.to_s+time.to_s
+
+  
 
 end
