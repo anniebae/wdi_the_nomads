@@ -50,6 +50,10 @@ body {
   color: #F5F5F5; 
 }
 
+.stage-ny {
+	position: absolute;
+}
+
 .drop-hike {
 	margin-top: -60px;
 	margin-right: 120px;
