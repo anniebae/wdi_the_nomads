@@ -44,13 +44,13 @@ function displayTrails(trails, startpointAddress){
   var $trails = $(".altrowstable");
   $trails.empty();
   $(trails).each(function(index, trail){
-    var trailHTML = trailToHTML(trail);
+    var trailHTML = trailToHTML(trail, startpointAddress);
     $trails.append(trailHTML);
   });
   $trails.show();
 }
 
-function trailToHTML(trail){
+function trailToHTML(trail, startpointAddress){
   var trail = trail;
   var $tr = $("<tr>");
   $tr.addClass("trail");
@@ -68,7 +68,7 @@ function trailToHTML(trail){
 
   $a.on('click', function(e){
     e.preventDefault();
-    displayTrailInfoBox(trail);
+    displayTrailInfoBox(trail, startpointAddress);
 
   })
 
@@ -88,15 +88,15 @@ function trailToHTML(trail){
   return $tr;
 }
 
-function displayTrailInfoBox(trail){
+function displayTrailInfoBox(trail, startpointAddress){
   var $trailDetails = $('.trail-details');
   $trailDetails.empty();
-  var trailHTMLDetails = trailToDetails(trail);
+  var trailHTMLDetails = trailToDetails(trail, startpointAddress);
   $trailDetails.append(trailHTMLDetails);
   $trailDetails.parent().show().css("opacity", 1).slideDown(1000);
 }
 
-function trailToDetails(trail){
+function trailToDetails(trail, startpointAddress){
   var $div = $('<div>');
 
   var $h3Title = $('<h3>');
@@ -150,9 +150,12 @@ function trailToDetails(trail){
   $(getDirections).val('Get Directions');
   $(getDirections).addClass('directions-submit');
   $(getDirections).css({"position": "absolute", "top": "50%"});
+  var lat = trail.lat;
+  var lon = trail.lon;
+  var startpoint_address = startpointAddress;
   $(getDirections).on('click', function(e){
     e.preventDefault;
-    alert('yay');
+    alert(startpointAddress);
   });
 
                  
