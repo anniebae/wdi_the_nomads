@@ -27,4 +27,6 @@ class TrailsController < ApplicationController
     end
   end
 
+
+
 end

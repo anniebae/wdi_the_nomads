@@ -150,12 +150,20 @@ function trailToDetails(trail, startpointAddress){
   $(getDirections).val('Get Directions');
   $(getDirections).addClass('directions-submit');
   $(getDirections).css({"position": "absolute", "top": "50%"});
-  var lat = trail.lat;
-  var lon = trail.lon;
   var startpoint_address = startpointAddress;
   $(getDirections).on('click', function(e){
     e.preventDefault;
-    alert(startpointAddress);
+    alert("address: " + startpointAddress + "\ncoordinates: " + lat + "," + lon);
+    $.ajax({
+      url: '/directions/' + id,
+      method: 'GET',
+      dataType: 'json',
+      data: {startpoint_address: startpointAddress, trail_id: id},
+      success: function(data){
+        var directions = data.directions;
+        alert(directions);
+      }
+    });
   });
 
                  
