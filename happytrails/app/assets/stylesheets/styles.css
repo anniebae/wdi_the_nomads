@@ -325,9 +325,14 @@ table tr:nth-child(ODD){
 .close_box {
 	position: fixed;
 	cursor: pointer;
-	margin-left: 15px;
-	margin-top: 15px;
+	margin-left: 12px;
+	margin-top: 12px;
 	color: #ABABAB;
+}
+
+.close_png {
+	height: 25px;
+	width: 25px;
 }
 
 .infobox-header {
