@@ -292,6 +292,7 @@ table tr:nth-child(ODD){
 	margin-left: 30%;
 	margin-top: -4%;
 	width: 35%;
+	text-align: center;
 }
 
 .infobox-address {
@@ -299,6 +300,7 @@ table tr:nth-child(ODD){
 	margin-top: 32%;
 	margin-left: 32%;
 	width: 35%;
+	text-align: center;
 }
 
 .infobox-duration {
