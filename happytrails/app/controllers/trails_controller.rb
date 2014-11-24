@@ -20,7 +20,7 @@ class TrailsController < ApplicationController
 
   def show
     trail = Trail.find(params[:id])
-    paragraphs = trail.paragraphs
+    paragraphs = trail.paragraphs.order('index')
     respond_to do |format|
       format.html
       format.json {render :json => {paragraphs: paragraphs}}
