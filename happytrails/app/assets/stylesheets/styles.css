@@ -25,7 +25,10 @@ body {
 	background: black;
 }
 
+
 .nav-bar li {
+	padding-right: 25px;
+	float: right;
 	display: inline-block;
   margin: 5px 10px 5px 10px;
 }
@@ -48,6 +51,9 @@ body {
 }
 
 .drop-hike {
+	margin-top: -60px;
+	margin-right: 120px;
+	float: right;
 	width: 220px;
 	background-color: black;
 	color: white;
@@ -62,6 +68,9 @@ body {
 }
 
 .drop-hello {
+	margin-top: -58px;
+	margin-right: 10px;
+	float: right;
 	background-color: black;
 	width: 150px;
 }
@@ -264,7 +273,8 @@ table tr:nth-child(ODD){
 	border: 1px solid black;
 	background-color: white;
 	color: black;
-	border: 2px solid #5C8A00;
+	border-radius: 20px;
+	border: none;
 	display: none;
 	overflow: scroll;
 }
@@ -273,12 +283,14 @@ table tr:nth-child(ODD){
 	position: absolute;
 	margin-left: 30%;
 	margin-top: -4%;
+	width: 35%;
 }
 
 .infobox-address {
 	position: absolute;
-	margin-top: 28%;
-	margin-left: 36%;
+	margin-top: 32%;
+	margin-left: 32%;
+	width: 35%;
 }
 
 .infobox-duration {
@@ -303,9 +315,9 @@ table tr:nth-child(ODD){
 .close_box {
 	position: fixed;
 	cursor: pointer;
-	margin-left: 10px;
-	margin-top: 10px;
-	color: #D3D3D3;
+	margin-left: 15px;
+	margin-top: 15px;
+	color: #ABABAB;
 }
 
 .infobox-header {
