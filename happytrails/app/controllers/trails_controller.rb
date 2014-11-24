@@ -14,7 +14,7 @@ class TrailsController < ApplicationController
     trails = @trails
     respond_to do |format|
       format.html
-      format.json { render :json => {trails: trails}}
+      format.json { render :json => {trails: trails, startpoint_address: startpoint_address}}
     end
   end
 
