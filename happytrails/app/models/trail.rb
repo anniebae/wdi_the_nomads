@@ -192,7 +192,7 @@ end
     
   	origin = startpoint_address.gsub(/\s/,"+")
 
-  	packet = "origin=#{origin}&destination=#{target_coordinates}"
+  	packet = "origin=#{origin}&destination=#{target_coordinates}&units=imperial"
 
   	response = HTTParty.get("https://maps.googleapis.com/maps/api/directions/json?#{packet}")
 
