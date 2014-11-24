@@ -5,7 +5,7 @@ class TrailsController < ApplicationController
     city = params[:city] || ""
     state = params[:state] || ""
     zip = params[:zip] || ""
-    startpoint_address = address + " " + city + " " + state + " " + zip
+    startpoint_address = address + " " + city + "," + state + " " + zip
     # @trails = Trail.search_by(startpoint_address)
     @trails = []
     10.times do |i|
@@ -14,7 +14,7 @@ class TrailsController < ApplicationController
     trails = @trails
     respond_to do |format|
       format.html
-      format.json { render :json => {trails: trails}}
+      format.json { render :json => {trails: trails, startpoint_address: startpoint_address}}
     end
   end
 
@@ -26,5 +26,7 @@ class TrailsController < ApplicationController
       format.json {render :json => {paragraphs: paragraphs}}
     end
   end
+
+
 
 end

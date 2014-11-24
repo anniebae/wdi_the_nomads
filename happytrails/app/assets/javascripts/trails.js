@@ -40,17 +40,17 @@ function secondsToHours(seconds){
   return hours + " hrs " + minutes + " minutes away"
 }
 
-function displayTrails(trails){
+function displayTrails(trails, startpointAddress){
   var $trails = $(".altrowstable");
   $trails.empty();
   $(trails).each(function(index, trail){
-    var trailHTML = trailToHTML(trail);
+    var trailHTML = trailToHTML(trail, startpointAddress);
     $trails.append(trailHTML);
   });
   $trails.show();
 }
 
-function trailToHTML(trail){
+function trailToHTML(trail, startpointAddress){
   var trail = trail;
   var $tr = $("<tr>");
   $tr.addClass("trail");
@@ -68,7 +68,7 @@ function trailToHTML(trail){
 
   $a.on('click', function(e){
     e.preventDefault();
-    displayTrailInfoBox(trail);
+    displayTrailInfoBox(trail, startpointAddress);
 
   })
 
@@ -88,15 +88,15 @@ function trailToHTML(trail){
   return $tr;
 }
 
-function displayTrailInfoBox(trail){
+function displayTrailInfoBox(trail, startpointAddress){
   var $trailDetails = $('.trail-details');
   $trailDetails.empty();
-  var trailHTMLDetails = trailToDetails(trail);
+  var trailHTMLDetails = trailToDetails(trail, startpointAddress);
   $trailDetails.append(trailHTMLDetails);
   $trailDetails.parent().show().css("opacity", 1).slideDown(1000);
 }
 
-function trailToDetails(trail){
+function trailToDetails(trail, startpointAddress){
   var $div = $('<div>');
 
   var $h3Title = $('<h3>');
@@ -144,6 +144,28 @@ function trailToDetails(trail){
       });
     }
   });
+
+  var getDirections = document.createElement('input');
+  getDirections.type = 'submit';
+  $(getDirections).val('Get Directions');
+  $(getDirections).addClass('directions-submit');
+  $(getDirections).css({"position": "absolute", "top": "50%"});
+  var startpoint_address = startpointAddress;
+  $(getDirections).on('click', function(e){
+    e.preventDefault;
+    alert("address: " + startpointAddress + "\ncoordinates: " + lat + "," + lon);
+    $.ajax({
+      url: '/directions/' + id,
+      method: 'GET',
+      dataType: 'json',
+      data: {startpoint_address: startpointAddress, trail_id: id},
+      success: function(data){
+        var directions = data.directions;
+        alert(directions);
+      }
+    });
+  });
+
                  
   $div.append($h3Title);
   $div.append($img);
@@ -151,6 +173,7 @@ function trailToDetails(trail){
   $div.append($pDuration);
   $div.append($pDifficulty);
   $div.append($description);
+  $div.append($(getDirections));
 
   return $div;
 }
@@ -203,7 +226,8 @@ $(document).ready(function() {
       },
       success: function(data){
         var trails = data.trails;
-        displayTrails(trails);
+        var startpointAddress = data.startpoint_address;
+        displayTrails(trails, startpointAddress);
       }
     });
   });
