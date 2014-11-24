@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'trails/index'
 
   resources :trails
-  resources :directions, only: [:show]
+  resources :directions, only: [:index]
   root "welcome#index"
 
 

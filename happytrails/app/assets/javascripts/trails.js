@@ -129,6 +129,7 @@ function trailToDetails(trail, startpointAddress){
 
   var id = trail.id;
   var $description = $('<div>');
+
   $.ajax({
     url: '/trails/' + id,
     method: 'GET',
@@ -146,24 +147,29 @@ function trailToDetails(trail, startpointAddress){
   });
 
   var getDirections = document.createElement('input');
+  $(getDirections).data('id', id)
+  $(getDirections).data('startpointAddress', startpointAddress)
   getDirections.type = 'submit';
   $(getDirections).val('Get Directions');
   $(getDirections).addClass('directions-submit');
   $(getDirections).css({"position": "absolute", "top": "50%"});
-  var startpoint_address = startpointAddress;
+
   $(getDirections).on('click', function(e){
     e.preventDefault;
-    alert("address: " + startpointAddress + "\ncoordinates: " + lat + "," + lon);
+    var startpointAddress = $(this).data('startpointAddress');
+    var id = $(this).data('id');
+
     $.ajax({
-      url: '/directions/' + id,
+      url: '/directions',
       method: 'GET',
       dataType: 'json',
       data: {startpoint_address: startpointAddress, trail_id: id},
       success: function(data){
         var directions = data.directions;
         alert(directions);
+        window.location.replace("/directions");
       }
-    });
+    });        
   });
 
                  
