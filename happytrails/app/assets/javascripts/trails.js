@@ -169,10 +169,9 @@ $(document).ready(function() {
   });
 
 
-
   $('.close_box').on('click', function(){
-    $(this).parent().fadeTo(300,0,function(){
-      $(this).remove();
+    $(this).parent().css({
+      "display": "none"
     });
   });
 
