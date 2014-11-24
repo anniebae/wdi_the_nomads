@@ -45,54 +45,61 @@ namespace :db do
         img_arr.push("")
       end
 
+
       description_string = response.slice(/<div class=\"hike-heading\">Description<\/div>.+<div class=\"stop\">/m)
       if description_string != nil
         p_arr = description_string.split("</p>")
         idx0 = p_arr.shift
         p_arr.unshift("<p>" + idx0.split("<p>")[-1])
+
         p_arr.map! { |p| p.lstrip.split("<br /> <br /> ") }
+        p_arr.flatten!
         p_arr.map! { |p| p.include?("<img") ? p.gsub!(/<img.+>/,"") : p}
         p_arr.map! { |p| p.include?("<a href") ? p.gsub!(/<a\shref.+>/,"") : p}
-        p_arr.map! do |p|
-          if p.include?("<em>")
-            split1 = p.split("<em>")
-            split2 = split1.map!{|text|text.split("</em>")}
-            split2.flatten!
-            emphasized = []
-            split2.each_with_index do |text, i|
-              if i%2 == 1
-                emphasized.push(text.upcase)
-              else
-                emphasized.push(text)
-              end
-            end
-            return emphasized
-          else
-            return p
-          end
-        end
 
-        end
-        p_arr.flatten!
-        index_array = []
-        p_arr.each_with_index do |p,i|
-          if p[0..4] == "</div"
-            index_array.push(i)
+        p_arr.map! do |p|
+          if p != nil
+            if p.include?("<em>")
+              split1 = p.split("<em>")
+              split2 = split1.map!{|text|text.split("</em>")}
+              split2.flatten!
+              emphasized = []
+              split2.each_with_index do |text, i|
+                if i%2 == 1
+                  emphasized.push(text.upcase)
+                else
+                  emphasized.push(text)
+                end
+              end
+              emphasized.join
+            else
+              p
+            end
+          else
+            ""
           end
         end
-        if index_array != []
-          p_arr = p_arr[0..index_array[0]-1]
-          p_arr.map! { |p| p[3..-1] }
-          p_arr_arr.push(p_arr)
-        else
-          p_arr_arr.push([""])
+      end
+
+      p_arr.flatten! if p_arr[0].class == Array
+
+      index_array = []
+      p_arr.each_with_index do |p,i|
+        if p[0..4] == "</div"
+          index_array.push(i)
         end
+      end
+      if index_array != []
+        p_arr = p_arr[0..index_array[0]-1]
+        p_arr.map! { |p| p[3..-1] }
+        p_arr_arr.push(p_arr)
       else
         p_arr_arr.push([""])
       end
 
       sleep 1
     end
+
 
     data.each_with_index do |arr, index|
       arr.push(img_arr[index])
