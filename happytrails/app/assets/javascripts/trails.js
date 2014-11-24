@@ -169,8 +169,16 @@ $(document).ready(function() {
     $(".drop-hello").slideToggle();
   });
 
+// ********************* TROUBLE *******************
 
 
+
+  $('.close_box').on('click', function(){
+    $(this).parent().css({
+      "display": "none"
+    });
+  });
+// ********************* TROUBLE *******************
 
   $('.location-form').on('submit', function(e){
     e.preventDefault();
