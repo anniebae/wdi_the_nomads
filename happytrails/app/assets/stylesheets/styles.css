@@ -294,8 +294,8 @@ table tr:nth-child(ODD){
 
 .directions-submit {
 	cursor: pointer;
-  width: 80px;
-  height: 35px;
+  width: 85px;
+  height: 40px;
   border: none;
   margin-left: 43%;
 }
@@ -305,18 +305,10 @@ table tr:nth-child(ODD){
 	cursor: pointer;
 	margin-left: 10px;
 	margin-top: 10px;
+	color: #D3D3D3;
 }
 
 .infobox-header {
 	font-weight: bold;
 	color: #5C8A00;
-}
-
-.hiker-image {
-	height: 100px;
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	margin: 0;
-	padding: 0;
 }

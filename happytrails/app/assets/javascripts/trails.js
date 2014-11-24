@@ -69,6 +69,7 @@ function trailToHTML(trail){
   $a.on('click', function(e){
     e.preventDefault();
     displayTrailInfoBox(trail);
+
   })
 
   $tdTitle.append($a);
@@ -92,7 +93,7 @@ function displayTrailInfoBox(trail){
   $trailDetails.empty();
   var trailHTMLDetails = trailToDetails(trail);
   $trailDetails.append(trailHTMLDetails);
-  $trailDetails.parent().slideDown(1000);
+  $trailDetails.parent().show().css("opacity", 1).slideDown(1000);
 }
 
 function trailToDetails(trail){
@@ -168,12 +169,6 @@ $(document).ready(function() {
     $(".drop-hello").slideToggle();
   });
 
-
-  $('.close_box').on('click', function(){
-    $(this).parent().css({
-      "display": "none"
-    });
-  });
 
 
 
