@@ -66,6 +66,7 @@ body {
 	width: 150px;
 }
 
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
@@ -247,8 +248,7 @@ table tr:nth-child(ODD){
 .trails-table {
 	margin: 0 auto;
 	text-align: center;
-	width: 1200px;
-	margin-left: 210px;
+	width: 75%
 
 }
 
