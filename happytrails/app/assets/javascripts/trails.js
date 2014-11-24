@@ -40,7 +40,7 @@ function secondsToHours(seconds){
   return hours + " hrs " + minutes + " minutes away"
 }
 
-function displayTrails(trails){
+function displayTrails(trails, startpointAddress){
   var $trails = $(".altrowstable");
   $trails.empty();
   $(trails).each(function(index, trail){
@@ -144,6 +144,12 @@ function trailToDetails(trail){
       });
     }
   });
+
+  var getDirections = document.createElement('input');
+  getDirections.type = 'submit';
+  $(getDirections).val('Get Directions');
+  $(getDirections).addClass('directions-submit');
+
                  
   $div.append($h3Title);
   $div.append($img);
@@ -151,6 +157,7 @@ function trailToDetails(trail){
   $div.append($pDuration);
   $div.append($pDifficulty);
   $div.append($description);
+  $div.append($(getDirections));
 
   return $div;
 }
@@ -203,7 +210,8 @@ $(document).ready(function() {
       },
       success: function(data){
         var trails = data.trails;
-        displayTrails(trails);
+        var startpointAddress = data.startpoint_address;
+        displayTrails(trails, startpointAddress);
       }
     });
   });

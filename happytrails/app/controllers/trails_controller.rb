@@ -5,7 +5,7 @@ class TrailsController < ApplicationController
     city = params[:city] || ""
     state = params[:state] || ""
     zip = params[:zip] || ""
-    startpoint_address = address + " " + city + " " + state + " " + zip
+    startpoint_address = address + " " + city + "," + state + " " + zip
     # @trails = Trail.search_by(startpoint_address)
     @trails = []
     10.times do |i|
