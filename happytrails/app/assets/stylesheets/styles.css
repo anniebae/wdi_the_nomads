@@ -76,6 +76,7 @@ body {
 	border-radius: 5px;
 	position: fixed;
 	right: 0;
+	z-index: 2;
 }
 
 .drop-hike p {
@@ -94,6 +95,7 @@ body {
 	width: 150px;
 	position: fixed;
 	right: 0;
+	z-index: 2;
 }
 
 .drop-hello img {
@@ -357,8 +359,8 @@ table tr:nth-child(ODD){
 .trail-details {
 	font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
 	font-weight: lighter;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
 
