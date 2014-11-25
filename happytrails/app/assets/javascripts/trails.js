@@ -57,7 +57,7 @@ function trailToHTML(trail, startpointAddress){
 
   var $tdTravelDist = $("<td>");
   $tdTravelDist.addClass("travel_distance");
-  $tdTravelDist.text(secondsToHours(trail.drivingfromgrandcentralseconds));
+  $tdTravelDist.text(secondsToHours(trail.target_solution));
 
   var $tdTitle = $("<td>");
   $tdTitle.addClass("title");
@@ -206,7 +206,7 @@ function listToHTML(directions){
     var distance = step[0];
     var duration = step[1];
     var text = step[2];
-    var stepHTML = stepToHTML(distance, duration, text);
+    var stepHTML = stepToHTML(distance, duration, text, index);
     $table.append(stepHTML);
   });
 
@@ -215,9 +215,13 @@ function listToHTML(directions){
   $trailDetails.append($table);
 };
 
-function stepToHTML(distance, duration, text){
+function stepToHTML(distance, duration, text, index){
   var $tr = $('<tr>');
   $tr.addClass('trail');
+
+  var $tdIndex = $('<td>');
+  $tdIndex.addClass('directions-index');
+  $tdIndex.text(index+1);
 
   var $tdText = $('<td>');
   $tdText.addClass('directions-text');
@@ -231,6 +235,7 @@ function stepToHTML(distance, duration, text){
   $tdDuration.addClass('directions-duration');
   $tdDuration.text(duration);  
 
+  $tr.append($tdIndex);
   $tr.append($tdText);
   $tr.append($tdDistance);
   $tr.append($tdDuration);
