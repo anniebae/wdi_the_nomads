@@ -55,7 +55,7 @@ end
 #                             THESE WILL RING GOOGLE AND LOAD STATIC DISTANCE DATA
 #                            DO NOT DO THIS MORE THAN ONCE PER IP ADDRESS PER DAY
 #                             OR DON'T BE A PLEB, AND PAY GOOGLE FOR THEIR WORK
-# 
+#
 # =========================================================================================================
 
 
@@ -351,8 +351,8 @@ end
 
 
 # ================================================================================================================================
-# 
-# 
+#
+#
 #  /$$$$$$$$ /$$$$$$$  /$$$$$$  /$$$$$$  /$$   /$$  /$$$$$$  /$$   /$$ /$$        /$$$$$$  /$$$$$$$$ /$$$$$$  /$$$$$$  /$$   /$$
 # |__  $$__/| $$__  $$|_  $$_/ /$$__  $$| $$$ | $$ /$$__  $$| $$  | $$| $$       /$$__  $$|__  $$__/|_  $$_/ /$$__  $$| $$$ | $$
 #    | $$   | $$  \ $$  | $$  | $$  \ $$| $$$$| $$| $$  \__/| $$  | $$| $$      | $$  \ $$   | $$     | $$  | $$  \ $$| $$$$| $$
@@ -361,9 +361,9 @@ end
 #    | $$   | $$  \ $$  | $$  | $$  | $$| $$\  $$$| $$  \ $$| $$  | $$| $$      | $$  | $$   | $$     | $$  | $$  | $$| $$\  $$$
 #    | $$   | $$  | $$ /$$$$$$| $$  | $$| $$ \  $$|  $$$$$$/|  $$$$$$/| $$$$$$$$| $$  | $$   | $$    /$$$$$$|  $$$$$$/| $$ \  $$
 #    |__/   |__/  |__/|______/|__/  |__/|__/  \__/ \______/  \______/ |________/|__/  |__/   |__/   |______/ \______/ |__/  \__/
-# 
 #
-# 
+#
+#
 #                                                         !WWWWWeeu..   ..ueeWWWWW!
 #                                                          "$$(    R$$e$$R    )$$"
 #                                                           "$8oeeo. "*" .oeeo8$"
@@ -387,21 +387,21 @@ end
 #                                                                 @$.... '$B
 #                                                                d$$$$$$$$$$:
 #                                                                ````````````
-# 
+#
 # ================================================================================================================================
 
 def self.findnearestneighbor(target_address)
   grandcentral="40.752726,-73.977229"
   barclayscenter="40.68292,-73.975185"
   albanyNY="42.6681398,-73.8113997"
-  
+
   tri_coordinates = grandcentral + "|" + barclayscenter + "|" + albanyNY
   querystring = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{target_address}&destinations=#{tri_coordinates}&units=imperial")
   response = HTTParty.get(querystring)
 
   durations =response["rows"][0]["elements"].map{|element| element["duration"]["value"]}
   base_vector_to_use = durations.each_with_index.min[1]
-  
+
   if base_vector_to_use == 0
       "grandcentral"
     elsif base_vector_to_use == 1
