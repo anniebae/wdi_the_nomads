@@ -10,7 +10,7 @@ class TrailsController < ApplicationController
     target_solution = "drivingfrom"+Trail.findnearestneighbor(@startpoint_address)+"seconds"
 
     trails = Trail.order(target_solution).limit(10)
-    respond_to do |format|
+    respond_to do |format|  
       format.html
       format.json { render :json => {trails: trails, startpoint_address: @startpoint_address}}
     end
