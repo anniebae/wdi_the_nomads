@@ -8,7 +8,7 @@ body {
   -o-background-size: cover;
   -webkit-background-size: cover;
 	color: white;
-	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	font-family: 'Poiret One';
 	font-weight: 200px;
 }
 
@@ -167,7 +167,7 @@ body {
 }
 
 p {
-	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	font-family: 'Poiret One';
 }
 
 h1 {
@@ -190,7 +190,7 @@ h2 {
 }
 
 h3 {
-	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	font-family: 'Poiret One';
 	font-size: 3em;
 	font-weight: 200;
 	text-align: center;
@@ -267,15 +267,6 @@ table.altrowstable {
 	display: none;
 }
 
-table.directions-table {
-	font-family: 'Poiret One';
-	font-size: 14px;
-	color: #333333;
-	border-width: 1px;
-	border-color: #FFFFFF;
-	border-collapse: collapse;
-}
-
 table.altrowstable td {
 	border-width: 1px;
 	padding: 8px;
@@ -284,13 +275,6 @@ table.altrowstable td {
 	height: 30px;
 }
 
-table.directions-table td {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #FFFFFF;
-	height: 30px;
-}
 
 table tr:nth-child(EVEN){
 	background-color: #F2F2EB;
@@ -303,14 +287,6 @@ table tr:nth-child(ODD){
 	margin: 0 auto;
 	text-align: center;
 	width: 75%
-}
-
-.directions-distance {
-	width: 4em;
-}
-
-.directions-duration {
-	width: 4em;
 }
 
 
