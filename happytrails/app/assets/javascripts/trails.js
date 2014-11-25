@@ -188,13 +188,16 @@ function listToHTML(directions){
   var $trailDetails = $('.trail-details');
   $trailDetails.empty();
 
+  // var $div = $('<div>');
+  // $div.addClass('trail-list-box');
+
   var $h3Title = $('<h3>');
   $h3Title.addClass('directions-title');
   $h3Title.text('DIRECTIONS');
   $trailDetails.append($h3Title);
 
   var $table = $('<table>');
-  $table.addClass('altrowstable');
+  $table.addClass('directions-table');
 
   $(directions).each(function(index, step){
     var distance = step[0];
@@ -204,8 +207,9 @@ function listToHTML(directions){
     $table.append(stepHTML);
   });
 
-  $trailDetails.append($table);
+  // $div.append($table);
 
+  $trailDetails.append($table);
 };
 
 function stepToHTML(distance, duration, text){
