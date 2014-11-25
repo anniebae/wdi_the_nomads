@@ -75,6 +75,7 @@ body {
 	border: 2px solid black;
 	border-radius: 5px;
 	position: fixed;
+	top: 15%;
 	right: 0;
 	z-index: 2;
 }
@@ -96,6 +97,7 @@ body {
 	position: fixed;
 	right: 0;
 	z-index: 2;
+	top: 15%;
 }
 
 .drop-hello img {
@@ -107,13 +109,14 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
-	margin-top: -5em;
-	width: 45%;
+	margin-top: 0.5em;
+	width: 35%;
 	opacity: 0.81;
-	border: 1px solid black;
+	border: 1px solid darkgrey;
 	background: rgb(233,	224,	214);
 	text-align: center;
 	z-index: -1;
+	border-radius: .5em;
 }
 
 .container input {
@@ -136,8 +139,7 @@ body {
 
 .location-form {
 	width: 100%;
-	height: 100%;
-	height: 20em;
+	height: 15em;
 	position: relative;
 }
 
@@ -151,24 +153,25 @@ body {
 }
 
 .form-p input{
-	width: 70%;
-	height: 50%;
+	width: 83%;
+	height: 60%;
+	font-size: 1em;
 }
 
 .form-p#address {
-	top: 0%;
+	top: -5%;
 }
 
 .form-p#city {
-	top: 20%;
+	top: 15%;
 }
 
 .form-p#state {
-	top: 40%;
+	top: 35%;
 }
 
 .form-p#zip {
-	top: 60%;
+	top: 55%;
 }
 
 .form-p#submit {
@@ -402,6 +405,3 @@ table tr:nth-child(ODD){
 .footer {
 	position: fixed;
 	bottom: 13%;
-	width: 100%;
-	left: 0;
-}

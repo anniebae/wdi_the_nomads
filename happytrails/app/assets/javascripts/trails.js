@@ -19,7 +19,7 @@ function animateLocationForm(form, speed){
     "top": "-0.3em", "height": "100%"
   }, speed);
   $(form).find('.form-p#address').animate({
-    "left": "-4%", "width": "40%"
+    "left": "0%", "width": "32%"
   }, speed);
   $(form).find('.form-p#city').animate({
     "left": "30%", "width": "20%"
@@ -31,8 +31,8 @@ function animateLocationForm(form, speed){
     "left": "57%", "width": "12%"
   }, speed);  
   $(form).find('.form-p#submit').animate({
-    "width": "20%"
-  })
+    "width": "20%", "top": "0.2em"
+  });
   $(form).find('.welcome-submit').animate({
     "bottom":"45%","width":"70%","left":"375%"
   }, speed);
@@ -171,6 +171,7 @@ function trailToDetails(trail, startpointAddress){
   $(getDirections).css({
     "position": "absolute", 
     "top": "50%",
+    "margin-left": "36em"
   });
 
   $(getDirections).on('click', function(e){
@@ -235,7 +236,6 @@ function stepToHTML(distance, duration, text, index){
 
   var $tdText = $('<td>');
   $tdText.addClass('directions-text');
-  debugger;
   $tdText.text(text);
 
   var $tdDistance = $('<td>');
