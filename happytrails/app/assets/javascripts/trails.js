@@ -52,7 +52,8 @@ function displayTrails(trails, startpointAddress, targetSolution){
     var trailHTML = trailToHTML(trail, startpointAddress, targetSolution);
     $trails.append(trailHTML);
   });
-  $trails.show();
+  $trails.css({"display": "inline-block"})
+  // $trails.show();
 }
 
 function trailToHTML(trail, startpointAddress, targetSolution){
