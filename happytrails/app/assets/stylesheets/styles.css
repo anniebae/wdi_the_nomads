@@ -167,7 +167,8 @@ body {
 }
 
 p {
-	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	font-family: Helvetica;
+	font-weight: 300;
 }
 
 h1 {
@@ -190,7 +191,7 @@ h2 {
 }
 
 h3 {
-	font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	font-family: 'Poiret One';
 	font-size: 3em;
 	font-weight: 200;
 	text-align: center;
