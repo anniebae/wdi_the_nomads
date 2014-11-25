@@ -3,6 +3,7 @@ The Nomads
 Annie Bae
 Dave Koenig
 Ian Schmertzler
+
 ========================================================
 
 HIKE is a web application for avid hikers who want to access hike trails more easily but don’t want to deal with the logistical details. This app simplifies the planning and selection processes in hiking by showing a list of hike trails by distance, cost, difficulty, and accessibility based on modes of transportation.
