@@ -265,6 +265,15 @@ table.altrowstable {
 	display: none;
 }
 
+table.directions-table {
+	font-family: 'Poiret One';
+	font-size: 14px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	border-collapse: collapse;
+}
+
 table.altrowstable td {
 	border-width: 1px;
 	padding: 8px;
@@ -273,6 +282,13 @@ table.altrowstable td {
 	height: 30px;
 }
 
+table.directions-table td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	height: 30px;
+}
 
 table tr:nth-child(EVEN){
 	background-color: #F2F2EB;
