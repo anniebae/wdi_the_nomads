@@ -303,6 +303,14 @@ table tr:nth-child(ODD){
 	width: 75%
 }
 
+.directions-distance {
+	width: 4em;
+}
+
+.directions-duration {
+	width: 4em;
+}
+
 
 /*TRAIL DETAILED INFORMATION DIV BOX*/
 .trail-info-box {
