@@ -23,6 +23,7 @@ body {
 	height: 1em;
 	padding-bottom: 28px;
 	background: black;
+	z-index: 1;
 }
 
 .nav-bar li {
@@ -70,6 +71,8 @@ body {
 	font-size: 13px;
 	font-style: italic;
 	color: rgb(252,	252,	247);
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
 .drop-hello {
@@ -80,6 +83,9 @@ body {
 	width: 150px;
 	position: fixed;
 	right: 0;
+}
+
+.drop-hello img {
 	margin-right: 5px;
 	margin-left: 5px;
 }
@@ -94,6 +100,7 @@ body {
 	border: 1px solid black;
 	background: rgb(233,	224,	214);
 	text-align: center;
+	z-index: -1;
 }
 
 .container input {
