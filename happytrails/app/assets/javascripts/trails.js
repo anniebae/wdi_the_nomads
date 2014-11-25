@@ -57,7 +57,7 @@ function trailToHTML(trail, startpointAddress){
 
   var $tdTravelDist = $("<td>");
   $tdTravelDist.addClass("travel_distance");
-  $tdTravelDist.text(secondsToHours(trail.drivingfromgrandcentralseconds));
+  $tdTravelDist.text(secondsToHours(trail.target_solution));
 
   var $tdTitle = $("<td>");
   $tdTitle.addClass("title");
