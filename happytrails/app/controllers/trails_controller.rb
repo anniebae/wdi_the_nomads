@@ -20,7 +20,7 @@ class TrailsController < ApplicationController
     trail = Trail.find(params[:id])
     paragraphs = trail.paragraphs.order('index')
     paragraphs = paragraphs.to_a
-    paragraphs.reject! { |p| p.body=="&nbsp;" || p.body[0..6]=='style="' }
+    paragraphs.reject! { |p| p.body=="&nbsp;" || p.body[0..6]=='style="' || p.body == ".]" }
     date_of_hike = []
     paragraphs.each_with_index do |p,i|
       if p.body[0..11] == "Date of hike"

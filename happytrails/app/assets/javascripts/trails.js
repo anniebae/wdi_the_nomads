@@ -149,6 +149,7 @@ function trailToDetails(trail, startpointAddress){
         $p.text(pgraph.body);
         $description.append($p);
       });
+      $description.append($('<p>.</p><p>.</p><p>.</p>'))
     }
   });
 
