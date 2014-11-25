@@ -1,37 +1,42 @@
 function animateTitle(title, speed){
   
   $(title).animate({
-    "margin-top": "50px"
+    "margin-top": "3em"
   }, speed);
-
   $(title).find($('h1')).animate({
     "font-size": "35px"
   }, speed);
 }
 
 function animateLocationForm(form, speed){
+  $(form).animate({
+    "height": "4em"
+  });
   $(form).closest('.container').animate({
-    "width": "80%", "height": "7em", "margin-bottom": "20px"
-  }, speed);
-  $(form).find('.welcome-submit').animate({
-    "top":"45%","width":"10%","left":"45%"
+    "width": "80%", "height": "4em", "margin-bottom": "20px", "margin-top": "-1.5em"
   }, speed);
   $(form).find('.form-p').animate({
-    "width": "20%", "top": "-16%"
+    "top": "-0.3em", "height": "100%"
   }, speed);
   $(form).find('.form-p#address').animate({
-    "left": "2%"
+    "left": "-4%", "width": "40%"
   }, speed);
   $(form).find('.form-p#city').animate({
-    "left": "27%"
+    "left": "30%", "width": "20%"
   }, speed);
   $(form).find('.form-p#state').animate({
-    "left": "52%"
+    "left": "49%", "width": "7%"
   }, speed);
   $(form).find('.form-p#zip').animate({
-    "left": "77%"
+    "left": "57%", "width": "12%"
   }, speed);  
-}
+  $(form).find('.form-p#submit').animate({
+    "width": "20%"
+  })
+  $(form).find('.welcome-submit').animate({
+    "bottom":"45%","width":"70%","left":"375%"
+  }, speed);
+};
 
 
 function secondsToHours(seconds){
