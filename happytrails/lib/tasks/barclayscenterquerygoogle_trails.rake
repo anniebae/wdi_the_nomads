@@ -1,8 +1,8 @@
 namespace :db do
 
-  desc "pull the lga dataset"
+  desc "pull the barclays center dataset"
 
   task :googlegcpopulate_trails => :environment do
-    Trail.stagenewyork
+    Trail.stagebarclayscenter
   end
 end

@@ -93,22 +93,22 @@ def self.stagegrandcentral
 
   driver_request_one_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_one}&units=imperial")
   driver_request_two_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_two}&units=imperial")
-  cycling_request_one_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_one}&mode=bicycling&units=imperial")
-  cycling_request_two_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_two}&mode=bicycling&units=imperial")
-  walking_request_one_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_one}&mode=walking&units=imperial")
-  walking_request_two_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_two}&mode=walking&units=imperial")
+  # cycling_request_one_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_one}&mode=bicycling&units=imperial")
+  # cycling_request_two_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_two}&mode=bicycling&units=imperial")
+  # walking_request_one_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_one}&mode=walking&units=imperial")
+  # walking_request_two_grandcentral = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{grandcentral}&destinations=#{trail_coordinate_string_two}&mode=walking&units=imperial")
 
   driving_response_one_grandcentral = HTTParty.get(driver_request_one_grandcentral)
   sleep 12
   driving_response_two_grandcentral = HTTParty.get(driver_request_two_grandcentral)
   sleep 12
-  cycling_response_one_grandcentral = HTTParty.get(cycling_request_one_grandcentral)
-  sleep 12
-  cycling_response_two_grandcentral = HTTParty.get(cycling_request_two_grandcentral)
-  sleep 12
-  walking_response_one_grandcentral = HTTParty.get(walking_request_one_grandcentral)
-  sleep 12
-  walking_response_two_grandcentral = HTTParty.get(walking_request_two_grandcentral)
+  # cycling_response_one_grandcentral = HTTParty.get(cycling_request_one_grandcentral)
+  # sleep 12
+  # cycling_response_two_grandcentral = HTTParty.get(cycling_request_two_grandcentral)
+  # sleep 12
+  # walking_response_one_grandcentral = HTTParty.get(walking_request_one_grandcentral)
+  # sleep 12
+  # walking_response_two_grandcentral = HTTParty.get(walking_request_two_grandcentral)
 
   i=0
   driving_response_one_grandcentral["rows"][0]["elements"].each do |track|
@@ -123,31 +123,31 @@ def self.stagegrandcentral
     i=i+1
   end
 
-  i=0
-  cycling_response_one_grandcentral["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:cyclingfromgrandcentralseconds] = track["duration"]["value"]
-    trails_with_data[i][:cyclingfromgrandcentralmiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # i=0
+  # cycling_response_one_grandcentral["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:cyclingfromgrandcentralseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:cyclingfromgrandcentralmiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
-  cycling_response_two_grandcentral["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:cyclingfromgrandcentralseconds] = track["duration"]["value"]
-    trails_with_data[i][:cyclingfromgrandcentralmiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # cycling_response_two_grandcentral["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:cyclingfromgrandcentralseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:cyclingfromgrandcentralmiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
-  i=0
-  walking_response_one_grandcentral["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:walkingfromgrandcentralseconds] = track["duration"]["value"]
-    trails_with_data[i][:walkingfromgrandcentralmiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # i=0
+  # walking_response_one_grandcentral["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:walkingfromgrandcentralseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:walkingfromgrandcentralmiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
-  walking_response_two_grandcentral["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:walkingfromgrandcentralseconds] = track["duration"]["value"]
-    trails_with_data[i][:walkingfromgrandcentralmiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # walking_response_two_grandcentral["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:walkingfromgrandcentralseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:walkingfromgrandcentralmiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
   trails_with_data.each do |trail|
     trail.save
@@ -190,22 +190,22 @@ def self.stagebarclayscenter
 
   driver_request_one_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_one}&units=imperial")
   driver_request_two_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_two}&units=imperial")
-  cycling_request_one_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_one}&mode=bicycling&units=imperial")
-  cycling_request_two_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_two}&mode=bicycling&units=imperial")
-  walking_request_one_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_one}&mode=walking&units=imperial")
-  walking_request_two_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_two}&mode=walking&units=imperial")
+  # cycling_request_one_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_one}&mode=bicycling&units=imperial")
+  # cycling_request_two_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_two}&mode=bicycling&units=imperial")
+  # walking_request_one_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_one}&mode=walking&units=imperial")
+  # walking_request_two_barclayscenter = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{barclayscenter}&destinations=#{trail_coordinate_string_two}&mode=walking&units=imperial")
 
   driving_response_one_barclayscenter = HTTParty.get(driver_request_one_barclayscenter)
   sleep 12
   driving_response_two_barclayscenter = HTTParty.get(driver_request_two_barclayscenter)
   sleep 12
-  cycling_response_one_barclayscenter = HTTParty.get(cycling_request_one_barclayscenter)
-  sleep 12
-  cycling_response_two_barclayscenter = HTTParty.get(cycling_request_two_barclayscenter)
-  sleep 12
-  walking_response_one_barclayscenter = HTTParty.get(walking_request_one_barclayscenter)
-  sleep 12
-  walking_response_two_barclayscenter = HTTParty.get(walking_request_two_barclayscenter)
+  # cycling_response_one_barclayscenter = HTTParty.get(cycling_request_one_barclayscenter)
+  # sleep 12
+  # cycling_response_two_barclayscenter = HTTParty.get(cycling_request_two_barclayscenter)
+  # sleep 12
+  # walking_response_one_barclayscenter = HTTParty.get(walking_request_one_barclayscenter)
+  # sleep 12
+  # walking_response_two_barclayscenter = HTTParty.get(walking_request_two_barclayscenter)
 
   i=0
   driving_response_one_barclayscenter["rows"][0]["elements"].each do |track|
@@ -220,31 +220,31 @@ def self.stagebarclayscenter
     i=i+1
   end
 
-  i=0
-  cycling_response_one_barclayscenter["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:cyclingfrombarclayscenterseconds] = track["duration"]["value"]
-    trails_with_data[i][:cyclingfrombarclayscentermiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # i=0
+  # cycling_response_one_barclayscenter["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:cyclingfrombarclayscenterseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:cyclingfrombarclayscentermiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
-  cycling_response_two_barclayscenter["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:cyclingfrombarclayscenterseconds] = track["duration"]["value"]
-    trails_with_data[i][:cyclingfrombarclayscentermiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # cycling_response_two_barclayscenter["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:cyclingfrombarclayscenterseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:cyclingfrombarclayscentermiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
-  i=0
-  walking_response_one_barclayscenter["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:walkingfrombarclayscenterseconds] = track["duration"]["value"]
-    trails_with_data[i][:walkingfrombarclayscentermiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # i=0
+  # walking_response_one_barclayscenter["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:walkingfrombarclayscenterseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:walkingfrombarclayscentermiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
-  walking_response_two_barclayscenter["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:walkingfrombarclayscenterseconds] = track["duration"]["value"]
-    trails_with_data[i][:walkingfrombarclayscentermiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # walking_response_two_barclayscenter["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:walkingfrombarclayscenterseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:walkingfrombarclayscentermiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
   trails_with_data.each do |trail|
     trail.save
@@ -252,7 +252,7 @@ def self.stagebarclayscenter
 
 end
 
-def self.stagebarclayscenter
+def self.stagealbanyny
   location_string = ""
   location_set = []
   trails_with_data = []
@@ -286,22 +286,22 @@ def self.stagebarclayscenter
 
   driver_request_one_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_one}&units=imperial")
   driver_request_two_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_two}&units=imperial")
-  cycling_request_one_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_one}&mode=bicycling&units=imperial")
-  cycling_request_two_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_two}&mode=bicycling&units=imperial")
-  walking_request_one_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_one}&mode=walking&units=imperial")
-  walking_request_two_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_two}&mode=walking&units=imperial")
+  # cycling_request_one_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_one}&mode=bicycling&units=imperial")
+  # cycling_request_two_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_two}&mode=bicycling&units=imperial")
+  # walking_request_one_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_one}&mode=walking&units=imperial")
+  # walking_request_two_albanyNY = URI.escape("https://maps.googleapis.com/maps/api/distancematrix/json?origins=#{albanyNY}&destinations=#{trail_coordinate_string_two}&mode=walking&units=imperial")
 
   driving_response_one_albanyNY = HTTParty.get(driver_request_one_albanyNY)
   sleep 12
   driving_response_two_albanyNY = HTTParty.get(driver_request_two_albanyNY)
   sleep 12
-  cycling_response_one_albanyNY = HTTParty.get(cycling_request_one_albanyNY)
-  sleep 12
-  cycling_response_two_albanyNY = HTTParty.get(cycling_request_two_albanyNY)
-  sleep 12
-  walking_response_one_albanyNY = HTTParty.get(walking_request_one_albanyNY)
-  sleep 12
-  walking_response_two_albanyNY = HTTParty.get(walking_request_two_albanyNY)
+  # cycling_response_one_albanyNY = HTTParty.get(cycling_request_one_albanyNY)
+  # sleep 12
+  # cycling_response_two_albanyNY = HTTParty.get(cycling_request_two_albanyNY)
+  # sleep 12
+  # walking_response_one_albanyNY = HTTParty.get(walking_request_one_albanyNY)
+  # sleep 12
+  # walking_response_two_albanyNY = HTTParty.get(walking_request_two_albanyNY)
 
   i=0
   driving_response_one_albanyNY["rows"][0]["elements"].each do |track|
@@ -316,31 +316,31 @@ def self.stagebarclayscenter
     i=i+1
   end
 
-  i=0
-  cycling_response_one_albanyNY["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:cyclingfromalbanyNYseconds] = track["duration"]["value"]
-    trails_with_data[i][:cyclingfromalbanyNYmiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # i=0
+  # cycling_response_one_albanyNY["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:cyclingfromalbanyNYseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:cyclingfromalbanyNYmiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
-  cycling_response_two_albanyNY["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:cyclingfromalbanyNYseconds] = track["duration"]["value"]
-    trails_with_data[i][:cyclingfromalbanyNYmiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # cycling_response_two_albanyNY["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:cyclingfromalbanyNYseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:cyclingfromalbanyNYmiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
-  i=0
-  walking_response_one_albanyNY["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:walkingfromalbanyNYseconds] = track["duration"]["value"]
-    trails_with_data[i][:walkingfromalbanyNYmiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # i=0
+  # walking_response_one_albanyNY["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:walkingfromalbanyNYseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:walkingfromalbanyNYmiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
-  walking_response_two_albanyNY["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:walkingfromalbanyNYseconds] = track["duration"]["value"]
-    trails_with_data[i][:walkingfromalbanyNYmiles] = track["distance"]["value"]
-    i=i+1
-  end
+  # walking_response_two_albanyNY["rows"][0]["elements"].each do |track|
+  #   trails_with_data[i][:walkingfromalbanyNYseconds] = track["duration"]["value"]
+  #   trails_with_data[i][:walkingfromalbanyNYmiles] = track["distance"]["value"]
+  #   i=i+1
+  # end
 
   trails_with_data.each do |trail|
     trail.save
