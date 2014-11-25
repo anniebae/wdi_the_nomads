@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141123124824) do
+ActiveRecord::Schema.define(version: 20141125010837) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,18 @@ ActiveRecord::Schema.define(version: 20141123124824) do
     t.float    "lat"
     t.float    "lon"
     t.string   "img"
+    t.integer  "drivingfrombarclayscentermiles"
+    t.integer  "drivingfrombarclayscenterseconds"
+    t.integer  "drivingfromalbanymiles"
+    t.integer  "drivingfromalbanyseconds"
+    t.integer  "cyclingfrombarclayscentermiles"
+    t.integer  "cyclingfrombarclayscenterseconds"
+    t.integer  "cyclingfromalbanymiles"
+    t.integer  "cyclingfromalbanyseconds"
+    t.integer  "walkingfrombarclayscentermiles"
+    t.integer  "walkingfrombarclayscenterseconds"
+    t.integer  "walkingfromalbanymiles"
+    t.integer  "walkingfromalbanyseconds"
   end
 
 end
