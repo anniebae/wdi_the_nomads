@@ -149,7 +149,7 @@ function trailToDetails(trail, startpointAddress){
         $p.text(pgraph.body);
         $description.append($p);
       });
-      $description.append($('<p>.</p><p>.</p><p>.</p>'))
+      $description.append($('<p>.</p><p>.</p><p>.</p>'));
     }
   });
 
@@ -199,9 +199,6 @@ function listToHTML(directions){
   var $trailDetails = $('.trail-details');
   $trailDetails.empty();
 
-  // var $div = $('<div>');
-  // $div.addClass('trail-list-box');
-
   var $h3Title = $('<h3>');
   $h3Title.addClass('directions-title');
   $h3Title.text('DIRECTIONS');
@@ -218,9 +215,8 @@ function listToHTML(directions){
     $table.append(stepHTML);
   });
 
-  // $div.append($table);
-
   $trailDetails.append($table);
+  $trailDetails.append($('<p>.</p><p>.</p><p>.</p>'));
 };
 
 function stepToHTML(distance, duration, text, index){

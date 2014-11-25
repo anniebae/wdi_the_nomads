@@ -290,6 +290,18 @@ table tr:nth-child(ODD){
 	width: 75%
 }
 
+.directions-distance {
+	width: 3.5em;
+}
+
+.directions-duration {
+	width: 3.5em;
+}
+
+.directions-table .trail {
+	height: 2.5em;
+}
+
 
 /*TRAIL DETAILED INFORMATION DIV BOX*/
 .trail-info-box {
