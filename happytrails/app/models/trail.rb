@@ -305,14 +305,14 @@ def self.stagealbanyny
 
   i=0
   driving_response_one_albanyNY["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:drivingfromalbanyNYseconds] = track["duration"]["value"]
-    trails_with_data[i][:drivingfromalbanyNYmiles] = track["distance"]["value"]
+    trails_with_data[i][:drivingfromalbanyseconds] = track["duration"]["value"]
+    trails_with_data[i][:drivingfromalbanymiles] = track["distance"]["value"]
     i=i+1
   end
 
   driving_response_two_albanyNY["rows"][0]["elements"].each do |track|
-    trails_with_data[i][:drivingfromalbanyNYseconds] = track["duration"]["value"]
-    trails_with_data[i][:drivingfromalbanyNYmiles] = track["distance"]["value"]
+    trails_with_data[i][:drivingfromalbanyseconds] = track["duration"]["value"]
+    trails_with_data[i][:drivingfromalbanymiles] = track["distance"]["value"]
     i=i+1
   end
 
