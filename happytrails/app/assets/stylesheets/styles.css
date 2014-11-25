@@ -75,7 +75,7 @@ body {
 	border: 2px solid black;
 	border-radius: 5px;
 	position: fixed;
-	top: 15%;
+	top: 13%;
 	right: 0;
 	z-index: 2;
 }
@@ -97,7 +97,7 @@ body {
 	position: fixed;
 	right: 0;
 	z-index: 2;
-	top: 15%;
+	top: 13%;
 }
 
 .drop-hello img {
