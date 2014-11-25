@@ -333,8 +333,8 @@ table tr:nth-child(ODD){
 .trail-details {
 	font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
 	font-weight: lighter;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
 
