@@ -193,41 +193,42 @@ function listToHTML(directions){
   $h3Title.text('DIRECTIONS');
   $trailDetails.append($h3Title);
 
-  var $ol = $('<ol>');
-  $ol.addClass('directions-list');
+  var $table = $('<table>');
+  $table.addClass('altrowstable');
 
   $(directions).each(function(index, step){
     var distance = step[0];
     var duration = step[1];
     var text = step[2];
     var stepHTML = stepToHTML(distance, duration, text);
-    $ol.append(stepHTML);
+    $table.append(stepHTML);
   });
 
-  $trailDetails.append($ol);
+  $trailDetails.append($table);
 
 };
 
 function stepToHTML(distance, duration, text){
-  var $li = $('<li>');
+  var $tr = $('<tr>');
+  $tr.addClass('trail');
 
-  var $spanText = $('<span>');
-  $spanText.addClass('directions-text');
-  $spanText.text(text);
+  var $tdText = $('<td>');
+  $tdText.addClass('directions-text');
+  $tdText.text(text);
 
-  var $spanDistance = $('<span>');
-  $spanDistance.addClass('directions-distance');
-  $spanDistance.text(distance);  
+  var $tdDistance = $('<td>');
+  $tdDistance.addClass('directions-distance');
+  $tdDistance.text(distance);  
 
-  var $spanDuration = $('<span>');
-  $spanDuration.addClass('directions-duration');
-  $spanDuration.text(duration);  
+  var $tdDuration = $('<td>');
+  $tdDuration.addClass('directions-duration');
+  $tdDuration.text(duration);  
 
-  $li.append($spanText);
-  $li.append($spanDistance);
-  $li.append($spanDuration);
+  $tr.append($tdText);
+  $tr.append($tdDistance);
+  $tr.append($tdDuration);
 
-  return $li;
+  return $tr;
 }
 
 
