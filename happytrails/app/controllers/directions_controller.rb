@@ -1,3 +1,25 @@
+# @directions = response["routes"]["legs"]["steps"]
+
+# i=0
+
+# <table>
+#   <tr>
+#     <th>Step</th>
+#     <th>Distance</th>
+#     <th>Duration</th>
+#     <th>Directions</th>
+#   </tr>
+# <% @directions.each do |stage| %?
+#   <tr>
+#     <td>i</td>
+#     <td>distance=stage["distance"]["text"]</td>
+#     <td>duration=stage["duration"]["text"]</td>
+#     <td>directions=stage["html_instructions"].replaceAll("<[^>]*>", "")</td>
+#   </tr>
+# <% i = i+1 %>
+# <%end%>
+# </table>
+
 class DirectionsController < ApplicationController
 
 
@@ -11,8 +33,15 @@ class DirectionsController < ApplicationController
 
     directions = response["routes"][0]["legs"][0]["steps"]
 
-    [["5 miles", "feklw", "fejkw"], ["fjklew"]]
-
+    directions_arr = []
+    directions.each do |step|
+      steps_arr = []
+      steps_arr.push(step['distance']['text']) # aka distance, "0.6 mi"
+      steps_arr.push(step['duration']['text']) # aka duration, "2 mins"
+      steps_arr.push(step['html_instructions'].gsub(/<[^>]*>/,"")) # aka html_instructions, "Head east on Herkimer St toward Gunther Pl"
+      directions_arr.push(steps_arr)
+    end
+    directions_arr
   end
 
   def index
