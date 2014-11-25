@@ -5,13 +5,12 @@ class TrailsController < ApplicationController
     city = params[:city] || ""
     state = params[:state] || ""
     zip = params[:zip] || ""
-    startpoint_address = address + " " + city + "," + state + " " + zip
+    @startpoint_address = address + " " + city + "," + state + " " + zip
     # @trails = Trail.search_by(startpoint_address)
-    @trails = []
-    10.times do |i|
-      @trails.push(Trail.all.sample)
-    end
-    trails = @trails
+
+    target_solution = "drivingfrom"+Trail.findnearestneighbor(@startpoint_address)+"seconds"
+
+    trails = Trail.order(target_solution, :asc).limit(10)
     respond_to do |format|
       format.html
       format.json { render :json => {trails: trails, startpoint_address: startpoint_address}}
