@@ -154,7 +154,10 @@ function trailToDetails(trail, startpointAddress){
   getDirections.type = 'submit';
   $(getDirections).val('Get Directions');
   $(getDirections).addClass('directions-submit');
-  $(getDirections).css({"position": "absolute", "top": "50%"});
+  $(getDirections).css({
+    "position": "absolute", 
+    "top": "50%",
+  });
 
   $(getDirections).on('click', function(e){
     e.preventDefault;
