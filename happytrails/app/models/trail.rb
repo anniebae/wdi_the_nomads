@@ -188,18 +188,6 @@ end
 # =========================================================================================================
 
 
-  def self.getdirections(startpoint_address, target_coordinates)
-
-  	origin = startpoint_address.gsub(/\s/,"+")
-
-  	packet = "origin=#{origin}&destination=#{target_coordinates}&units=imperial"
-
-  	response = HTTParty.get("https://maps.googleapis.com/maps/api/directions/json?#{packet}")
-
- 	  response.to_json
-
-  end
-
     # if transit_type == "mass transit"
     #     mode = "transit"
     #   elsif transit_type == "bicycling"

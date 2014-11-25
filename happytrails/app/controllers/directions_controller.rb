@@ -9,6 +9,10 @@ class DirectionsController < ApplicationController
 
     response = HTTParty.get("https://maps.googleapis.com/maps/api/directions/json?#{packet}")
 
+    directions = response["routes"][0]["legs"][0]["steps"]
+
+    [["5 miles", "feklw", "fejkw"], ["fjklew"]]
+
   end
 
   def index
