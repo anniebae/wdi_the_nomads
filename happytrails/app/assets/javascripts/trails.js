@@ -51,7 +51,6 @@ function displayTrails(trails, startpointAddress, targetSolution){
 }
 
 function trailToHTML(trail, startpointAddress, targetSolution){
-  debugger;
   var trail = trail;
   var $tr = $("<tr>");
   $tr.addClass("trail");
