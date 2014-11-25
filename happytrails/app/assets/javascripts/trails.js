@@ -154,7 +154,10 @@ function trailToDetails(trail, startpointAddress){
   getDirections.type = 'submit';
   $(getDirections).val('Get Directions');
   $(getDirections).addClass('directions-submit');
-  $(getDirections).css({"position": "absolute", "top": "50%"});
+  $(getDirections).css({
+    "position": "absolute", 
+    "top": "50%",
+  });
 
   $(getDirections).on('click', function(e){
     e.preventDefault;
@@ -188,46 +191,56 @@ function listToHTML(directions){
   var $trailDetails = $('.trail-details');
   $trailDetails.empty();
 
+  // var $div = $('<div>');
+  // $div.addClass('trail-list-box');
+
   var $h3Title = $('<h3>');
   $h3Title.addClass('directions-title');
   $h3Title.text('DIRECTIONS');
   $trailDetails.append($h3Title);
 
-  var $ol = $('<ol>');
-  $ol.addClass('directions-list');
+  var $table = $('<table>');
+  $table.addClass('directions-table');
 
   $(directions).each(function(index, step){
     var distance = step[0];
     var duration = step[1];
     var text = step[2];
-    var stepHTML = stepToHTML(distance, duration, text);
-    $ol.append(stepHTML);
+    var stepHTML = stepToHTML(distance, duration, text, index);
+    $table.append(stepHTML);
   });
 
-  $trailDetails.append($ol);
+  // $div.append($table);
 
+  $trailDetails.append($table);
 };
 
-function stepToHTML(distance, duration, text){
-  var $li = $('<li>');
+function stepToHTML(distance, duration, text, index){
+  var $tr = $('<tr>');
+  $tr.addClass('trail');
 
-  var $spanText = $('<span>');
-  $spanText.addClass('directions-text');
-  $spanText.text(text);
+  var $tdIndex = $('<td>');
+  $tdIndex.addClass('directions-index');
+  $tdIndex.text(index+1);
 
-  var $spanDistance = $('<span>');
-  $spanDistance.addClass('directions-distance');
-  $spanDistance.text(distance);  
+  var $tdText = $('<td>');
+  $tdText.addClass('directions-text');
+  $tdText.text(text);
 
-  var $spanDuration = $('<span>');
-  $spanDuration.addClass('directions-duration');
-  $spanDuration.text(duration);  
+  var $tdDistance = $('<td>');
+  $tdDistance.addClass('directions-distance');
+  $tdDistance.text(distance);  
 
-  $li.append($spanText);
-  $li.append($spanDistance);
-  $li.append($spanDuration);
+  var $tdDuration = $('<td>');
+  $tdDuration.addClass('directions-duration');
+  $tdDuration.text(duration);  
 
-  return $li;
+  $tr.append($tdIndex);
+  $tr.append($tdText);
+  $tr.append($tdDistance);
+  $tr.append($tdDuration);
+
+  return $tr;
 }
 
 

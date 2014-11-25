@@ -76,6 +76,7 @@ body {
 	border-radius: 5px;
 	position: fixed;
 	right: 0;
+	z-index: 2;
 }
 
 .drop-hike p {
@@ -94,6 +95,7 @@ body {
 	width: 150px;
 	position: fixed;
 	right: 0;
+	z-index: 2;
 }
 
 .drop-hello img {
@@ -265,6 +267,15 @@ table.altrowstable {
 	display: none;
 }
 
+table.directions-table {
+	font-family: 'Poiret One';
+	font-size: 14px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	border-collapse: collapse;
+}
+
 table.altrowstable td {
 	border-width: 1px;
 	padding: 8px;
@@ -273,6 +284,13 @@ table.altrowstable td {
 	height: 30px;
 }
 
+table.directions-table td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	height: 30px;
+}
 
 table tr:nth-child(EVEN){
 	background-color: #F2F2EB;
@@ -285,6 +303,14 @@ table tr:nth-child(ODD){
 	margin: 0 auto;
 	text-align: center;
 	width: 75%
+}
+
+.directions-distance {
+	width: 4em;
+}
+
+.directions-duration {
+	width: 4em;
 }
 
 
@@ -333,7 +359,8 @@ table tr:nth-child(ODD){
 .trail-details {
 	font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
 	font-weight: lighter;
-	padding-left: 1em;
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
 

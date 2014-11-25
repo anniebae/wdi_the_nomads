@@ -12,3 +12,6 @@ A user can enter a starting address from where they wish to depart for their hik
 Each trail name is a link that opens up a div, using javascript, with a detailed description of the chosen trail. A user can exit out of the trail's info div with the 'X' button on the top left corner, and read about more trails.
 
 ![ScreenShot](app/assets/images/hike4.jpg)
+
+Each trails' description page includes a 'Get Directions' button which leads a user to another div, rendering detailed description of directions.
+![ScreenShot](app/assets/images/hike5.jpg)
