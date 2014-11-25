@@ -25,7 +25,6 @@ body {
 	background: black;
 }
 
-
 .nav-bar li {
 	padding-right: 25px;
 	float: right;
@@ -81,8 +80,9 @@ body {
 	width: 150px;
 	position: fixed;
 	right: 0;
+	margin-right: 5px;
+	margin-left: 5px;
 }
-
 
 .container {
 	margin-left: auto;
@@ -94,7 +94,6 @@ body {
 	border: 1px solid black;
 	background: rgb(233,	224,	214);
 	text-align: center;
-	height: 21em;
 }
 
 .container input {
@@ -102,6 +101,7 @@ body {
 	height: 30px;
 	font-family: 'Poiret One';
 	font-size: 22px;
+	border-radius: 3px;
 }
 
 .container input.welcome-submit {
@@ -110,10 +110,6 @@ body {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	opacity: 1;
-	position: absolute;
-	left: 10%;
-	top: 65%;
-	width: 80%;
 }
 
 .location-form {
@@ -124,7 +120,6 @@ body {
 
 .form-p {
 	width: 100%;
-	position: absolute;
 	display: inline-block;
 	left: 0%;
 }
@@ -325,9 +320,14 @@ table tr:nth-child(ODD){
 .close_box {
 	position: fixed;
 	cursor: pointer;
-	margin-left: 15px;
-	margin-top: 15px;
+	margin-left: 12px;
+	margin-top: 12px;
 	color: #ABABAB;
+}
+
+.close_png {
+	height: 25px;
+	width: 25px;
 }
 
 .infobox-header {
