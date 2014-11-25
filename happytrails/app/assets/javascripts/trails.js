@@ -129,7 +129,6 @@ function trailToDetails(trail, startpointAddress){
 
   var id = trail.id;
   var $description = $('<div>');
-
   $.ajax({
     url: '/trails/' + id,
     method: 'GET',
@@ -138,7 +137,7 @@ function trailToDetails(trail, startpointAddress){
     success: function(data){
       var paragraphs = data.paragraphs;
       $description.addClass('infobox-description');
-      $.each(paragraphs, function(idx, pgraph){
+      $.each(paragraphs, function(index, pgraph){
         var $p = $('<p>');
         $p.text(pgraph.body);
         $description.append($p);
@@ -158,7 +157,6 @@ function trailToDetails(trail, startpointAddress){
     e.preventDefault;
     var startpointAddress = $(this).data('startpointAddress');
     var id = $(this).data('id');
-
     $.ajax({
       url: '/directions',
       method: 'GET',
@@ -166,12 +164,10 @@ function trailToDetails(trail, startpointAddress){
       data: {startpoint_address: startpointAddress, trail_id: id},
       success: function(data){
         var directions = data.directions;
-        alert(directions);
-        window.location.replace("/directions");
+        listToHTML(directions);
       }
     });        
   });
-
                  
   $div.append($h3Title);
   $div.append($img);
@@ -182,7 +178,54 @@ function trailToDetails(trail, startpointAddress){
   $div.append($(getDirections));
 
   return $div;
+};
+
+function listToHTML(directions){
+  var $trailDetails = $('.trail-details');
+  $trailDetails.empty();
+
+  var $h3Title = $('<h3>');
+  $h3Title.addClass('directions-title');
+  $h3Title.text('DIRECTIONS');
+  $trailDetails.append($h3Title);
+
+  var $ol = $('<ol>');
+  $ol.addClass('directions-list');
+
+  $(directions).each(function(index, step){
+    var distance = step[0];
+    var duration = step[1];
+    var text = step[2];
+    var stepHTML = stepToHTML(distance, duration, text);
+    $ol.append(stepHTML);
+  });
+
+  $trailDetails.append($ol);
+
+};
+
+function stepToHTML(distance, duration, text){
+  var $li = $('<li>');
+
+  var $spanText = $('<span>');
+  $spanText.addClass('directions-text');
+  $spanText.text(text);
+
+  var $spanDistance = $('<span>');
+  $spanDistance.addClass('directions-distance');
+  $spanDistance.text(distance);  
+
+  var $spanDuration = $('<span>');
+  $spanDuration.addClass('directions-duration');
+  $spanDuration.text(duration);  
+
+  $li.append($spanText);
+  $li.append($spanDistance);
+  $li.append($spanDuration);
+
+  return $li;
 }
+
 
 
 $(document).ready(function() {
