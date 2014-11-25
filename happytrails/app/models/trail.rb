@@ -412,4 +412,15 @@ def self.findnearestneighbor(target_address)
 
 end
 
+  def target(target_solution)
+    case target_solution
+    when "drivingfromgrandcentralseconds"
+      self.drivingfromgrandcentralseconds
+    when "drivingfrombarclayscenterseconds"
+      self.drivingfrombarclayscenterseconds
+    when "drivingfromalbanyseconds"
+      self.drivingfromalbanyseconds
+    end
+  end
+
 end

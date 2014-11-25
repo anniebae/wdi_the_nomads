@@ -9,7 +9,6 @@ class TrailsController < ApplicationController
 
     target_solution = "drivingfrom"+Trail.findnearestneighbor(@startpoint_address)+"seconds"
 
-    binding.pry
     trails = Trail.order(target_solution).limit(10)
     respond_to do |format|
       format.html

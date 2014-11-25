@@ -40,24 +40,32 @@ function secondsToHours(seconds){
   return hours + " hrs " + minutes + " minutes away"
 }
 
-function displayTrails(trails, startpointAddress){
+function displayTrails(trails, startpointAddress, targetSolution){
   var $trails = $(".altrowstable");
   $trails.empty();
   $(trails).each(function(index, trail){
-    var trailHTML = trailToHTML(trail, startpointAddress);
+    var trailHTML = trailToHTML(trail, startpointAddress, targetSolution);
     $trails.append(trailHTML);
   });
   $trails.show();
 }
 
-function trailToHTML(trail, startpointAddress){
+function trailToHTML(trail, startpointAddress, targetSolution){
+  debugger;
   var trail = trail;
   var $tr = $("<tr>");
   $tr.addClass("trail");
 
   var $tdTravelDist = $("<td>");
   $tdTravelDist.addClass("travel_distance");
-  $tdTravelDist.text(secondsToHours(trail.target_solution));
+  if (targetSolution==="drivingfromgrandcentralseconds"){
+    $tdTravelDist.text(secondsToHours(trail.drivingfromgrandcentralseconds))
+  } else if (targetSolution==="drivingfrombarclayscenterseconds"){
+    $tdTravelDist.text(secondsToHours(trail.drivingfrombarclayscenterseconds))
+  } else if (targetSolution==="drivingfromalbanyseconds"){
+    $tdTravelDist.text(secondsToHours(trail.drivingfromalbanyseconds))
+  };
+
 
   var $tdTitle = $("<td>");
   $tdTitle.addClass("title");
@@ -293,7 +301,8 @@ $(document).ready(function() {
       success: function(data){
         var trails = data.trails;
         var startpointAddress = data.startpoint_address;
-        displayTrails(trails, startpointAddress);
+        var targetSolution = data.target_solution;
+        displayTrails(trails, startpointAddress, targetSolution);
       }
     });
   });
