@@ -145,6 +145,9 @@ function trailToDetails(trail, startpointAddress){
     }
   });
 
+  var $footer = $('<div>');
+  $footer.addClass('footer');
+
   var getDirections = document.createElement('input');
   $(getDirections).data('id', id)
   $(getDirections).data('startpointAddress', startpointAddress)
@@ -175,7 +178,8 @@ function trailToDetails(trail, startpointAddress){
   $div.append($pDuration);
   $div.append($pDifficulty);
   $div.append($description);
-  $div.append($(getDirections));
+  $footer.append($(getDirections));
+  $div.append($footer);
 
   return $div;
 };
