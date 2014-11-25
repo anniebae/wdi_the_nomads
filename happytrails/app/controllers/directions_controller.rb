@@ -36,9 +36,18 @@ class DirectionsController < ApplicationController
     directions_arr = []
     directions.each do |step|
       steps_arr = []
-      steps_arr.push(step['distance']['text']) # aka distance, "0.6 mi"
-      steps_arr.push(step['duration']['text']) # aka duration, "2 mins"
-      steps_arr.push(step['html_instructions'].gsub(/<[^>]*>/,"")) # aka html_instructions, "Head east on Herkimer St toward Gunther Pl"
+      steps_arr.push(step['distance']['text'])
+      steps_arr.push(step['duration']['text'])
+      instructions = step['html_instructions'].gsub(/<[^>]*>/,"")
+      if instructions.match(/[a-z][A-Z]/) != nil
+        match = instructions.match(/[a-z][A-Z]/).to_s
+        match_alt = match[0] + "  " + match[1]
+        instructions.gsub!(match,match_alt)
+        steps_arr.push(instructions)
+      else
+        steps_arr.push(instructions)
+      end
+
       directions_arr.push(steps_arr)
     end
     directions_arr

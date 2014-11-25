@@ -229,6 +229,7 @@ function stepToHTML(distance, duration, text, index){
 
   var $tdText = $('<td>');
   $tdText.addClass('directions-text');
+  debugger;
   $tdText.text(text);
 
   var $tdDistance = $('<td>');
