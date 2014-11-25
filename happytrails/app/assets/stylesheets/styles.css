@@ -344,7 +344,7 @@ table tr:nth-child(ODD){
 
 .infobox-img {
 	position: absolute;
-	margin-left: 30%;
+	margin-left: 28%;
 	margin-top: -4%;
 	width: 35%;
 	text-align: center;
@@ -356,6 +356,7 @@ table tr:nth-child(ODD){
 	margin-left: 32%;
 	width: 35%;
 	text-align: center;
+	display: none;
 }
 
 .infobox-duration {
@@ -372,11 +373,12 @@ table tr:nth-child(ODD){
 
 .directions-submit {
 	cursor: pointer;
-  height: 40px;
-  border: none;
+  height: 35px;
+  border: 1px solid beige;
   position: fixed;
   margin: 0 auto;
   left: 46.7%;
+  border-radius: 0.5em;
 }
 
 .close_box {
@@ -399,7 +401,7 @@ table tr:nth-child(ODD){
 
 .footer {
 	position: fixed;
-	bottom: 10%;
+	bottom: 13%;
 	width: 100%;
 	left: 0;
 }

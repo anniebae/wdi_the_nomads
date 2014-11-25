@@ -13,7 +13,7 @@ function animateLocationForm(form, speed){
     "height": "4em"
   });
   $(form).closest('.container').animate({
-    "width": "80%", "height": "4em", "margin-bottom": "20px", "margin-top": "-1.5em"
+    "width": "70%", "height": "4em", "margin-bottom": "20px", "margin-top": "-1.5em"
   }, speed);
   $(form).find('.form-p').animate({
     "top": "-0.3em", "height": "100%"
@@ -155,7 +155,7 @@ function trailToDetails(trail, startpointAddress){
         $p.text(pgraph.body);
         $description.append($p);
       });
-      $description.append($('<p>.</p><p>.</p><p>.</p>'));
+      $description.append($('<p>.</p><p>.</p><p>.</p><p>.</p>'));
     }
   });
 
