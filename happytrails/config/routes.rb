@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'trails/index'
 
+  ########### Yaniv Comment ###########
+  # Is the above a typo or unfinished route?
+  #####################################
+
   resources :trails
   resources :directions, only: [:index]
   root "welcome#index"

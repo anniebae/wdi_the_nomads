@@ -1,3 +1,13 @@
+  ########### Yaniv Comment ###########
+  # Woah
+
+  # ADD SPACES TO YOUR CODE.
+  # It is very difficult to read at the moment.
+  # Always write code that is easy to read.
+
+
+  #####################################
+
 # =========================================================================================================
 #
 #   ~~~888~~~ 888~-_        e      888 888                e    e        ,88~-_   888~-_   888~~  888
@@ -25,6 +35,10 @@ end
 #                       THIS WILL LOAD GEO-COORDINATES INTO YOUR TABLE
 # =========================================================================================================
 
+
+  ########### Yaniv Comment ###########
+  # Add spaces
+  #####################################
 def self.setgeocoordinates
   Trail.all.each do |trail|
     location_string = ""

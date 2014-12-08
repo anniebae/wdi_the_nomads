@@ -1,3 +1,7 @@
+########### Yaniv Comment ###########
+# The erb below should be removed. 
+#####################################
+
 # @directions = response["routes"]["legs"]["steps"]
 
 # i=0
@@ -23,6 +27,15 @@
 class DirectionsController < ApplicationController
 
 
+    ########### Yaniv Comment ###########
+    # We shouldn't be writing methods in controllers
+    # that aren't related to actual controller work.
+    # 
+    # The method below would probably belong more in one
+    # of your models, or perhaps a Directions class (remember,
+    # we can still make classes that aren't part of active record)
+    #####################################
+
   def getdirections(startpoint_address, target_coordinates)
 
     origin = startpoint_address.gsub(/\s/,"+")
@@ -33,6 +46,10 @@ class DirectionsController < ApplicationController
 
     directions = response["routes"][0]["legs"][0]["steps"]
 
+
+    ########### Yaniv Comment ###########
+    # Why not use .map here?
+    #####################################
     directions_arr = []
     directions.each do |step|
       steps_arr = []
@@ -56,6 +73,10 @@ class DirectionsController < ApplicationController
   def index
     startpoint_address = params[:startpoint_address]
     trail = Trail.find(params[:trail_id])
+    ########### Yaniv Comment ###########
+    # You could probabaly wrap the line below in a
+    # method of the Trail model.
+    #####################################
     target_coordinates = trail.lat.to_s + "," + trail.lon.to_s
     directions = getdirections(startpoint_address, target_coordinates)
     respond_to do |format|

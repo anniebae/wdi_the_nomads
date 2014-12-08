@@ -1,3 +1,29 @@
+  ########### Yaniv Comment ###########
+  # This looks like a job for....
+  # tuh-duh-duh-duh.......!
+  # Rake Tasks!
+
+  # Incorporating this into a rake task would let us
+  # load our code automatically... So there won't be
+  # need to recreate the Trail model, or use
+  # ActiveRecord::Base.establish_connection. It would
+  # be done automatically for us.
+
+  # Also, I see a lot of repeating code here. Someone
+  # should come back to this file and extract all
+  # of the repeating logic into methods. Maybe even a class!
+  # Make it DRY! This file might only be run once... But that's
+  # no reason to leave it unDRY or difficult to read (especially
+  # if other people might need to run or modify it)
+
+
+  # And last but not least,
+  # LAST BUT NOT LEAST,
+  # get the indentation right.
+  # ASAP
+  #####################################
+
+
 require "active_record"
 
 location_string = ""

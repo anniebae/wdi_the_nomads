@@ -62,6 +62,11 @@ function trailToHTML(trail, startpointAddress, targetSolution){
   $tr.addClass("trail");
 
   var $tdTravelDist = $("<td>");
+  ////////// Yaniv Comment //////////
+  // Holy moly that is difficult to read. Let's get some
+  // camelCasing going and some spaces around those
+  // equal signs.
+  ///////////////////////////////////
   $tdTravelDist.addClass("travel_distance");
   if (targetSolution==="drivingfromgrandcentralseconds"){
     $tdTravelDist.text(secondsToHours(trail.drivingfromgrandcentralseconds))
@@ -71,7 +76,11 @@ function trailToHTML(trail, startpointAddress, targetSolution){
     $tdTravelDist.text(secondsToHours(trail.drivingfromalbanyseconds))
   };
 
-
+  ////////// Yaniv Comment //////////
+  // This could all be written as one string
+  // var td = "<td class='title'></td>"
+  // less magic and more easy to see what's going on
+  ///////////////////////////////////
   var $tdTitle = $("<td>");
   $tdTitle.addClass("title");
   var $a = $("<a>");
@@ -93,6 +102,11 @@ function trailToHTML(trail, startpointAddress, targetSolution){
   $tdTrailDifficulty.addClass("trail_difficulty");
   $tdTrailDifficulty.text(trail.difficulty);
 
+  ////////// Yaniv Comment //////////
+  // Hmm. I see repetition. Why not stick all these
+  // el variables in an array, then use a loop to iterate
+  // and append them to the tr?
+  ///////////////////////////////////
   $tr.append($tdTravelDist);
   $tr.append($tdTitle);
   $tr.append($tdTrailLength);
@@ -155,6 +169,13 @@ function trailToDetails(trail, startpointAddress){
         $p.text(pgraph.body);
         $description.append($p);
       });
+      ////////// Yaniv Comment //////////
+      // Why all the empty p tags? Are they here
+      // just to allow for spacing? If that's the case,
+      // its better to not 'hack' the spacing by adding
+      // unnecessary elements, and rather use CSS to
+      // add spacing
+      ///////////////////////////////////
       $description.append($('<p>.</p><p>.</p><p>.</p><p>.</p>'));
     }
   });

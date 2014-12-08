@@ -1,5 +1,8 @@
 class AddGeoVectors < ActiveRecord::Migration
   def change
+      ########### Yaniv Comment ###########
+      # See comment in Create Trails migration
+      #####################################
   	add_column :trails, :drivingfrombarclayscentermiles, :integer
   	add_column :trails, :drivingfrombarclayscenterseconds, :integer
   	add_column :trails, :drivingfromalbanymiles, :integer
