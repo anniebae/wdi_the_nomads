@@ -1,8 +1,7 @@
 body {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
-	background: url("./forest_bg.jpg");
-	background-repeat: no-repeat;
+	background: url("https://farm7.staticflickr.com/6035/6343784399_19012b525d_b.jpg");
 	background-size: cover;
 	-moz-background-size: cover;
   -o-background-size: cover;
