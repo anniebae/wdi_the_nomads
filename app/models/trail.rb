@@ -11,7 +11,7 @@
 
 
 class Trail <ActiveRecord::Base
-require 'HTTParty'
+require 'httparty'
 has_many :paragraphs
 # =========================================================================================================
 #                      THIS WILL CLEAR YOUR DATABASE OF UNUSABLE TRAILS
