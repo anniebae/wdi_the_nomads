@@ -297,7 +297,6 @@ table.altrowstable td {
 	height: 30px;
 }
 
-
 table tr:nth-child(EVEN){
 	background-color: #F2F2EB;
 }
@@ -321,7 +320,6 @@ table tr:nth-child(ODD){
 .directions-table .trail {
 	height: 2.5em;
 }
-
 
 /*TRAIL DETAILED INFORMATION DIV BOX*/
 .trail-info-box {
@@ -373,7 +371,6 @@ table tr:nth-child(ODD){
 	padding-right: 3em;
 }
 
-
 .directions-submit {
 	cursor: pointer;
   height: 35px;
@@ -405,3 +402,4 @@ table tr:nth-child(ODD){
 .footer {
 	position: fixed;
 	bottom: 13%;
+}
